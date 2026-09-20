@@ -419,3 +419,4 @@ function App() {
   );
 }
 export default App;
+/* deployment-sync: Planvanta homepage logo sizing */
