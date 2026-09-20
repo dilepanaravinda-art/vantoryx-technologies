@@ -471,3 +471,30 @@
 @media(max-width:520px){
  .planvanta-card__logo{width:min(360px,100%)!important;max-height:135px!important}
 }
+
+/* PLANVANTA LOGO FILL APPROVED AREA */
+.planvanta-card__logo{
+  width:100%!important;
+  max-width:520px!important;
+  height:auto!important;
+  max-height:none!important;
+  object-fit:contain!important;
+  object-position:left center!important;
+  margin:0 0 18px!important;
+  filter:none!important;
+  opacity:1!important;
+  mix-blend-mode:normal!important;
+  transform:none!important;
+}
+@media(min-width:1201px){
+ .planvanta-card__logo{width:100%!important;max-width:520px!important}
+}
+@media(min-width:901px) and (max-width:1200px){
+ .planvanta-card__logo{width:100%!important;max-width:455px!important}
+}
+@media(max-width:900px){
+ .planvanta-card__logo{width:min(440px,100%)!important}
+}
+@media(max-width:520px){
+ .planvanta-card__logo{width:100%!important;max-width:380px!important}
+}
