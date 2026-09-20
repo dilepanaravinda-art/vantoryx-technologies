@@ -278,6 +278,8 @@ function App() {
                 </div>
               </div>
               <div className='planvanta-card__visual'>
+                <div className='planvanta-card__sweep planvanta-card__sweep--one' aria-hidden='true' />
+                <div className='planvanta-card__sweep planvanta-card__sweep--two' aria-hidden='true' />
                 <div className='planvanta-card__halo' aria-hidden='true' />
                 <img src='/resources/planvanta-interface.png' alt='Planvanta 2.0 Material Planning dashboard' />
               </div>
