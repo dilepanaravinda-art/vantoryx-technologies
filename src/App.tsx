@@ -265,9 +265,8 @@ function App() {
             <article className='product-panel planvanta-panel'>
               <div className='product-number'>01</div>
               <div className='product-body'>
-                <div className='product-brand'>
-                  <span className='product-mark planvanta-mark'>P</span>
-                  <div><strong>Planvanta</strong><small>PLAN · SOURCE · CONTROL · GROW</small></div>
+                <div className='product-brand product-brand-official planvanta-brand'>
+                  <img src='/resources/planvanta-logo.png' alt='Planvanta — Plan, Source, Control, Grow' />
                 </div>
                 <p className='product-eyebrow'>SUPPLY CHAIN INTELLIGENCE</p>
                 <h3>See the plan.<br />Control the outcome.</h3>
@@ -288,9 +287,8 @@ function App() {
             <article className='product-panel vendora-panel'>
               <div className='product-number'>02</div>
               <div className='product-body'>
-                <div className='product-brand'>
-                  <span className='product-mark vendora-mark'>V</span>
-                  <div><strong>VENDORA</strong><small>SUPPLIER INTELLIGENCE PLATFORM</small></div>
+                <div className='product-brand product-brand-official vendora-brand'>
+                  <img src='/resources/vendora-logo.png' alt='VENDORA — Supplier Intelligence Platform' />
                 </div>
                 <p className='product-eyebrow'>DISCOVER · VERIFY · SOURCE</p>
                 <h3>Find better suppliers.<br />Source with confidence.</h3>
