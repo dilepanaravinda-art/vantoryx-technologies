@@ -390,3 +390,45 @@ mask-image:linear-gradient(90deg,transparent 0%,#000 7%,#000 93%,transparent 100
 .pv-side-message{right:3.1%!important;width:17.5%!important}
 @media(max-width:1200px){.pv-logo{transform:translateY(6px)!important}.pv-interface-crop{left:1.5%!important;width:72.5%!important}.pv-side-message{right:2.2%!important;width:19%!important}}
 @media(max-width:900px){.pv-logo{transform:none!important}.pv-interface-crop{left:2%!important;width:96%!important}.pv-side-message{left:30px!important;right:auto!important;width:auto!important}}
+
+/* Planvanta dashboard restoration — preserve full dashboard, isolate far-right story */
+.pv-interface-crop{
+  left:1.5%!important;top:14.5%!important;width:79%!important;height:78%!important;
+  -webkit-mask-image:none!important;mask-image:none!important;
+  overflow:hidden!important;border-radius:24px!important;
+}
+.pv-interface-crop:before{
+  box-shadow:none!important;background:none!important;
+}
+.pv-interface-crop:after{
+  content:""!important;position:absolute!important;z-index:5!important;
+  top:0!important;right:0!important;bottom:0!important;left:auto!important;
+  width:5%!important;height:auto!important;
+  background:linear-gradient(90deg,transparent,rgba(7,18,47,.92))!important;
+  pointer-events:none!important;
+}
+.pv-interface{
+  left:0!important;top:0!important;width:auto!important;height:100%!important;
+  max-width:none!important;max-height:none!important;transform:none!important;
+  object-fit:cover!important;object-position:left center!important;
+  filter:saturate(1.04) contrast(1.02) drop-shadow(0 24px 42px rgba(0,0,0,.24))!important;
+}
+.pv-right:before{
+  content:""!important;position:absolute!important;z-index:3!important;
+  left:79%!important;right:0!important;top:0!important;bottom:0!important;
+  inset:0 0 0 79%!important;
+  background:linear-gradient(105deg,#09152f 0%,#0c1235 34%,#171044 100%)!important;
+  filter:none!important;
+}
+.pv-side-message{z-index:6!important;right:2.5%!important;width:16.5%!important}
+@media(max-width:1200px){
+  .pv-interface-crop{left:1.5%!important;width:78%!important}
+  .pv-right:before{left:78%!important;inset:0 0 0 78%!important}
+  .pv-side-message{right:1.7%!important;width:18%!important}
+}
+@media(max-width:900px){
+  .pv-interface-crop{left:2%!important;top:5%!important;width:96%!important;height:70%!important}
+  .pv-interface{width:100%!important;height:auto!important}
+  .pv-right:before{left:0!important;right:0!important;top:72%!important;bottom:0!important;inset:72% 0 0 0!important;background:linear-gradient(180deg,rgba(9,21,47,.08),#0c1235 34%,#171044 100%)!important}
+  .pv-side-message{left:30px!important;right:auto!important;width:auto!important}
+}
