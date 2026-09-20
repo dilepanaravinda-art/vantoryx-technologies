@@ -150,3 +150,24 @@
 @keyframes vxPulseTwo{0%,18%,100%{opacity:0;transform:translate3d(-130px,70px,0) scale(.55)}30%{opacity:.8}68%{opacity:.7}82%{opacity:0;transform:translate3d(170px,-75px,0) scale(.9)}}
 @media(prefers-reduced-motion:reduce){.hero-background,.cinematic-stars,.cinematic-atmosphere,.cinematic-orbit-pulse{animation:none!important}.hero-background{transform:scale(1.02)!important}.cinematic-orbit-pulse{display:none}}
 @media(max-width:900px){.hero-background{animation-duration:42s!important}.cinematic-stars-near,.cinematic-orbit-pulse{display:none}.cinematic-stars-far{opacity:.16}}
+
+/* Approved header treatment: glass belongs only to navigation tabs */
+@media(min-width:1100px){
+ .nav{
+   left:3.2vw!important;right:3.2vw!important;top:2.2vh!important;height:84px!important;
+   grid-template-columns:minmax(300px,21vw) 1fr minmax(175px,12vw)!important;
+   padding:0!important;border:0!important;border-radius:0!important;background:transparent!important;
+   box-shadow:none!important;backdrop-filter:none!important;-webkit-backdrop-filter:none!important;
+ }
+ .brand-plate{background:transparent!important;border:0!important;box-shadow:none!important;backdrop-filter:none!important}
+ .nav-links{
+   justify-self:center!important;width:min(690px,42vw)!important;height:64px!important;
+   padding:0 14px!important;border:1px solid rgba(126,182,255,.30)!important;border-radius:32px!important;
+   background:linear-gradient(105deg,rgba(5,20,45,.64),rgba(4,14,34,.54) 58%,rgba(22,16,52,.54))!important;
+   box-shadow:inset 0 1px 0 rgba(255,255,255,.08),0 12px 34px rgba(0,0,0,.24),0 0 22px rgba(34,211,238,.055)!important;
+   backdrop-filter:blur(24px) saturate(125%)!important;-webkit-backdrop-filter:blur(24px) saturate(125%)!important;
+ }
+ .nav-links a{height:100%!important;padding:0 24px!important}
+ .nav-links a:after{bottom:8px!important}
+ .demo{justify-self:end!important}
+}
