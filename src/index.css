@@ -555,3 +555,34 @@
     padding:10px 28px 18px 4px!important;
   }
 }
+
+/* PLANVANTA REMOVE INTRINSIC LOGO WHITESPACE */
+@media(min-width:901px){
+  .planvanta-card__copy{
+    padding:18px 20px 24px 48px!important;
+    overflow:hidden!important;
+  }
+  .planvanta-card__logo{
+    width:520px!important;
+    max-width:none!important;
+    height:auto!important;
+    max-height:none!important;
+    margin:-104px 0 -94px -8px!important;
+    object-fit:contain!important;
+    object-position:left center!important;
+    filter:none!important;
+    opacity:1!important;
+  }
+  .planvanta-card__eyebrow{
+    margin:0 0 10px!important;
+  }
+  .planvanta-card__visual{
+    padding-top:18px!important;
+  }
+}
+@media(min-width:901px) and (max-width:1200px){
+  .planvanta-card__logo{
+    width:455px!important;
+    margin:-90px 0 -82px -7px!important;
+  }
+}
