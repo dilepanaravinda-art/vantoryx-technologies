@@ -267,17 +267,14 @@ function App() {
             <article className='planvanta-card' id='planvanta'>
               <div className='planvanta-card__copy'>
                 <img className='planvanta-card__logo' src='/resources/planvanta-logo.png' alt='Planvanta' />
-                <p className='planvanta-card__eyebrow'>SUPPLY CHAIN PLANNING &amp; OPERATIONAL INTELLIGENCE</p>
-                <h3>Plan Smarter.<br />See Clearly.<br /><span>Operate with Confidence.</span></h3>
-                <p className='planvanta-card__body'>Connect material planning, procurement, inventory, logistics and management visibility in one operational intelligence environment.</p>
+                <p className='planvanta-card__eyebrow'>INTRODUCING PLANVANTA 2.0</p>
+                <h3>Manufacturing Intelligence. <span>Connected.</span></h3>
+                <p className='planvanta-card__body'>Planvanta 2.0 is Vantoryx Technologies' manufacturing planning and operational intelligence platform — bringing material planning, inventory, procurement, plant operations and management visibility into one connected environment.</p>
+                <p className='planvanta-card__support'>Built for growing manufacturers. Designed for multi-plant operations. Engineered to turn operational data into clearer decisions.</p>
+                <p className='planvanta-card__statement'>Plan Smarter. See Clearly. Operate with Confidence.</p>
                 <div className='planvanta-card__actions'>
-                  <a className='planvanta-card__primary' href='#planvanta'>Explore Planvanta 2.0 <ArrowRight size={17}/></a>
+                  <a className='planvanta-card__primary' href='/products/planvanta'>Explore Planvanta 2.0 <ArrowRight size={17}/></a>
                   <a className='planvanta-card__secondary' href='#contact'>Request a Demo <ArrowRight size={17}/></a>
-                </div>
-                <div className='planvanta-card__benefits'>
-                  <span><Layers3 size={21}/><b>Greater Visibility</b></span>
-                  <span><BarChart3 size={21}/><b>Better Planning</b></span>
-                  <span><ShieldCheck size={21}/><b>Stronger Decisions</b></span>
                 </div>
               </div>
               <div className='planvanta-card__visual'>
