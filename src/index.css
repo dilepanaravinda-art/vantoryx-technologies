@@ -372,3 +372,12 @@ mask-image:linear-gradient(90deg,transparent 0%,#000 7%,#000 93%,transparent 100
 .pv-right:after{background:radial-gradient(ellipse at 48% 42%,rgba(52,157,255,.27),rgba(68,82,218,.085) 43%,transparent 73%)!important}
 @media(max-width:1200px){.planvanta-feature,.pv-right{min-height:670px!important}.pv-logo{width:min(325px,76%)!important}.pv-interface-crop{left:0!important;top:15%!important}.pv-side-message{right:.5%!important}}
 @media(max-width:900px){.planvanta-feature{min-height:0!important}.pv-right{min-height:540px!important}.pv-logo{width:min(330px,82%)!important}.pv-interface-crop{left:2%!important;top:5%!important}.pv-interface{transform:none!important}.pv-side-message{left:30px!important;right:auto!important}}
+
+/* Planvanta right-side cleanup — hide source-art marketing bleed */
+.pv-interface-crop{width:75.5%!important}
+.pv-interface-crop:after{content:"";position:absolute!important;z-index:5!important;top:0!important;right:0!important;bottom:0!important;left:auto!important;width:8%!important;height:auto!important;background:linear-gradient(90deg,transparent,rgba(7,18,47,.72) 48%,#091431 100%)!important;pointer-events:none!important}
+.pv-right:before{content:"";position:absolute!important;z-index:3!important;top:0!important;right:0!important;bottom:0!important;left:74%!important;inset:auto 0 0 74%!important;background:linear-gradient(100deg,rgba(7,19,46,.97) 0%,rgba(10,17,49,.985) 32%,rgba(18,15,60,.98) 100%)!important;filter:none!important}
+.pv-side-message{z-index:6!important;right:2.2%!important;width:17.5%!important}
+.pv-side-message:after{content:"";position:absolute;z-index:-1;inset:-38px -34px -40px -42px;background:radial-gradient(ellipse at 48% 48%,rgba(70,64,190,.13),transparent 70%);pointer-events:none}
+@media(max-width:1200px){.pv-interface-crop{width:74%!important}.pv-right:before{left:73%!important;inset:auto 0 0 73%!important}.pv-side-message{right:1.5%!important;width:19%!important}}
+@media(max-width:900px){.pv-interface-crop{width:96%!important}.pv-right:before{left:0!important;right:0!important;top:72%!important;bottom:0!important;inset:72% 0 0 0!important;background:linear-gradient(180deg,rgba(7,19,46,.18),rgba(10,17,49,.98) 36%,rgba(18,15,60,.98))!important}.pv-side-message{left:30px!important;right:auto!important;width:auto!important}}
