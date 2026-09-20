@@ -343,3 +343,31 @@
 .planvanta-card__statement{max-width:520px;margin:18px 0 0;color:#f0f7ff;font-size:14px;line-height:1.45;font-weight:780;letter-spacing:-.01em}
 .planvanta-card__statement+.planvanta-card__actions{margin-top:22px}
 @media(max-width:900px){.planvanta-card__support{font-size:13px}.planvanta-card__statement{font-size:14px}}
+
+/* PLANVANTA DEAD-SPACE CORRECTION */
+.planvanta-card{
+  min-height:0!important;
+  align-items:stretch!important;
+}
+.planvanta-card__copy{
+  justify-content:flex-start!important;
+  padding-top:28px!important;
+  padding-bottom:32px!important;
+}
+.planvanta-card__logo{
+  margin-bottom:20px!important;
+}
+.planvanta-card__visual{
+  align-items:flex-start!important;
+  padding-top:28px!important;
+  padding-bottom:28px!important;
+}
+@media(min-width:901px){
+  .planvanta-card{min-height:500px!important}
+  .planvanta-card__copy{padding-top:28px!important}
+  .planvanta-card__visual{padding-top:28px!important}
+}
+@media(max-width:900px){
+  .planvanta-card__copy{padding-top:30px!important}
+  .planvanta-card__visual{padding-top:8px!important}
+}
