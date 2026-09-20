@@ -81,9 +81,9 @@ function CinematicWorld() {
       ctx.fillStyle = nebula;
       ctx.fillRect(0, 0, w, h);
 
-      const cx = w * 0.715;
-      const cy = h * 0.64;
-      const r = Math.min(w * 0.315, h * 0.56);
+      const cx = w * 0.69;
+      const cy = h * 0.585;
+      const r = Math.min(w * 0.285, h * 0.50);
       const earth = ctx.createRadialGradient(cx - r * 0.35, cy - r * 0.38, r * 0.08, cx, cy, r);
       earth.addColorStop(0, '#1a68ba');
       earth.addColorStop(0.28, '#073c7e');
@@ -100,7 +100,11 @@ function CinematicWorld() {
       ctx.fillStyle = earth;
       ctx.fillRect(cx - r, cy - r, r * 2, r);
 
-      for (let i = 0; i < 88; i++) {
+      // Abstract illuminated continental masses make the sphere read as Earth, not a network dome.
+      const land = [[-.42,-.42,.17,.09,-.25],[-.28,-.31,.11,.19,.18],[-.15,-.12,.08,.22,-.1],[.02,-.38,.13,.08,.15],[.16,-.30,.18,.12,-.12],[.29,-.15,.13,.20,.12],[.40,-.02,.08,.12,.32],[.08,-.06,.12,.18,-.25]];
+      land.forEach(([lx,ly,rx,ry,rot]) => { ctx.save(); ctx.translate(cx+lx*r,cy+ly*r); ctx.rotate(rot); const g=ctx.createRadialGradient(0,0,0,0,0,rx*r); g.addColorStop(0,'rgba(36,211,238,.28)'); g.addColorStop(.55,'rgba(25,116,176,.18)'); g.addColorStop(1,'rgba(15,75,130,0)'); ctx.fillStyle=g; ctx.beginPath(); ctx.ellipse(0,0,rx*r,ry*r,0,0,Math.PI*2); ctx.fill(); ctx.restore(); });
+
+      for (let i = 0; i < 112; i++) {
         const a = (i * 2.399 + frame * 0.00016) % (Math.PI * 2);
         const rr = r * (0.14 + ((i * 47) % 79) / 100);
         const x = cx + Math.cos(a) * rr;
@@ -134,7 +138,7 @@ function CinematicWorld() {
       drawArc(cx, cy - r * 0.01, r * 0.37, r * 0.11, r * 0.24, 0.7, 'rgba(74,139,255,.7)', 0.9);
       drawArc(cx, cy, r * 0.84, r * 0.2, r * 0.22, 0.84, 'rgba(167,139,250,.48)', 0.8);
 
-      const hy = h * 0.68;
+      const hy = h * 0.625;
       const flare = ctx.createRadialGradient(w * 0.58, hy, 0, w * 0.58, hy, w * 0.28);
       flare.addColorStop(0, 'rgba(237,233,254,.98)');
       flare.addColorStop(0.012, 'rgba(167,139,250,.95)');
