@@ -213,3 +213,26 @@
 .planvanta-brand img{max-height:74px;filter:drop-shadow(0 10px 22px rgba(20,108,224,.10))}
 .vendora-brand{height:94px;margin-bottom:30px}.vendora-brand img{max-height:92px;max-width:min(340px,88%);filter:drop-shadow(0 10px 25px rgba(124,58,237,.12))}
 @media(max-width:900px){.product-brand-official{height:70px;margin-bottom:28px}.product-brand-official img{max-height:66px;max-width:88%}.vendora-brand{height:82px}.vendora-brand img{max-height:80px}}
+
+/* Flagship product polish — stronger brand hierarchy and tighter composition */
+.product-showcase{gap:34px!important}
+.product-panel{min-height:455px!important;grid-template-columns:minmax(460px,.9fr) 1.1fr!important}
+.product-body{padding:42px 34px 42px 50px!important}
+.product-number{right:28px!important;top:20px!important;font-size:54px!important;color:rgba(215,231,255,.09)!important;letter-spacing:-.04em!important}
+.product-brand-official{position:relative;width:min(520px,100%)!important;height:112px!important;margin:0 0 20px!important;isolation:isolate}
+.product-brand-official:before{content:"";position:absolute;z-index:-1;left:-22px;top:50%;width:110%;height:150%;transform:translateY(-50%);background:radial-gradient(ellipse at 28% 50%,rgba(66,176,255,.16),rgba(34,211,238,.055) 43%,transparent 72%);filter:blur(12px);pointer-events:none}
+.product-brand-official img{width:auto!important;height:auto!important;max-width:100%!important;object-fit:contain!important;object-position:left center!important}
+.planvanta-brand img{max-height:108px!important;filter:brightness(1.55) saturate(1.08) drop-shadow(0 0 12px rgba(68,187,255,.20))!important}
+.vendora-brand{height:128px!important;margin-bottom:10px!important}.vendora-brand:before{background:radial-gradient(ellipse at 24% 50%,rgba(78,154,255,.11),rgba(124,58,237,.075) 44%,transparent 72%)}.vendora-brand img{max-height:126px!important;max-width:450px!important;filter:brightness(1.1) drop-shadow(0 0 16px rgba(124,58,237,.14))!important}
+.product-eyebrow{margin-bottom:12px!important}.product-body h3{font-size:clamp(38px,2.75vw,54px)!important}.product-description{margin:18px 0 18px!important}.product-tags{margin-bottom:25px!important}
+.product-visual{padding:40px 48px!important}
+.visual-window{height:315px!important;max-width:680px!important;box-shadow:0 24px 64px rgba(0,0,0,.34),0 0 52px rgba(34,211,238,.06)!important}
+.vendora-visual{min-height:455px!important}
+.supplier-network{position:relative;width:330px;height:330px;display:grid;place-items:center}
+.network-rings,.network-rings i{position:absolute;inset:0;border-radius:50%}.network-rings i{border:1px solid rgba(91,166,241,.13)}.network-rings i:nth-child(2){inset:48px;border-color:rgba(167,139,250,.17)}.network-rings i:nth-child(3){inset:98px;border-color:rgba(34,211,238,.20)}
+.network-hub{position:relative;z-index:3;width:108px;height:108px;border-radius:28px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:7px;color:#a8f4ff;border:1px solid rgba(34,211,238,.35);background:linear-gradient(145deg,rgba(14,76,131,.88),rgba(50,29,116,.9));box-shadow:0 0 45px rgba(68,116,239,.20),inset 0 1px rgba(255,255,255,.1)}
+.network-hub small{text-align:center;font-size:7px;line-height:1.35;letter-spacing:.13em;color:#d5e8fa}
+.supplier-node{position:absolute;z-index:4;width:35px;height:35px;border-radius:11px;display:grid;place-items:center;font-size:9px;font-weight:800;color:#bdf7ff;border:1px solid rgba(34,211,238,.35);background:rgba(5,31,62,.92);box-shadow:0 0 18px rgba(34,211,238,.12)}.sn1{left:7%;top:26%}.sn2{right:5%;top:32%}.sn3{left:22%;bottom:5%}.sn4{right:19%;bottom:10%}
+.network-line{position:absolute;z-index:1;height:1px;width:115px;left:50%;top:50%;transform-origin:left center;background:linear-gradient(90deg,rgba(34,211,238,.42),rgba(167,139,250,.08))}.nl1{transform:rotate(-148deg)}.nl2{transform:rotate(-27deg)}.nl3{transform:rotate(124deg)}.nl4{transform:rotate(52deg)}
+.vendor-card{min-width:154px!important;padding:13px 16px!important}.vc1{left:6%!important;top:16%!important}.vc2{right:5%!important;bottom:17%!important}.vc3{right:7%;top:17%}.vendor-card b{font-size:12px!important}.vc3 b{color:#67dce8}
+@media(max-width:900px){.product-panel{grid-template-columns:1fr!important}.product-body{padding:34px 26px!important}.product-brand-official{height:94px!important;margin-bottom:18px!important}.planvanta-brand img{max-height:90px!important}.vendora-brand{height:110px!important}.vendora-brand img{max-height:108px!important}.product-visual{padding:28px!important}.supplier-network{width:280px;height:280px}}
