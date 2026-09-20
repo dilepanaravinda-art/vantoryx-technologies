@@ -268,11 +268,15 @@ function App() {
                 <div className='product-brand product-brand-official planvanta-brand'>
                   <img src='/resources/planvanta-logo.png' alt='Planvanta — Plan, Source, Control, Grow' />
                 </div>
-                <p className='product-eyebrow'>SUPPLY CHAIN INTELLIGENCE</p>
-                <h3>See the plan.<br />Control the outcome.</h3>
-                <p className='product-description'>A connected planning environment for material availability, purchasing, inventory, logistics and operational visibility.</p>
-                <div className='product-tags'><span>Material Planning</span><span>Procurement</span><span>Inventory</span><span>Logistics</span></div>
-                <a href='#planvanta'>Explore Planvanta <ArrowRight size={17} /></a>
+                <p className='product-eyebrow'>INTRODUCING PLANVANTA 2.0</p>
+                <h3>Supply Chain Intelligence.<br /><span className='connected-accent'>Connected.</span></h3>
+                <p className='product-description'>Planvanta 2.0 is Vantoryx Technologies' Supply chain planning and operational intelligence platform — bringing material planning, inventory, procurement, plant operations, and management visibility into one connected environment.</p>
+                <p className='product-description product-description-secondary'>Built for growing manufacturers. Designed for multi-plant operations. Engineered to turn operational data into clearer decisions.</p>
+                <p className='product-mantra'>Plan Smarter. See Clearly. Operate with Confidence.</p>
+                <div className='product-actions'>
+                  <a className='product-primary' href='#planvanta'>Explore Planvanta 2.0 <ArrowRight size={17} /></a>
+                  <a className='product-secondary' href='#contact'>Request a Demo <ArrowRight size={17} /></a>
+                </div>
               </div>
               <div className='product-visual planvanta-visual' aria-hidden='true'>
                 <div className='visual-window'>
