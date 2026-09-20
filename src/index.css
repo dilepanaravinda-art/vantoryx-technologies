@@ -96,3 +96,25 @@
  .signal-copy i{background:linear-gradient(#22D3EE,#22D3EE)!important;box-shadow:0 0 14px #22D3EE!important}
  .principles i{background:linear-gradient(#7C3AED,#A78BFA)!important;box-shadow:0 0 14px #7C3AED!important}
 }
+
+/* Premium enterprise UI refinement — calm hierarchy over cinematic artwork */
+@media(min-width:1100px){
+ .nav{left:3.2vw!important;right:3.2vw!important;top:2.2vh!important;height:84px!important;grid-template-columns:minmax(300px,21vw) 1fr minmax(175px,12vw)!important;padding:0 22px!important;border-radius:30px!important;border:1px solid rgba(117,177,255,.28)!important;background:linear-gradient(105deg,rgba(5,20,45,.66),rgba(4,14,34,.56) 58%,rgba(22,16,52,.55))!important;box-shadow:inset 0 1px rgba(255,255,255,.07),0 16px 42px rgba(0,0,0,.24)!important;backdrop-filter:blur(24px) saturate(125%)!important}
+ .brand-plate{height:76px!important;width:min(360px,20vw)!important}.brand img{height:96px!important;width:min(365px,20vw)!important;transform:translateX(-14px)!important;filter:brightness(1.4) contrast(1.1) drop-shadow(0 0 10px rgba(34,211,238,.18))!important}
+ .nav-links{height:100%!important;width:min(650px,39vw)!important;display:flex!important;justify-content:center!important;align-items:center!important;gap:4px!important;padding:0!important;background:transparent!important;border:0!important;box-shadow:none!important}
+ .nav-links a{display:flex!important;align-items:center!important;justify-content:center!important;padding:28px 23px!important;font-size:clamp(13px,.78vw,16px)!important;font-weight:650!important;letter-spacing:.01em!important;color:rgba(238,245,255,.86)!important}
+ .nav-links a svg{display:none!important}.nav-links a:after{bottom:16px!important;height:2px!important;left:32%!important;right:32%!important}
+ .demo{font-size:clamp(14px,.82vw,17px)!important;min-width:clamp(165px,10vw,195px)!important;padding:14px 24px!important;box-shadow:0 8px 28px rgba(93,74,240,.2),inset 0 1px rgba(255,255,255,.2)!important}
+ .hero-copy{left:4.6vw!important;top:43%!important;width:43vw!important}
+ .kicker{font-size:clamp(12px,.8vw,16px)!important;letter-spacing:.24em!important;margin-bottom:20px!important}
+ .hero h1{font-size:clamp(70px,5.45vw,106px)!important;line-height:.89!important;letter-spacing:-.048em!important}
+ .intro{font-size:clamp(16px,.98vw,20px)!important;line-height:1.58!important;max-width:640px!important;margin-top:25px!important;color:rgba(226,233,245,.9)!important}
+ .hero-actions{margin-top:28px!important;gap:14px!important}.hero-actions a{font-size:clamp(14px,.82vw,17px)!important;padding:14px 23px!important}
+ .signal-copy{right:4.2vw!important;top:17%!important;transform:none!important;font-size:10px!important;line-height:1.75!important;color:rgba(245,249,255,.9)!important;letter-spacing:.22em!important}
+ .principles{right:5vw!important;top:36%!important;transform:none!important;font-size:10px!important;line-height:1.8!important;color:rgba(225,234,248,.84)!important;letter-spacing:.22em!important}
+ .signal-copy i,.principles i{opacity:.78!important;box-shadow:0 0 9px rgba(34,211,238,.3)!important}
+ .capability-strip{left:5.5vw!important;right:5.5vw!important;bottom:8.4vh!important;min-height:82px!important;border-radius:18px!important;border:1px solid rgba(104,166,240,.28)!important;background:linear-gradient(100deg,rgba(3,18,41,.70),rgba(6,16,38,.64) 64%,rgba(31,17,61,.58))!important;box-shadow:0 16px 42px rgba(0,0,0,.28),inset 0 1px rgba(255,255,255,.055)!important;backdrop-filter:blur(20px)!important}
+ .capability{padding:13px 24px!important;gap:15px!important}.cap-icon{width:44px!important;height:44px!important;flex-basis:44px!important;border-radius:13px!important;border-color:rgba(34,211,238,.38)!important;background:rgba(15,67,106,.24)!important;box-shadow:none!important}.cap-icon svg{width:21px!important;height:21px!important}
+ .cap-copy{gap:3px!important}.cap-copy strong{font-size:clamp(12px,.75vw,15px)!important;font-weight:680!important}.cap-copy small{font-size:clamp(10px,.62vw,12px)!important;color:rgba(190,204,227,.76)!important}
+ .scroll-cue{bottom:2.4vh!important;gap:16px!important;color:rgba(236,243,255,.84)!important}.scroll-cue span{width:92px!important;opacity:.65!important}.scroll-cue b{font-size:9px!important;font-weight:620!important;letter-spacing:.27em!important}
+}
