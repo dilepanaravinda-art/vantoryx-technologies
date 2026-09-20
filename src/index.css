@@ -616,3 +616,66 @@ mask-image:linear-gradient(90deg,transparent 0%,#000 7%,#000 93%,transparent 100
  .pv-right:before{left:0!important;inset:70% 0 0 0!important;background:linear-gradient(180deg,rgba(9,21,47,0),#0c1235 34%,#171047 100%)!important}
  .pv-side-message{left:30px!important;right:auto!important;width:auto!important}
 }
+
+/* Planvanta boundary correction — preserve complete laptop, cover source story only */
+.pv-interface-crop{
+  left:1.5%!important;
+  top:12.5%!important;
+  width:82%!important;
+  height:76%!important;
+  overflow:hidden!important;
+  border-radius:26px!important;
+}
+.pv-interface-crop:before{display:none!important}
+.pv-interface-crop:after{display:none!important}
+.pv-interface{
+  position:absolute!important;
+  left:0!important;top:0!important;
+  width:auto!important;height:100%!important;
+  max-width:none!important;max-height:none!important;
+  transform:none!important;
+  object-fit:cover!important;
+  object-position:left center!important;
+  border-radius:24px!important;
+}
+.pv-right:before{
+  content:""!important;
+  position:absolute!important;
+  z-index:4!important;
+  left:84%!important;right:0!important;top:0!important;bottom:0!important;
+  inset:0 0 0 84%!important;
+  background:
+    radial-gradient(ellipse at 100% 75%,rgba(104,54,218,.16),transparent 58%),
+    linear-gradient(90deg,rgba(10,18,50,0) 0%,rgba(10,18,50,.72) 18%,#0d1238 34%,#171047 100%)!important;
+  box-shadow:-38px 0 42px rgba(10,18,50,.28)!important;
+  filter:none!important;
+  pointer-events:none!important;
+}
+.pv-right:after{
+  content:""!important;
+  position:absolute!important;
+  z-index:3!important;
+  left:80.5%!important;top:0!important;bottom:0!important;width:5%!important;
+  right:auto!important;height:auto!important;
+  background:linear-gradient(90deg,transparent 0%,rgba(9,19,48,.18) 28%,rgba(10,18,50,.62) 72%,rgba(10,18,50,.9) 100%)!important;
+  filter:blur(8px)!important;
+  pointer-events:none!important;
+}
+.pv-side-message{
+  z-index:6!important;
+  right:2.5%!important;
+  width:14.5%!important;
+}
+@media(max-width:1200px){
+ .pv-interface-crop{left:1.5%!important;width:81%!important}
+ .pv-right:before{left:83%!important;inset:0 0 0 83%!important}
+ .pv-right:after{left:79.5%!important}
+ .pv-side-message{right:1.5%!important;width:15.5%!important}
+}
+@media(max-width:900px){
+ .pv-interface-crop{left:2%!important;top:5%!important;width:96%!important;height:68%!important}
+ .pv-interface{width:100%!important;height:100%!important;object-fit:cover!important}
+ .pv-right:after{display:none!important}
+ .pv-right:before{left:0!important;inset:70% 0 0 0!important;background:linear-gradient(180deg,rgba(9,21,47,0),#0c1235 34%,#171047 100%)!important;box-shadow:none!important}
+ .pv-side-message{left:30px!important;right:auto!important;width:auto!important}
+}
