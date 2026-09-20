@@ -741,3 +741,55 @@ mask-image:linear-gradient(90deg,transparent 0%,#000 7%,#000 93%,transparent 100
  .pv-right:before{left:0!important;inset:70% 0 0 0!important;background:linear-gradient(180deg,rgba(9,21,47,0),#0c1235 34%,#171047 100%)!important}
  .pv-side-message{left:30px!important;right:auto!important;width:auto!important}
 }
+
+/* Planvanta hard boundary fix — source artwork cannot leak into story zone */
+.pv-interface-crop{
+  left:1.5%!important;
+  top:12.5%!important;
+  width:77%!important;
+  height:76%!important;
+  overflow:hidden!important;
+  border-radius:26px 0 0 26px!important;
+}
+.pv-interface{
+  left:0!important;top:0!important;
+  width:auto!important;height:100%!important;
+  max-width:none!important;
+  object-fit:contain!important;
+  object-position:left center!important;
+  clip-path:none!important;
+  border-radius:24px!important;
+}
+.pv-right:before{
+  left:77%!important;
+  inset:0 0 0 77%!important;
+  z-index:4!important;
+  background:
+    radial-gradient(ellipse at 100% 78%,rgba(105,54,220,.16),transparent 58%),
+    linear-gradient(90deg,#091731 0%,#0b1436 22%,#10113e 62%,#171047 100%)!important;
+}
+.pv-right:after{
+  display:block!important;
+  z-index:5!important;
+  left:75.5%!important;
+  top:12.5%!important;
+  bottom:11.5%!important;
+  width:3%!important;
+  right:auto!important;
+  height:auto!important;
+  background:linear-gradient(90deg,transparent,#091731)!important;
+  filter:blur(8px)!important;
+}
+.pv-side-message{z-index:6!important;right:3%!important;width:18%!important}
+@media(max-width:1200px){
+ .pv-interface-crop{width:76%!important}
+ .pv-right:before{left:76%!important;inset:0 0 0 76%!important}
+ .pv-right:after{left:74.5%!important}
+ .pv-side-message{right:2%!important;width:19%!important}
+}
+@media(max-width:900px){
+ .pv-interface-crop{left:2%!important;top:5%!important;width:96%!important;height:68%!important;border-radius:22px!important}
+ .pv-interface{width:100%!important;height:100%!important;object-fit:cover!important}
+ .pv-right:after{display:none!important}
+ .pv-right:before{left:0!important;inset:70% 0 0 0!important}
+}
