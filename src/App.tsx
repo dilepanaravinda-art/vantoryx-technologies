@@ -264,33 +264,6 @@ function App() {
           </div>
 
           <div className='product-showcase'>
-            <article className='product-panel planvanta-panel'>
-              <div className='product-body'>
-                <div className='product-brand product-brand-official planvanta-brand'>
-                  <img src='/resources/planvanta-logo.png' alt='Planvanta — Plan, Source, Control, Grow' />
-                </div>
-                <p className='product-eyebrow'>INTRODUCING PLANVANTA 2.0</p>
-                <h3>Supply Chain Intelligence.<br /><span className='connected-accent'>Connected.</span></h3>
-                <p className='product-description'>Planvanta 2.0 is Vantoryx Technologies' Supply chain planning and operational intelligence platform — bringing material planning, inventory, procurement, plant operations, and management visibility into one connected environment.</p>
-                <p className='product-description product-description-secondary'>Built for growing manufacturers. Designed for multi-plant operations. Engineered to turn operational data into clearer decisions.</p>
-                <p className='product-mantra'>Plan Smarter. See Clearly. Operate with Confidence.</p>
-                <div className='product-actions'>
-                  <a className='product-primary' href='#planvanta'>Explore Planvanta 2.0 <ArrowRight size={17} /></a>
-                  <a className='product-secondary' href='#contact'>Request a Demo <ArrowRight size={17} /></a>
-                </div>
-                <div className='planvanta-benefits' aria-label='Planvanta benefits'>
-                  <span><Layers3 size={23}/><b>Greater<br/>Visibility</b></span>
-                  <span><BarChart3 size={23}/><b>Better<br/>Planning</b></span>
-                  <span><ShieldCheck size={23}/><b>Stronger<br/>Decisions</b></span>
-                </div>
-              </div>
-              <div className='product-visual planvanta-visual planvanta-interface-visual'>
-                <div className='planvanta-interface-frame'>
-                  <img src='/resources/planvanta-interface.png' alt='Planvanta 2.0 material planning and operational intelligence interface' />
-                </div>
-              </div>
-            </article>
-
             <article className='product-panel vendora-panel'>
               <div className='product-number'>02</div>
               <div className='product-body'>
