@@ -335,3 +335,21 @@ box-shadow:0 34px 100px rgba(0,0,0,.42),inset 0 1px 0 rgba(174,226,255,.10)}
 .pv-side-message p{font-size:clamp(10px,.72vw,14px)!important;line-height:1.46!important;color:#9fb4cf!important}
 @media(max-width:1200px){.planvanta-feature{grid-template-columns:40% 60%!important;min-height:700px!important}.pv-left{padding:32px 15px 28px 38px!important}.pv-right{min-height:700px!important}.pv-interface-crop{width:80%!important;top:14%!important;height:73%!important}.pv-side-message{right:1.5%!important;width:17%!important}}
 @media(max-width:900px){.planvanta-feature{min-height:0!important}.pv-left{justify-content:flex-start!important;padding:38px 28px 30px!important}.pv-right{min-height:550px!important}.pv-interface-crop{left:2%!important;top:5%!important;width:96%!important;height:70%!important}.pv-interface{width:100%!important;height:auto!important;transform:none!important}.pv-side-message{left:30px!important;right:auto!important;bottom:26px!important;top:auto!important;width:auto!important}.pv-right:after{left:0;right:0;bottom:10%;height:28%}}
+
+/* Planvanta locked final polish */
+.pv-left{padding-top:32px!important;padding-bottom:28px!important}
+.pv-logo{margin-bottom:15px!important}
+.pv-interface-crop{left:2%!important;top:13.5%!important;width:81.5%!important;height:79%!important;border-radius:26px!important;
+-webkit-mask-image:linear-gradient(90deg,transparent 0%,rgba(0,0,0,.82) 3%,#000 8%,#000 91%,rgba(0,0,0,.82) 96%,transparent 100%),linear-gradient(180deg,transparent 0%,#000 5%,#000 92%,transparent 100%);
+-webkit-mask-composite:source-in;mask-image:linear-gradient(90deg,transparent 0%,#000 7%,#000 93%,transparent 100%)}
+.pv-interface-crop:before{box-shadow:inset 22px 0 34px rgba(5,25,47,.48),inset -26px 0 38px rgba(11,18,54,.56),inset 0 18px 28px rgba(4,18,40,.26),inset 0 -18px 30px rgba(18,38,88,.30)!important}
+.pv-interface{transform:scale(.99)!important;transform-origin:center center!important}
+.pv-right:after{left:7%!important;right:9%!important;bottom:4%!important;height:18%!important;background:radial-gradient(ellipse at 48% 42%,rgba(52,157,255,.27),rgba(68,82,218,.10) 43%,transparent 73%)!important}
+.pv-side-message{right:1.7%!important;top:43.5%!important;width:15.5%!important}
+.planvanta-feature{background:
+radial-gradient(ellipse 39% 64% at 12% 7%,rgba(21,202,246,.31) 0%,rgba(8,130,191,.17) 30%,rgba(4,54,92,.07) 58%,transparent 76%),
+radial-gradient(ellipse 55% 35% at 66% 96%,rgba(31,114,255,.27),transparent 65%),
+radial-gradient(ellipse 31% 56% at 99% 76%,rgba(113,52,235,.18),transparent 70%),
+linear-gradient(110deg,#05243b 0%,#041a31 29%,#06152d 54%,#0a1030 76%,#111039 100%)!important}
+@media(max-width:1200px){.pv-logo{margin-bottom:14px!important}.pv-interface-crop{left:1%!important;top:14%!important;width:82%!important;height:74%!important}.pv-interface{transform:scale(.98)!important}.pv-side-message{right:1%!important;width:16%!important}}
+@media(max-width:900px){.pv-left{padding-top:34px!important}.pv-logo{margin-bottom:22px!important}.pv-interface-crop{left:2%!important;top:5%!important;width:96%!important;height:70%!important;-webkit-mask-image:linear-gradient(180deg,#000 0%,#000 90%,transparent 100%);mask-image:linear-gradient(180deg,#000 0%,#000 90%,transparent 100%)}.pv-interface{transform:none!important}.pv-side-message{left:30px!important;right:auto!important;width:auto!important}}
