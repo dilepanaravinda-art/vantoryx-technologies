@@ -264,6 +264,28 @@ function App() {
           </div>
 
           <div className='product-showcase'>
+            <article className='planvanta-card' id='planvanta'>
+              <div className='planvanta-card__copy'>
+                <img className='planvanta-card__logo' src='/resources/planvanta-logo.png' alt='Planvanta' />
+                <p className='planvanta-card__eyebrow'>SUPPLY CHAIN PLANNING &amp; OPERATIONAL INTELLIGENCE</p>
+                <h3>Plan Smarter.<br />See Clearly.<br /><span>Operate with Confidence.</span></h3>
+                <p className='planvanta-card__body'>Connect material planning, procurement, inventory, logistics and management visibility in one operational intelligence environment.</p>
+                <div className='planvanta-card__actions'>
+                  <a className='planvanta-card__primary' href='#planvanta'>Explore Planvanta 2.0 <ArrowRight size={17}/></a>
+                  <a className='planvanta-card__secondary' href='#contact'>Request a Demo <ArrowRight size={17}/></a>
+                </div>
+                <div className='planvanta-card__benefits'>
+                  <span><Layers3 size={21}/><b>Greater Visibility</b></span>
+                  <span><BarChart3 size={21}/><b>Better Planning</b></span>
+                  <span><ShieldCheck size={21}/><b>Stronger Decisions</b></span>
+                </div>
+              </div>
+              <div className='planvanta-card__visual'>
+                <div className='planvanta-card__halo' aria-hidden='true' />
+                <img src='/resources/planvanta-interface.png' alt='Planvanta 2.0 Material Planning dashboard' />
+              </div>
+            </article>
+
             <article className='product-panel vendora-panel'>
               <div className='product-number'>02</div>
               <div className='product-body'>
