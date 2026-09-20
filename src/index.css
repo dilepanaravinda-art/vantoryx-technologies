@@ -432,3 +432,58 @@ mask-image:linear-gradient(90deg,transparent 0%,#000 7%,#000 93%,transparent 100
   .pv-right:before{left:0!important;right:0!important;top:72%!important;bottom:0!important;inset:72% 0 0 0!important;background:linear-gradient(180deg,rgba(9,21,47,.08),#0c1235 34%,#171044 100%)!important}
   .pv-side-message{left:30px!important;right:auto!important;width:auto!important}
 }
+
+/* Planvanta premium image-to-tile blend — CSS only */
+.pv-right{isolation:isolate!important}
+.pv-interface-crop{
+  left:1.5%!important;top:13.5%!important;width:79%!important;height:80%!important;
+  overflow:visible!important;border-radius:26px!important;background:transparent!important;
+  box-shadow:none!important;
+}
+.pv-interface-crop:before{
+  content:""!important;position:absolute!important;z-index:-1!important;
+  inset:-9% -7% -11% -9%!important;
+  background:
+    radial-gradient(ellipse at 50% 88%,rgba(45,155,255,.38),transparent 55%),
+    radial-gradient(ellipse at 78% 46%,rgba(87,67,231,.18),transparent 58%),
+    radial-gradient(ellipse at 12% 48%,rgba(35,211,238,.14),transparent 48%)!important;
+  filter:blur(25px)!important;pointer-events:none!important;
+}
+.pv-interface-crop:after{
+  content:""!important;position:absolute!important;z-index:3!important;
+  inset:-2%!important;width:auto!important;height:auto!important;
+  background:
+    linear-gradient(90deg,#061a32 0%,transparent 7%,transparent 91%,rgba(10,17,49,.82) 98%,#0b1234 100%),
+    linear-gradient(180deg,#07172f 0%,transparent 8%,transparent 88%,rgba(15,33,77,.38) 96%,transparent 100%)!important;
+  pointer-events:none!important;border-radius:28px!important;
+}
+.pv-interface{
+  position:relative!important;z-index:2!important;display:block!important;
+  width:100%!important;height:100%!important;max-width:none!important;max-height:none!important;
+  object-fit:cover!important;object-position:left center!important;border-radius:24px!important;
+  filter:saturate(1.06) contrast(1.025) drop-shadow(0 28px 44px rgba(0,0,0,.28))!important;
+}
+.pv-right:after{
+  content:""!important;position:absolute!important;z-index:0!important;
+  left:1%!important;right:14%!important;bottom:2%!important;height:26%!important;
+  background:
+    radial-gradient(ellipse at 48% 38%,rgba(47,167,255,.40),rgba(42,102,232,.16) 42%,transparent 69%),
+    linear-gradient(180deg,transparent 0%,rgba(38,118,224,.08) 65%,transparent 100%)!important;
+  filter:blur(22px)!important;pointer-events:none!important;
+}
+.pv-right:before{
+  z-index:4!important;left:79%!important;inset:0 0 0 79%!important;
+  background:linear-gradient(100deg,rgba(9,21,47,.15) 0%,rgba(10,18,51,.94) 17%,#0d1238 42%,#171047 100%)!important;
+  box-shadow:-22px 0 40px rgba(8,20,49,.42)!important;
+}
+.pv-side-message{z-index:6!important}
+@media(max-width:1200px){
+ .pv-interface-crop{left:1.5%!important;top:14%!important;width:78%!important;height:78%!important}
+ .pv-right:before{left:78%!important;inset:0 0 0 78%!important}
+}
+@media(max-width:900px){
+ .pv-interface-crop{left:2%!important;top:5%!important;width:96%!important;height:70%!important;overflow:hidden!important}
+ .pv-interface{width:100%!important;height:100%!important;object-fit:cover!important}
+ .pv-interface-crop:after{background:linear-gradient(180deg,rgba(7,23,47,.18),transparent 8%,transparent 88%,#0c1235 100%)!important}
+ .pv-right:before{left:0!important;inset:72% 0 0 0!important}
+}
