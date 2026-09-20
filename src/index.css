@@ -684,3 +684,31 @@
     margin:-68px 0 -58px -2px!important;
   }
 }
+
+/* PLANVANTA HOMEPAGE LOGO FINAL SIZE */
+@media(min-width:1201px){
+  .planvanta-card__logo{
+    width:360px!important;
+    max-width:78%!important;
+    height:auto!important;
+    margin:-56px 0 -46px 0!important;
+    object-fit:contain!important;
+    object-position:left center!important;
+    filter:none!important;
+    opacity:1!important;
+    transform:none!important;
+  }
+}
+@media(min-width:901px) and (max-width:1200px){
+  .planvanta-card__logo{
+    width:330px!important;
+    max-width:80%!important;
+    height:auto!important;
+    margin:-48px 0 -40px 0!important;
+    object-fit:contain!important;
+    object-position:left center!important;
+    filter:none!important;
+    opacity:1!important;
+    transform:none!important;
+  }
+}
