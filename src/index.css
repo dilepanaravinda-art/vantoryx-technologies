@@ -498,3 +498,33 @@
 @media(max-width:520px){
  .planvanta-card__logo{width:100%!important;max-width:380px!important}
 }
+
+/* PLANVANTA DEAD SPACE FINAL */
+@media(min-width:901px){
+ .planvanta-card{
+   align-items:start!important;
+   min-height:0!important;
+ }
+ .planvanta-card__copy{
+   justify-content:flex-start!important;
+   padding:20px 20px 28px 48px!important;
+ }
+ .planvanta-card__logo{
+   width:100%!important;
+   max-width:520px!important;
+   margin:0 0 4px!important;
+ }
+ .planvanta-card__eyebrow{
+   margin-top:0!important;
+   margin-bottom:10px!important;
+ }
+ .planvanta-card__visual{
+   align-self:start!important;
+   align-items:flex-start!important;
+   padding:20px 28px 20px 4px!important;
+ }
+}
+@media(min-width:1201px){
+ .planvanta-card__copy{padding-top:18px!important}
+ .planvanta-card__visual{padding-top:18px!important}
+}
