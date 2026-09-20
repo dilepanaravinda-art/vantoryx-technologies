@@ -586,3 +586,36 @@
     margin:-90px 0 -82px -7px!important;
   }
 }
+
+/* PLANVANTA TYPOGRAPHY REBALANCE */
+@media(min-width:901px){
+  .planvanta-card__eyebrow{
+    font-size:12px!important;
+    line-height:1.25!important;
+    letter-spacing:.16em!important;
+    font-weight:800!important;
+    margin:0 0 9px!important;
+  }
+  .planvanta-card h3{
+    font-size:clamp(36px,2.55vw,49px)!important;
+    line-height:1.01!important;
+  }
+  .planvanta-card__body{
+    font-size:13px!important;
+    line-height:1.58!important;
+    margin-top:17px!important;
+  }
+  .planvanta-card__support{
+    font-size:12px!important;
+    line-height:1.52!important;
+    margin-top:10px!important;
+  }
+  .planvanta-card__statement{
+    font-size:13px!important;
+    line-height:1.4!important;
+    margin-top:14px!important;
+  }
+  .planvanta-card__statement+.planvanta-card__actions{
+    margin-top:18px!important;
+  }
+}
