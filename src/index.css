@@ -611,3 +611,97 @@
 .planvanta-interface-frame{width:102%!important}
 @media(max-width:1250px){.planvanta-interface-visual{transform:translate(-1%,-1%) scale(1.035)}}
 @media(max-width:900px){.planvanta-brand{transform:none;width:min(310px,86%)!important}.planvanta-interface-visual{transform:none}.planvanta-panel .product-number{opacity:.11!important}}
+
+
+/* Planvanta flagship premium reveal v7 — preserve official brand artwork */
+.planvanta-panel{
+  position:relative!important;
+  overflow:hidden!important;
+  background:
+    radial-gradient(ellipse at 76% 48%,rgba(29,132,224,.16),transparent 34%),
+    radial-gradient(ellipse at 11% 17%,rgba(0,190,225,.11),transparent 27%),
+    radial-gradient(ellipse at 93% 88%,rgba(108,55,222,.14),transparent 35%),
+    linear-gradient(118deg,#061d33 0%,#031126 49%,#11133a 100%)!important;
+  box-shadow:inset 0 1px rgba(255,255,255,.055),0 28px 80px rgba(0,0,0,.22)!important;
+}
+.planvanta-panel:after{
+  content:'';position:absolute;inset:auto -8% -40% 34%;height:72%;pointer-events:none;
+  background:radial-gradient(ellipse,rgba(55,78,228,.16),transparent 67%);
+  filter:blur(30px);
+}
+.planvanta-panel .product-body{padding-left:58px!important;padding-right:18px!important}
+.planvanta-brand{
+  width:min(306px,82%)!important;
+  margin:0 0 18px!important;
+  transform:none!important;
+  position:relative!important;
+}
+.planvanta-brand:before{
+  inset:-70% -42%!important;
+  background:radial-gradient(ellipse at 34% 52%,rgba(53,210,244,.20),rgba(23,102,205,.07) 43%,transparent 70%)!important;
+  filter:blur(28px)!important;
+}
+.planvanta-brand img{
+  width:100%!important;
+  filter:none!important;
+  opacity:1!important;
+  mix-blend-mode:normal!important;
+}
+.planvanta-panel .product-eyebrow{
+  margin:0 0 12px!important;
+  font-size:14px!important;
+  letter-spacing:.145em!important;
+}
+.planvanta-panel .product-body h3{margin-bottom:19px!important}
+.planvanta-panel .product-description{
+  max-width:520px!important;
+  color:#cbd9e7!important;
+  line-height:1.6!important;
+}
+.planvanta-panel .product-description-secondary{color:#aebfd0!important}
+.planvanta-panel .product-mantra{
+  color:#f5fbff!important;
+  font-weight:800!important;
+  letter-spacing:-.01em!important;
+}
+.planvanta-panel .product-mantra::first-letter{color:inherit!important}
+.planvanta-panel .product-primary{
+  box-shadow:0 10px 30px rgba(49,146,241,.25),0 0 26px rgba(124,58,237,.12)!important;
+}
+.planvanta-panel .product-secondary{background:rgba(3,18,38,.38)!important}
+.planvanta-panel .product-number{
+  opacity:.12!important;
+  font-size:82px!important;
+  top:22px!important;
+  right:28px!important;
+}
+.planvanta-interface-visual{
+  transform:translate(-3.5%,-1%) scale(1.095)!important;
+  transform-origin:center!important;
+  z-index:3!important;
+}
+.planvanta-interface-visual:before{
+  inset:7% -8% 4% -12%!important;
+  background:
+    radial-gradient(ellipse at 47% 46%,rgba(22,199,244,.20),transparent 39%),
+    radial-gradient(ellipse at 82% 58%,rgba(128,67,245,.17),transparent 53%)!important;
+  filter:blur(40px)!important;
+}
+.planvanta-interface-frame{
+  width:104%!important;
+  -webkit-mask-image:linear-gradient(90deg,transparent 0%,#000 2.5%,#000 98%,transparent 100%)!important;
+  mask-image:linear-gradient(90deg,transparent 0%,#000 2.5%,#000 98%,transparent 100%)!important;
+  box-shadow:0 40px 105px rgba(0,0,0,.31),0 0 120px rgba(34,211,238,.10)!important;
+}
+@media(max-width:1250px){
+ .planvanta-panel .product-body{padding-left:42px!important}
+ .planvanta-brand{width:min(292px,82%)!important}
+ .planvanta-interface-visual{transform:translate(-2%,-1%) scale(1.06)!important}
+}
+@media(max-width:900px){
+ .planvanta-panel .product-body{padding:32px 26px 22px!important}
+ .planvanta-brand{width:min(300px,84%)!important;margin-bottom:16px!important}
+ .planvanta-interface-visual{transform:none!important}
+ .planvanta-interface-frame{-webkit-mask-image:none!important;mask-image:none!important}
+ .planvanta-panel .product-number{font-size:56px!important;opacity:.10!important}
+}
