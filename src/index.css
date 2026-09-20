@@ -907,3 +907,56 @@ mask-image:linear-gradient(90deg,transparent 0%,#000 7%,#000 93%,transparent 100
  .pv-right:after{display:none!important}
  .pv-side-message{left:30px!important;right:auto!important;width:auto!important}
 }
+
+/* PLANVANTA FINAL STRUCTURAL LOCK — device viewport + independent story zone */
+.pv-right{position:relative!important;overflow:hidden!important;isolation:isolate!important}
+.pv-device-stage{
+ position:absolute!important;z-index:2!important;
+ left:2%!important;top:13%!important;width:78%!important;height:74%!important;
+ overflow:hidden!important;border-radius:24px!important;
+}
+.pv-interface-crop{
+ position:absolute!important;inset:0!important;
+ width:100%!important;height:100%!important;
+ overflow:hidden!important;border-radius:24px!important;
+ background:transparent!important;box-shadow:none!important;
+}
+.pv-interface-crop:before,.pv-interface-crop:after{display:none!important}
+.pv-interface{
+ position:absolute!important;left:0!important;top:0!important;
+ height:100%!important;width:auto!important;max-width:none!important;max-height:none!important;
+ object-fit:contain!important;object-position:left center!important;
+ transform:none!important;clip-path:none!important;border-radius:23px!important;
+ filter:saturate(1.04) contrast(1.02) drop-shadow(0 24px 38px rgba(0,0,0,.24))!important;
+}
+.pv-right:before{
+ content:""!important;display:block!important;position:absolute!important;z-index:5!important;
+ left:79.5%!important;right:0!important;top:0!important;bottom:0!important;inset:0 0 0 79.5%!important;
+ background:
+  radial-gradient(ellipse at 0% 74%,rgba(34,139,229,.18),transparent 50%),
+  radial-gradient(ellipse at 100% 82%,rgba(88,61,196,.12),transparent 60%),
+  linear-gradient(90deg,#091a34 0%,#0a1835 30%,#0d1738 66%,#11163d 100%)!important;
+ box-shadow:-22px 0 34px rgba(8,25,50,.28)!important;filter:none!important;pointer-events:none!important;
+}
+.pv-right:after{
+ content:""!important;display:block!important;position:absolute!important;z-index:1!important;
+ left:8%!important;right:7%!important;bottom:3%!important;height:24%!important;top:auto!important;width:auto!important;
+ background:radial-gradient(ellipse at 52% 42%,rgba(41,151,255,.34),rgba(45,93,222,.13) 46%,transparent 72%)!important;
+ filter:blur(22px)!important;pointer-events:none!important;
+}
+.pv-side-message{
+ position:absolute!important;z-index:7!important;right:2.7%!important;width:16.2%!important;
+ background:transparent!important;border:0!important;box-shadow:none!important;
+}
+@media(max-width:1200px){
+ .pv-device-stage{left:2%!important;top:14%!important;width:77%!important;height:72%!important}
+ .pv-right:before{left:78.5%!important;inset:0 0 0 78.5%!important}
+ .pv-side-message{right:1.8%!important;width:17.5%!important}
+}
+@media(max-width:900px){
+ .pv-device-stage{left:2%!important;top:5%!important;width:96%!important;height:67%!important;border-radius:22px!important}
+ .pv-interface{width:100%!important;height:100%!important;object-fit:cover!important}
+ .pv-right:before{left:0!important;inset:69% 0 0 0!important;background:linear-gradient(180deg,rgba(9,22,48,0),#0b1835 35%,#11163d 100%)!important}
+ .pv-right:after{display:none!important}
+ .pv-side-message{left:30px!important;right:auto!important;width:auto!important}
+}
