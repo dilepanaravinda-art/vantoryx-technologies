@@ -297,9 +297,15 @@ function App() {
                 <a href='#vendora'>Explore VENDORA <ArrowRight size={17} /></a>
               </div>
               <div className='product-visual vendora-visual' aria-hidden='true'>
-                <div className='vendor-orbit'><span className='vendor-core'>V</span><i className='node n1'/><i className='node n2'/><i className='node n3'/><i className='node n4'/></div>
-                <div className='vendor-card vc1'><small>SUPPLIER</small><b>Verified</b></div>
-                <div className='vendor-card vc2'><small>RISK</small><b>Low</b></div>
+                <div className='supplier-network'>
+                  <div className='network-rings'><i /><i /><i /></div>
+                  <span className='network-hub'><ShieldCheck size={30} /><small>SUPPLIER<br/>INTELLIGENCE</small></span>
+                  <span className='supplier-node sn1'>01</span><span className='supplier-node sn2'>02</span><span className='supplier-node sn3'>03</span><span className='supplier-node sn4'>04</span>
+                  <span className='network-line nl1'/><span className='network-line nl2'/><span className='network-line nl3'/><span className='network-line nl4'/>
+                </div>
+                <div className='vendor-card vc1'><small>VERIFICATION</small><b>Verified supplier</b></div>
+                <div className='vendor-card vc2'><small>RISK PROFILE</small><b>Low exposure</b></div>
+                <div className='vendor-card vc3'><small>SOURCING</small><b>Qualified</b></div>
               </div>
             </article>
           </div>
