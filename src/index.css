@@ -619,3 +619,23 @@
     margin-top:18px!important;
   }
 }
+
+/* PLANVANTA LOGO CONTRAST BACKGROUND */
+.planvanta-card{
+  background:
+    radial-gradient(ellipse at 15% 14%,rgba(38,142,205,.22),transparent 31%),
+    radial-gradient(ellipse at 72% 54%,rgba(22,116,205,.17),transparent 34%),
+    radial-gradient(ellipse at 96% 92%,rgba(72,67,196,.10),transparent 39%),
+    linear-gradient(116deg,#0b2940 0%,#09243a 34%,#081b34 67%,#0a1733 100%)!important;
+}
+.planvanta-card__copy:before{
+  content:""!important;
+  position:absolute!important;
+  z-index:-1!important;
+  left:-48px!important;
+  right:-12px!important;
+  top:-18px!important;
+  height:250px!important;
+  background:radial-gradient(ellipse at 34% 42%,rgba(28,126,180,.22),rgba(8,38,61,.08) 58%,transparent 78%)!important;
+  pointer-events:none!important;
+}
