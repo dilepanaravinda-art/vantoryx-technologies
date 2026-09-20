@@ -16,3 +16,6 @@
 /* Approved mockup geometry pass */
 @media(min-width:901px){.nav{top:8px;height:72px;grid-template-columns:410px 1fr 230px}.brand-plate{width:390px;height:72px}.brand img{width:405px;height:104px}.hero-copy{top:38%;left:4.7vw}.signal-copy{top:14.5%;right:4.3vw}.principles{top:33%;right:5.4vw}.capability-strip{bottom:4.8vh}.world-canvas{filter:saturate(1.18) contrast(1.06)}}
 .hero-background{position:absolute;inset:0;z-index:-4;background-image:url('/resources/vantoryx-hero-bg.png');background-size:cover;background-position:center top;background-repeat:no-repeat}.world-canvas{display:none!important}@media(min-width:901px){.cinematic-vignette{background:linear-gradient(90deg,rgba(2,7,19,.16),rgba(2,7,19,.03) 42%,rgba(2,7,19,0) 72%);box-shadow:none}}@media(max-width:900px){.hero-background{background-position:58% top}.cinematic-vignette{background:linear-gradient(90deg,rgba(2,7,19,.76),rgba(2,7,19,.1))}}
+
+/* Refresh hero background after approved artwork replacement */
+.hero-background{background-image:url('/resources/vantoryx-hero-bg.png?v=20260920-2');background-size:cover;background-position:center center;background-repeat:no-repeat}
