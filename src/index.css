@@ -206,3 +206,10 @@
 .node{position:absolute;width:9px;height:9px;border-radius:50%;background:#8eeeff;box-shadow:0 0 16px #22d3ee}.n1{left:13%;top:27%}.n2{right:8%;top:44%}.n3{left:36%;bottom:-4px}.n4{right:28%;top:7%}
 .vendor-card{position:absolute;min-width:140px;padding:14px 17px;border:1px solid rgba(133,174,230,.18);border-radius:13px;background:rgba(5,21,46,.78);backdrop-filter:blur(12px);box-shadow:0 18px 38px rgba(0,0,0,.3)}.vendor-card small,.vendor-card b{display:block}.vendor-card small{color:#6e86a5;font-size:8px;letter-spacing:.16em}.vendor-card b{margin-top:5px;font-size:14px}.vc1{left:9%;top:23%}.vc1 b{color:#72e6dc}.vc2{right:8%;bottom:25%}.vc2 b{color:#bba7ff}
 @media(max-width:900px){.products-section{padding:90px 20px 100px}.section-heading{display:block;margin-bottom:45px}.section-heading>p:last-child{margin-top:25px}.product-panel{grid-template-columns:1fr;min-height:0}.product-body{padding:38px 28px}.product-visual{min-height:360px;padding:28px}.product-number{font-size:54px}.visual-window{height:300px;transform:none}.product-brand{margin-bottom:30px}}
+
+/* Official product identities */
+.product-brand-official{width:100%;height:82px;margin-bottom:38px;display:flex;align-items:center;justify-content:flex-start}
+.product-brand-official img{display:block;width:auto;max-width:min(390px,92%);height:auto;max-height:78px;object-fit:contain;object-position:left center}
+.planvanta-brand img{max-height:74px;filter:drop-shadow(0 10px 22px rgba(20,108,224,.10))}
+.vendora-brand{height:94px;margin-bottom:30px}.vendora-brand img{max-height:92px;max-width:min(340px,88%);filter:drop-shadow(0 10px 25px rgba(124,58,237,.12))}
+@media(max-width:900px){.product-brand-official{height:70px;margin-bottom:28px}.product-brand-official img{max-height:66px;max-width:88%}.vendora-brand{height:82px}.vendora-brand img{max-height:80px}}
