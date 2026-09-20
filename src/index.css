@@ -280,3 +280,60 @@
 @media(max-width:1100px){.planvanta-card{grid-template-columns:.86fr 1.14fr;min-height:560px}.planvanta-card__copy{padding:46px 18px 44px 42px}.planvanta-card__logo{width:min(285px,88%)}.planvanta-card__benefits{grid-template-columns:1fr;gap:9px}.planvanta-card__benefits span+span{padding-left:0;border-left:0}.planvanta-card__visual{padding:32px 24px 32px 0}}
 @media(max-width:820px){.planvanta-card{grid-template-columns:1fr;min-height:0;border-radius:25px}.planvanta-card__copy{padding:38px 28px 28px}.planvanta-card__logo{width:min(280px,82%);margin-bottom:27px}.planvanta-card h3{font-size:clamp(40px,11vw,58px)}.planvanta-card__visual{padding:12px 16px 30px}.planvanta-card__visual img{width:100%;max-height:none}.planvanta-card__benefits{grid-template-columns:repeat(3,1fr);gap:0}.planvanta-card__benefits span{display:block}.planvanta-card__benefits span+span{padding-left:12px;border-left:1px solid rgba(108,169,230,.14)}}
 @media(max-width:520px){.planvanta-card__copy{padding:32px 21px 23px}.planvanta-card__body{font-size:14px}.planvanta-card__actions{width:100%}.planvanta-card__actions a{width:100%}.planvanta-card__benefits{grid-template-columns:1fr;gap:10px}.planvanta-card__benefits span{display:flex}.planvanta-card__benefits span+span{padding-left:0;border-left:0}.planvanta-card__visual{padding:8px 8px 22px}}
+
+/* PLANVANTA PREMIUM WEBSITE POLISH */
+.planvanta-card{
+  grid-template-columns:minmax(390px,.68fr) minmax(620px,1.32fr);
+  min-height:560px;
+  border-radius:30px;
+  border:1px solid rgba(79,171,239,.20);
+  background:
+    radial-gradient(ellipse at 70% 48%,rgba(23,132,218,.15),transparent 35%),
+    radial-gradient(ellipse at 100% 100%,rgba(110,71,218,.13),transparent 42%),
+    linear-gradient(118deg,#06192c 0%,#071b31 44%,#091731 72%,#11153b 100%);
+  box-shadow:0 32px 90px rgba(0,0,0,.34),inset 0 1px 0 rgba(255,255,255,.05);
+}
+.planvanta-card__copy{
+  justify-content:center;
+  padding:42px 22px 42px 48px;
+}
+.planvanta-card__logo{
+  width:min(250px,72%);
+  margin:0 0 26px;
+  filter:brightness(1.45) saturate(1.08) drop-shadow(0 0 14px rgba(34,211,238,.10));
+}
+.planvanta-card__eyebrow{margin-bottom:12px;font-size:9px;letter-spacing:.19em}
+.planvanta-card h3{font-size:clamp(38px,2.85vw,54px);line-height:1.01;letter-spacing:-.04em}
+.planvanta-card__body{max-width:500px;margin-top:20px;font-size:14px;line-height:1.65}
+.planvanta-card__actions{margin-top:25px}
+.planvanta-card__actions a{min-height:45px;padding:0 17px;border-radius:12px}
+.planvanta-card__benefits{max-width:500px;margin-top:28px;padding-top:18px}
+.planvanta-card__visual{
+  align-items:center;
+  justify-content:flex-end;
+  padding:34px 32px 34px 12px;
+}
+.planvanta-card__visual img{
+  width:100%;
+  max-height:none;
+  border-radius:18px;
+  box-shadow:0 22px 54px rgba(0,0,0,.30);
+  filter:saturate(1.03) contrast(1.02);
+}
+.planvanta-card__visual:before{
+  left:3%;right:2%;bottom:4%;height:35%;
+  background:radial-gradient(ellipse,rgba(37,168,255,.20),rgba(65,88,222,.08) 48%,transparent 74%);
+}
+.planvanta-card__halo{width:78%;opacity:.72}
+@media(max-width:1200px){
+ .planvanta-card{grid-template-columns:minmax(350px,.72fr) minmax(0,1.28fr);min-height:520px}
+ .planvanta-card__copy{padding:36px 18px 36px 36px}
+ .planvanta-card__visual{padding:28px 24px 28px 8px}
+ .planvanta-card__logo{width:min(230px,74%)}
+}
+@media(max-width:900px){
+ .planvanta-card{grid-template-columns:1fr;min-height:0}
+ .planvanta-card__copy{padding:36px 28px 24px}
+ .planvanta-card__visual{padding:8px 20px 28px;justify-content:center}
+ .planvanta-card__logo{width:min(240px,70%)}
+}
