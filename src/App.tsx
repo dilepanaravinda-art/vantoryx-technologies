@@ -277,6 +277,11 @@ function App() {
                   <a className='product-primary' href='#planvanta'>Explore Planvanta 2.0 <ArrowRight size={17} /></a>
                   <a className='product-secondary' href='#contact'>Request a Demo <ArrowRight size={17} /></a>
                 </div>
+                <div className='planvanta-benefits' aria-label='Planvanta benefits'>
+                  <span><Layers3 size={23}/><b>Greater<br/>Visibility</b></span>
+                  <span><BarChart3 size={23}/><b>Better<br/>Planning</b></span>
+                  <span><ShieldCheck size={23}/><b>Stronger<br/>Decisions</b></span>
+                </div>
               </div>
               <div className='product-visual planvanta-visual planvanta-interface-visual'>
                 <div className='planvanta-interface-frame'>
