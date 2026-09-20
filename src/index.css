@@ -337,3 +337,9 @@
  .planvanta-card__visual{padding:8px 20px 28px;justify-content:center}
  .planvanta-card__logo{width:min(240px,70%)}
 }
+
+/* PLANVANTA HOMEPAGE FEATURE COPY */
+.planvanta-card__support{max-width:520px;margin:13px 0 0;color:#879bb4;font-size:13px;line-height:1.62}
+.planvanta-card__statement{max-width:520px;margin:18px 0 0;color:#f0f7ff;font-size:14px;line-height:1.45;font-weight:780;letter-spacing:-.01em}
+.planvanta-card__statement+.planvanta-card__actions{margin-top:22px}
+@media(max-width:900px){.planvanta-card__support{font-size:13px}.planvanta-card__statement{font-size:14px}}
