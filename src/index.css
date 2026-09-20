@@ -705,3 +705,21 @@
  .planvanta-interface-frame{-webkit-mask-image:none!important;mask-image:none!important}
  .planvanta-panel .product-number{font-size:56px!important;opacity:.10!important}
 }
+
+
+/* Approved Planvanta cinematic product composition — remove sequence marker */
+.planvanta-panel .product-number{display:none!important}
+
+/* Brighter integrated brand illumination based on approved mockup */
+.planvanta-panel{
+ background:
+   radial-gradient(ellipse at 12% 18%,rgba(0,188,235,.27),transparent 32%),
+   radial-gradient(ellipse at 50% 90%,rgba(20,119,211,.13),transparent 42%),
+   radial-gradient(ellipse at 89% 72%,rgba(111,51,224,.19),transparent 40%),
+   linear-gradient(116deg,#062139 0%,#031329 46%,#11143b 100%)!important;
+}
+.planvanta-brand:before{
+ inset:-95% -75%!important;
+ background:radial-gradient(ellipse at 35% 50%,rgba(56,216,245,.30),rgba(22,119,213,.12) 42%,transparent 69%)!important;
+ filter:blur(32px)!important;
+}
