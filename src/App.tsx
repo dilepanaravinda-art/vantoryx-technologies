@@ -209,70 +209,85 @@ const planvantaCapabilities = [
 ];
 
 function PlanvantaProductPage(){
-  return <main className='pv-page'>
+  const capabilities = planvantaCapabilities;
+  const questions = ['What materials require attention?','Where are inventory risks developing?','Which purchase orders need follow-up?','How is material availability changing?','What does management need to see now?'];
+  return <main className='pv-page pv-premium'>
     <header className='pv-page-nav'>
       <a href='/' className='pv-page-vx'><img src='/resources/vantoryx-logo.png' alt='Vantoryx Technologies'/></a>
-      <a href='/' className='pv-page-back'>Vantoryx Home <ArrowRight size={15}/></a>
+      <div className='pv-page-navlinks'><a href='#platform'>Platform</a><a href='#intelligence'>Intelligence</a><a href='#architecture'>Multi-Plant</a><a href='/#contact' className='pv-nav-demo'>Request a Demo <ArrowRight size={14}/></a></div>
     </header>
 
     <section className='pv-page-hero'>
+      <div className='pv-hero-orbit pv-hero-orbit--one'/><div className='pv-hero-orbit pv-hero-orbit--two'/>
       <div className='pv-page-hero-copy'>
         <img src='/resources/planvanta-logo.png' className='pv-page-logo' alt='Planvanta'/>
         <p className='pv-page-kicker'>MANUFACTURING PLANNING &amp; OPERATIONAL INTELLIGENCE</p>
-        <h1>Plan Smarter.<br/>See Clearly.<br/><span>Operate with Confidence.</span></h1>
-        <p className='pv-page-lead'><b>Planvanta 2.0</b> is a web-based manufacturing planning and operational intelligence platform designed to help growing manufacturers bring planning, inventory, procurement, production and management visibility into one connected environment.</p>
-        <p className='pv-page-sub'>Developed by <b>Vantoryx Technologies</b>, Planvanta transforms operational data into practical, decision-ready information — helping teams move beyond fragmented spreadsheets and disconnected reporting.</p>
-        <strong className='pv-page-mantra'>Smarter planning. Better visibility. Stronger decisions.</strong>
-        <div className='pv-page-actions'><a className='pv-btn-primary' href='/#contact'>Request a Demo <ArrowRight size={16}/></a><a className='pv-btn-secondary' href='#platform'>Explore Planvanta <ArrowRight size={16}/></a></div>
+        <h1>Manufacturing Intelligence.<br/><span>Connected.</span></h1>
+        <p className='pv-page-lead'>Planvanta 2.0 connects material planning, inventory, procurement, plant operations and management visibility in one structured environment built for growing manufacturers.</p>
+        <div className='pv-hero-mantra'><span>PLAN</span><i>•</i><span>SOURCE</span><i>•</i><span>CONTROL</span><i>•</i><span>GROW</span></div>
+        <div className='pv-page-actions'><a className='pv-btn-primary' href='/#contact'>Request a Demo <ArrowRight size={16}/></a><a className='pv-btn-secondary' href='#platform'>Explore the Platform <ArrowRight size={16}/></a></div>
       </div>
-      <div className='pv-page-hero-visual'><div className='pv-page-glow'/><img src='/resources/planvanta-interface.png' alt='Planvanta 2.0 Material Planning interface'/></div>
+      <div className='pv-hero-stage'>
+        <div className='pv-stage-label'><span>PLANVANTA 2.0</span><b>LIVE OPERATIONAL VIEW</b></div>
+        <div className='pv-page-hero-visual'><div className='pv-page-glow'/><img src='/resources/planvanta-interface.png' alt='Planvanta 2.0 operational interface'/></div>
+        <div className='pv-stage-chips'><span>Material Planning</span><span>Inventory</span><span>Procurement</span><span>Management Visibility</span></div>
+      </div>
+    </section>
+
+    <section className='pv-signal-strip'>
+      <span>ONE PLATFORM</span><i>→</i><span>PLANT VISIBILITY</span><i>→</i><span>STRUCTURED INTELLIGENCE</span><i>→</i><span>DECISION-READY INFORMATION</span>
     </section>
 
     <section className='pv-page-section pv-reality'>
-      <div className='pv-section-copy'><p className='pv-page-kicker'>BUILT FOR THE REALITY OF MODERN MANUFACTURING</p><h2>Move beyond fragmented<br/><span>operational visibility.</span></h2><p>Growing manufacturers often manage critical decisions across spreadsheets, reports, emails and disconnected systems. The result can be slower planning cycles, limited visibility, inventory imbalance and valuable management time spent consolidating information instead of acting on it.</p><strong>Planvanta 2.0 brings those decisions together.</strong></div>
-      <div className='pv-fragment-map'><div className='pv-source-row'><span>Spreadsheets</span><span>ERP Data</span><span>Purchase Orders</span><span>Inventory</span><span>Production Plans</span></div><div className='pv-flow-line'>↓</div><div className='pv-core'>PLANVANTA <b>2.0</b><small>ONE CONNECTED OPERATIONAL VIEW</small></div></div>
-    </section>
-
-    <section className='pv-page-section pv-architecture'>
-      <div className='pv-centered'><p className='pv-page-kicker'>ONE PLATFORM. CONNECTED OPERATIONS.</p><h2>Designed around how manufacturing<br/><span>organisations actually operate.</span></h2><p>A business can manage multiple manufacturing plants within one environment while maintaining plant-specific data, configuration, access permissions and operational visibility.</p></div>
-      <div className='pv-architecture-flow'>{['Organisation / Group','Plants','Modules','Dashboards','Decisions'].map((x,i)=><div className='pv-arch-step' key={x}><small>0{i+1}</small><b>{x}</b>{i<4&&<i>→</i>}</div>)}</div>
+      <div className='pv-section-index'>01</div>
+      <div className='pv-section-copy'><p className='pv-page-kicker'>THE OPERATIONAL REALITY</p><h2>Critical decisions should not live across <span>disconnected information.</span></h2><p>Growing manufacturers often coordinate planning through spreadsheets, ERP extracts, purchase orders, inventory records and operational reports. Planvanta brings these decision inputs into a clearer manufacturing intelligence environment.</p></div>
+      <div className='pv-fragment-map'><div className='pv-source-row'><span>Demand</span><span>Inventory</span><span>Purchase Orders</span><span>Plant Data</span><span>Planning Parameters</span></div><div className='pv-data-lines'><i/><i/><i/><i/><i/></div><div className='pv-core'><small>CONNECTED THROUGH</small>PLANVANTA <b>2.0</b><em>ONE STRUCTURED OPERATIONAL VIEW</em></div></div>
     </section>
 
     <section className='pv-page-section pv-platform' id='platform'>
-      <div className='pv-centered'><p className='pv-page-kicker'>EXPLORE THE PLATFORM</p><h2>Manufacturing intelligence<br/><span>in one environment.</span></h2><p>Planvanta brings focused operational capabilities together so planners and management can work from a clearer, more consistent view of the business.</p></div>
-      <div className='pv-cap-grid'>{planvantaCapabilities.map(([t,d],i)=><article key={t}><span>0{i+1}</span><h3>{t}</h3><p>{d}</p></article>)}</div>
-      <div className='pv-product-proof'><div><p className='pv-page-kicker'>REAL PLANVANTA 2.0 INTERFACE</p><h3>See what needs attention.<br/><span>Act with clearer visibility.</span></h3><p>The interface brings planning status, material risk, purchase-order visibility and operational indicators into focused management views.</p></div><img src='/resources/planvanta-interface.png' alt='Planvanta 2.0 operational dashboard'/></div>
+      <div className='pv-section-head'><div><p className='pv-page-kicker'>02 — THE PLATFORM</p><h2>See the operation.<br/><span>Not another report.</span></h2></div><p>Planvanta turns operational information into focused views designed around the decisions manufacturing teams need to make.</p></div>
+      <div className='pv-product-cinema'>
+        <div className='pv-product-frame'><div className='pv-frame-bar'><span/><span/><span/><b>PLANVANTA 2.0 / OPERATIONAL INTELLIGENCE</b></div><img src='/resources/planvanta-interface.png' alt='Real Planvanta 2.0 interface'/></div>
+        <aside><p className='pv-page-kicker'>REAL PRODUCT INTERFACE</p><h3>Decision visibility, brought forward.</h3><p>Planning status, material risk, purchase-order visibility and operational indicators are brought into focused management views.</p><div className='pv-proof-stat'><span>PLANNING</span><b>Structured</b></div><div className='pv-proof-stat'><span>VISIBILITY</span><b>Connected</b></div><div className='pv-proof-stat'><span>DECISIONS</span><b>Focused</b></div></aside>
+      </div>
+      <div className='pv-cap-rail'>{capabilities.map(([t,d],i)=><article key={t}><span>{String(i+1).padStart(2,'0')}</span><h3>{t}</h3><p>{d}</p></article>)}</div>
     </section>
 
-    <section className='pv-page-section pv-decision'>
-      <div className='pv-centered'><p className='pv-page-kicker'>FROM DATA TO DECISION</p><h2>A structured path from<br/><span>information to action.</span></h2></div>
-      <div className='pv-decision-flow'>{[
+    <section className='pv-page-section pv-decision' id='intelligence'>
+      <div className='pv-section-head'><div><p className='pv-page-kicker'>03 — FROM DATA TO DECISION</p><h2>A clearer path from <span>information to action.</span></h2></div><p>Planvanta structures operational information into a repeatable decision-support flow without replacing human judgement.</p></div>
+      <div className='pv-decision-track'>{[
         ['CONNECT','Bring supported operational information into Planvanta.'],
         ['STRUCTURE','Organise information around groups, plants, modules and responsibilities.'],
         ['CALCULATE','Apply standardised planning logic with authorised plant parameters.'],
         ['VISUALISE','Turn operational data into focused dashboards and indicators.'],
-        ['IDENTIFY','Highlight shortages, requirements, trends and exceptions.'],
+        ['IDENTIFY','Surface shortages, requirements, trends and exceptions.'],
         ['ACT','Give teams decision-ready information for informed action.']
-      ].map(([t,d],i)=><article key={t}><b>{String(i+1).padStart(2,'0')}</b><h3>{t}</h3><p>{d}</p></article>)}</div>
+      ].map(([t,d],i)=><article key={t}><div><b>{String(i+1).padStart(2,'0')}</b><i/></div><h3>{t}</h3><p>{d}</p></article>)}</div>
     </section>
 
     <section className='pv-page-section pv-questions'>
-      <div className='pv-section-copy'><p className='pv-page-kicker'>MANUFACTURING INTELLIGENCE IN ACTION</p><h2>Designed around practical<br/><span>manufacturing decisions.</span></h2><p>Planvanta is not intended to replace human operational judgement. It is designed to strengthen it with structured calculations, dashboards and decision-support information.</p></div>
-      <div className='pv-question-list'>{['What materials require attention?','Where are inventory risks developing?','Which purchase orders need follow-up?','How is material availability changing?','What does management need to see now?'].map(q=><div key={q}><span>↗</span>{q}</div>)}</div>
+      <div className='pv-section-copy'><p className='pv-page-kicker'>04 — INTELLIGENCE IN ACTION</p><h2>Built around the questions that <span>move operations.</span></h2><p>Instead of asking teams to interpret more raw data, Planvanta is designed to help bring attention to practical manufacturing decisions.</p></div>
+      <div className='pv-question-stack'>{questions.map((q,i)=><div key={q}><small>{String(i+1).padStart(2,'0')}</small><b>{q}</b><span>↗</span></div>)}</div>
     </section>
 
-    <section className='pv-page-section pv-multiplant'>
-      <div className='pv-centered'><p className='pv-page-kicker'>MULTI-PLANT BY DESIGN</p><h2>Local operational control.<br/><span>Group-level visibility.</span></h2><p>Each plant can maintain its own operational data and authorised configuration while management receives consolidated organisational visibility — creating a common planning framework without removing the operational identity of individual plants.</p></div>
-      <div className='pv-plant-flow'><div><span>PLANT A</span><span>PLANT B</span><span>PLANT C</span></div><i>→</i><strong>GROUP<br/><em>INTELLIGENCE</em></strong></div>
+    <section className='pv-page-section pv-multiplant' id='architecture'>
+      <div className='pv-section-head'><div><p className='pv-page-kicker'>05 — MULTI-PLANT BY DESIGN</p><h2>Local control.<br/><span>Group intelligence.</span></h2></div><p>Each plant can maintain its own operational data and authorised configuration while management receives consolidated organisational visibility.</p></div>
+      <div className='pv-network'>
+        <div className='pv-network-left'><span>PLANT A<small>Local operational view</small></span><span>PLANT B<small>Local operational view</small></span><span>PLANT C<small>Local operational view</small></span></div>
+        <div className='pv-network-lines'><i/><i/><i/></div>
+        <div className='pv-network-core'><small>ORGANISATION / GROUP</small><b>PLANVANTA</b><em>CONSOLIDATED VISIBILITY</em></div>
+        <div className='pv-network-arrow'>→</div>
+        <div className='pv-network-output'><small>MANAGEMENT</small><b>Decision-Ready<br/>Group View</b></div>
+      </div>
     </section>
 
     <section className='pv-page-section pv-growth'>
-      <div className='pv-growth-copy'><p className='pv-page-kicker'>DESIGNED FOR GROWING MANUFACTURERS</p><h2>Enterprise thinking.<br/><span>Without enterprise complexity.</span></h2><p>Planvanta is designed for manufacturers that need better systems as operations become more complex, without adding unnecessary layers of traditional enterprise complexity.</p><p>Its web-based, configurable foundation supports a structured operational intelligence environment while retaining the flexibility growing organisations require.</p></div>
-      <div className='pv-access-card'><small>RIGHT INFORMATION. RIGHT PEOPLE.</small><h3>Controlled visibility across the organisation.</h3><div className='pv-access-flow'>System <b>→</b> Organisation <b>→</b> Plant <b>→</b> Module <b>→</b> Dashboard <b>→</b> Permission</div><p>Role- and permission-based access principles help organisations control which plants, modules, dashboards and functions are available to different users.</p></div>
+      <div className='pv-growth-copy'><p className='pv-page-kicker'>06 — DESIGNED TO GROW WITH OPERATIONS</p><h2>Enterprise thinking.<br/><span>Without enterprise complexity.</span></h2><p>Planvanta is designed for manufacturers that need better systems as operations become more complex, without adding unnecessary layers of traditional enterprise complexity.</p><div className='pv-growth-points'><span>Web-based environment</span><span>Plant-specific visibility</span><span>Role-based access principles</span><span>Configurable operational structure</span></div></div>
+      <div className='pv-access-card'><small>RIGHT INFORMATION / RIGHT PEOPLE</small><h3>Controlled visibility across the organisation.</h3><div className='pv-access-flow'><span>System</span><b>→</b><span>Organisation</span><b>→</b><span>Plant</span><b>→</b><span>Module</span><b>→</b><span>Dashboard</span><b>→</b><span>Permission</span></div><p>Role- and permission-based access principles help organisations control which plants, modules, dashboards and functions are available to different users.</p></div>
     </section>
 
     <section className='pv-page-section pv-why'>
-      <div className='pv-centered'><p className='pv-page-kicker'>WHY PLANVANTA?</p><h2>A scalable foundation for<br/><span>clearer operations.</span></h2></div>
+      <div className='pv-section-head'><div><p className='pv-page-kicker'>07 — WHY PLANVANTA</p><h2>A scalable foundation for <span>clearer operations.</span></h2></div><p>Manufacturing-focused structure with the visibility growing organisations need.</p></div>
       <div className='pv-why-grid'>{[
         ['Connected Visibility','Bring important planning and operational information into one structured environment.'],
         ['Multi-Plant Architecture','Manage individual plants while maintaining consolidated organisational visibility.'],
@@ -280,19 +295,11 @@ function PlanvantaProductPage(){
         ['Configurable Operations','Support common organisational standards alongside authorised plant-specific parameters.'],
         ['Role-Based Access','Provide users with access appropriate to their plants, modules and responsibilities.'],
         ['Decision-Ready Dashboards','Move beyond raw data toward information designed for operational action.']
-      ].map(([t,d])=><article key={t}><h3>{t}</h3><p>{d}</p></article>)}</div>
+      ].map(([t,d],i)=><article key={t}><small>{String(i+1).padStart(2,'0')}</small><h3>{t}</h3><p>{d}</p><span>↗</span></article>)}</div>
     </section>
 
     <section className='pv-origin'><p>BUILT BY VANTORYX TECHNOLOGIES</p><h2>Built in Sri Lanka.<br/>Engineered for growing manufacturers.<br/><span>Designed to scale further.</span></h2></section>
-
-    <section className='pv-final'>
-      <img src='/resources/planvanta-logo.png' alt='Planvanta'/>
-      <p className='pv-page-kicker'>MANUFACTURING PLANNING &amp; OPERATIONAL INTELLIGENCE</p>
-      <h2>Make Your Operations<br/><span>Easier to See.</span></h2>
-      <p>Your business already generates the data.<br/><b>Planvanta helps turn it into decisions.</b></p>
-      <div className='pv-page-actions'><a className='pv-btn-primary' href='/#contact'>Request a Demo <ArrowRight size={16}/></a><a className='pv-btn-secondary' href='/#contact'>Talk to Vantoryx <ArrowRight size={16}/></a></div>
-      <small>Developed by Vantoryx Technologies</small>
-    </section>
+    <section className='pv-final'><div className='pv-final-glow'/><img src='/resources/planvanta-logo.png' alt='Planvanta'/><p className='pv-page-kicker'>MANUFACTURING INTELLIGENCE. CONNECTED.</p><h2>Make Your Operations<br/><span>Easier to See.</span></h2><p>Your business already generates the data.<br/><b>Planvanta helps turn it into decisions.</b></p><div className='pv-page-actions'><a className='pv-btn-primary' href='/#contact'>Request a Demo <ArrowRight size={16}/></a><a className='pv-btn-secondary' href='/#contact'>Talk to Vantoryx <ArrowRight size={16}/></a></div><small>Developed by Vantoryx Technologies</small></section>
   </main>
 }
 
