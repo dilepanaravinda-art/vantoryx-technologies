@@ -381,3 +381,12 @@ mask-image:linear-gradient(90deg,transparent 0%,#000 7%,#000 93%,transparent 100
 .pv-side-message:after{content:"";position:absolute;z-index:-1;inset:-38px -34px -40px -42px;background:radial-gradient(ellipse at 48% 48%,rgba(70,64,190,.13),transparent 70%);pointer-events:none}
 @media(max-width:1200px){.pv-interface-crop{width:74%!important}.pv-right:before{left:73%!important;inset:auto 0 0 73%!important}.pv-side-message{right:1.5%!important;width:19%!important}}
 @media(max-width:900px){.pv-interface-crop{width:96%!important}.pv-right:before{left:0!important;right:0!important;top:72%!important;bottom:0!important;inset:72% 0 0 0!important;background:linear-gradient(180deg,rgba(7,19,46,.18),rgba(10,17,49,.98) 36%,rgba(18,15,60,.98))!important}.pv-side-message{left:30px!important;right:auto!important;width:auto!important}}
+
+/* Planvanta micro-lock — spacing and photographic-edge cleanup */
+.pv-logo{transform:translateY(8px)!important;margin-bottom:23px!important}
+.pv-interface-crop{left:1.5%!important;width:74%!important}
+.pv-interface-crop:before{box-shadow:inset 34px 0 46px rgba(5,25,47,.70),inset -28px 0 42px rgba(11,18,54,.64),inset 0 28px 42px rgba(4,18,40,.58),inset 0 -18px 30px rgba(18,38,88,.30)!important}
+.pv-interface-crop:after{width:10%!important;background:linear-gradient(90deg,transparent,rgba(7,18,47,.78) 48%,#091431 100%)!important}
+.pv-side-message{right:3.1%!important;width:17.5%!important}
+@media(max-width:1200px){.pv-logo{transform:translateY(6px)!important}.pv-interface-crop{left:1.5%!important;width:72.5%!important}.pv-side-message{right:2.2%!important;width:19%!important}}
+@media(max-width:900px){.pv-logo{transform:none!important}.pv-interface-crop{left:2%!important;width:96%!important}.pv-side-message{left:30px!important;right:auto!important;width:auto!important}}
