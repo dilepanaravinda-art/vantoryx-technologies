@@ -264,6 +264,29 @@ function App() {
           </div>
 
           <div className='product-showcase'>
+            <article className='planvanta-feature' id='planvanta'>
+              <div className='pv-left'>
+                <img className='pv-logo' src='/resources/planvanta-logo.png' alt='Planvanta' />
+                <p className='pv-kicker'>INTRODUCING PLANVANTA 2.0</p>
+                <h3>Supply Chain<br />Intelligence.<br /><span>Connected.</span></h3>
+                <p className='pv-copy'>Planvanta 2.0 is Vantoryx Technologies' Supply chain planning and operational intelligence platform — bringing material planning, inventory, procurement, plant operations, and management visibility into one connected environment.</p>
+                <p className='pv-copy pv-copy-secondary'>Built for growing manufacturers. Designed for multi-plant operations. Engineered to turn operational data into clearer decisions.</p>
+                <strong className='pv-statement'>Plan Smarter. See Clearly. Operate with Confidence.</strong>
+                <div className='pv-actions'>
+                  <a className='pv-primary' href='#planvanta'>Explore Planvanta 2.0 <ArrowRight size={17} /></a>
+                  <a className='pv-secondary' href='#contact'>Request a Demo <ArrowRight size={17} /></a>
+                </div>
+                <div className='pv-benefits' aria-label='Planvanta benefits'>
+                  <span><Layers3 size={23}/><b>Greater<br/>Visibility</b></span>
+                  <span><BarChart3 size={23}/><b>Better<br/>Planning</b></span>
+                  <span><ShieldCheck size={23}/><b>Stronger<br/>Decisions</b></span>
+                </div>
+              </div>
+              <div className='pv-right'>
+                <img className='pv-interface' src='/resources/planvanta-interface.png' alt='Planvanta 2.0 material planning interface' />
+              </div>
+            </article>
+
             <article className='product-panel vendora-panel'>
               <div className='product-number'>02</div>
               <div className='product-body'>
