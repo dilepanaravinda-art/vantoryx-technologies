@@ -130,3 +130,23 @@
 @keyframes vxLightSweep{0%,28%{transform:translateX(-36%);opacity:0}44%{opacity:.75}68%,100%{transform:translateX(36%);opacity:0}}
 @media(prefers-reduced-motion:reduce){.hero-background,.hero:before,.hero:after{animation:none!important}.hero-background{transform:scale(1.04)!important}}
 @media(max-width:900px){.hero-background{inset:-2%!important;transform-origin:62% 48%;animation-duration:26s}.hero:after{display:none}}
+
+/* Premium cinematic depth pass — restrained independent motion */
+.hero-background{inset:-1.2%!important;transform:scale(1.018)!important;transform-origin:58% 52%!important;animation:vxEarthDrift 34s ease-in-out infinite alternate!important;filter:saturate(1.025) contrast(1.025) brightness(.97)!important}
+.hero:before,.hero:after{content:none!important;animation:none!important}
+.cinematic-stars{position:absolute;inset:-8%;pointer-events:none;z-index:-3;opacity:.28;background-repeat:repeat;will-change:transform,opacity}
+.cinematic-stars-far{background-image:radial-gradient(circle,rgba(186,225,255,.8) 0 1px,transparent 1.4px);background-size:137px 113px;animation:vxStarsFar 48s linear infinite}
+.cinematic-stars-near{background-image:radial-gradient(circle,rgba(87,210,255,.75) 0 1px,transparent 1.7px);background-size:229px 181px;opacity:.18;animation:vxStarsNear 38s linear infinite}
+.cinematic-atmosphere{position:absolute;inset:0;pointer-events:none;z-index:-2;background:radial-gradient(ellipse at 66% 47%,rgba(34,211,238,.10),transparent 26%),radial-gradient(ellipse at 59% 44%,rgba(89,142,255,.08),transparent 38%);mix-blend-mode:screen;animation:vxAtmospherePremium 10s ease-in-out infinite alternate}
+.cinematic-orbit-pulse{position:absolute;pointer-events:none;z-index:-1;width:9px;height:9px;border-radius:50%;background:#dffcff;box-shadow:0 0 7px #fff,0 0 15px rgba(34,211,238,.95),0 0 28px rgba(34,211,238,.45);opacity:0}
+.pulse-one{left:60%;top:33%;animation:vxPulseOne 12s ease-in-out infinite}
+.pulse-two{left:78%;top:45%;animation:vxPulseTwo 15s ease-in-out 4s infinite}
+.cinematic-vignette{background:radial-gradient(ellipse at 61% 48%,transparent 40%,rgba(1,5,15,.06) 68%,rgba(1,4,13,.32) 100%),linear-gradient(90deg,rgba(2,7,19,.26),rgba(2,7,19,.025) 40%,transparent 72%)!important;box-shadow:inset 0 0 90px rgba(0,0,0,.18)!important}
+@keyframes vxEarthDrift{0%{transform:scale(1.018) translate3d(0,0,0)}100%{transform:scale(1.032) translate3d(-.28%,.12%,0)}}
+@keyframes vxStarsFar{from{transform:translate3d(0,0,0)}to{transform:translate3d(-1.2%,.55%,0)}}
+@keyframes vxStarsNear{from{transform:translate3d(0,0,0)}to{transform:translate3d(-2.1%,.9%,0)}}
+@keyframes vxAtmospherePremium{0%{opacity:.48;filter:blur(2px)}100%{opacity:.78;filter:blur(5px)}}
+@keyframes vxPulseOne{0%,14%,100%{opacity:0;transform:translate3d(-90px,55px,0) scale(.6)}25%{opacity:.95}62%{opacity:.8}78%{opacity:0;transform:translate3d(230px,-88px,0) scale(1)}}
+@keyframes vxPulseTwo{0%,18%,100%{opacity:0;transform:translate3d(-130px,70px,0) scale(.55)}30%{opacity:.8}68%{opacity:.7}82%{opacity:0;transform:translate3d(170px,-75px,0) scale(.9)}}
+@media(prefers-reduced-motion:reduce){.hero-background,.cinematic-stars,.cinematic-atmosphere,.cinematic-orbit-pulse{animation:none!important}.hero-background{transform:scale(1.02)!important}.cinematic-orbit-pulse{display:none}}
+@media(max-width:900px){.hero-background{animation-duration:42s!important}.cinematic-stars-near,.cinematic-orbit-pulse{display:none}.cinematic-stars-far{opacity:.16}}
