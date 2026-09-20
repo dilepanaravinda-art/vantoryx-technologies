@@ -118,3 +118,15 @@
  .cap-copy{gap:3px!important}.cap-copy strong{font-size:clamp(12px,.75vw,15px)!important;font-weight:680!important}.cap-copy small{font-size:clamp(10px,.62vw,12px)!important;color:rgba(190,204,227,.76)!important}
  .scroll-cue{bottom:2.4vh!important;gap:16px!important;color:rgba(236,243,255,.84)!important}.scroll-cue span{width:92px!important;opacity:.65!important}.scroll-cue b{font-size:9px!important;font-weight:620!important;letter-spacing:.27em!important}
 }
+
+/* Cinematic hero motion — subtle film-like depth using the uploaded official artwork */
+.hero{overflow:hidden;isolation:isolate}
+.hero-background{inset:-3%!important;transform:scale(1.035);transform-origin:58% 52%;will-change:transform,filter;animation:vxCameraPush 22s ease-in-out infinite alternate;filter:saturate(1.04) contrast(1.035) brightness(.96)}
+.hero:before{content:"";position:absolute;inset:0;z-index:-3;pointer-events:none;background:radial-gradient(circle at 53% 42%,rgba(116,202,255,.13),transparent 25%),radial-gradient(circle at 72% 46%,rgba(34,211,238,.07),transparent 22%);mix-blend-mode:screen;animation:vxAtmosphere 8s ease-in-out infinite alternate}
+.hero:after{content:"";position:absolute;inset:-20%;z-index:-2;pointer-events:none;background:linear-gradient(108deg,transparent 31%,rgba(255,255,255,.025) 43%,rgba(68,192,255,.055) 47%,transparent 53%);transform:translateX(-32%);animation:vxLightSweep 15s ease-in-out infinite}
+.cinematic-vignette{background:radial-gradient(ellipse at 57% 46%,transparent 35%,rgba(1,5,16,.08) 67%,rgba(1,4,13,.38) 100%),linear-gradient(90deg,rgba(2,7,19,.30) 0%,rgba(2,7,19,.04) 39%,transparent 72%)!important;box-shadow:inset 0 0 120px rgba(0,0,0,.22)!important}
+@keyframes vxCameraPush{0%{transform:scale(1.035) translate3d(0,0,0)}45%{transform:scale(1.06) translate3d(-.25%,.15%,0)}100%{transform:scale(1.085) translate3d(-.65%,.35%,0)}}
+@keyframes vxAtmosphere{0%{opacity:.58;filter:blur(1px)}100%{opacity:1;filter:blur(4px)}}
+@keyframes vxLightSweep{0%,28%{transform:translateX(-36%);opacity:0}44%{opacity:.75}68%,100%{transform:translateX(36%);opacity:0}}
+@media(prefers-reduced-motion:reduce){.hero-background,.hero:before,.hero:after{animation:none!important}.hero-background{transform:scale(1.04)!important}}
+@media(max-width:900px){.hero-background{inset:-2%!important;transform-origin:62% 48%;animation-duration:26s}.hero:after{display:none}}
