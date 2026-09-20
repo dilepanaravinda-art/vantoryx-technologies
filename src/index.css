@@ -596,3 +596,18 @@
  .planvanta-interface-frame{width:100%!important}
  .planvanta-panel .product-number{font-size:54px!important;right:18px!important}
 }
+
+
+/* Planvanta flagship final lock v6 */
+.planvanta-panel .product-body{padding-top:34px!important;padding-bottom:34px!important}
+.planvanta-brand{width:min(326px,86%)!important;margin:0 0 8px!important;transform:translateY(8px)}
+.planvanta-brand:before{inset:-62% -30%!important;background:radial-gradient(ellipse at 30% 50%,rgba(66,220,255,.34),rgba(44,124,236,.12) 42%,transparent 69%)!important}
+.planvanta-brand img{width:min(318px,100%)!important;filter:brightness(1.76) saturate(1.22) contrast(1.09) drop-shadow(0 0 22px rgba(34,211,238,.29))!important}
+.planvanta-panel .product-eyebrow{margin-top:4px!important;margin-bottom:11px!important}
+.planvanta-panel .product-description{max-width:535px!important;color:#c8d7e6!important}
+.planvanta-panel .product-description-secondary{color:#a9bdd1!important}
+.planvanta-panel .product-number{opacity:.13!important}
+.planvanta-interface-visual{transform:translate(-1.5%,-1.5%) scale(1.055);transform-origin:center}
+.planvanta-interface-frame{width:102%!important}
+@media(max-width:1250px){.planvanta-interface-visual{transform:translate(-1%,-1%) scale(1.035)}}
+@media(max-width:900px){.planvanta-brand{transform:none;width:min(310px,86%)!important}.planvanta-interface-visual{transform:none}.planvanta-panel .product-number{opacity:.11!important}}
