@@ -274,12 +274,19 @@ function App() {
                 <div className='product-tags'><span>Material Planning</span><span>Procurement</span><span>Inventory</span><span>Logistics</span></div>
                 <a href='#planvanta'>Explore Planvanta <ArrowRight size={17} /></a>
               </div>
-              <div className='product-visual' aria-hidden='true'>
+              <div className='product-visual planvanta-visual' aria-hidden='true'>
                 <div className='visual-window'>
-                  <div className='visual-top'><i /><i /><i /><b>CONTROL TOWER</b></div>
-                  <div className='visual-kpis'><span><b>95%</b><small>Availability</small></span><span><b>24</b><small>Active POs</small></span><span><b>08</b><small>Priority</small></span></div>
-                  <div className='visual-chart'><i /><i /><i /><i /><i /><i /><i /><i /></div>
-                  <div className='visual-lines'><span /><span /><span /></div>
+                  <div className='visual-top'><i /><i /><i /><b>PLANVANTA · OPERATIONS CONTROL TOWER</b></div>
+                  <div className='visual-kpis'>
+                    <span><small>MATERIAL AVAILABILITY</small><b>95%</b><em>On plan</em></span>
+                    <span><small>OPEN PURCHASE ORDERS</small><b>24</b><em>8 priority</em></span>
+                    <span><small>INVENTORY HEALTH</small><b>82%</b><em>Within Min–Max</em></span>
+                  </div>
+                  <div className='planvanta-dashboard'>
+                    <div className='availability-panel'><small>3-MONTH MATERIAL OUTLOOK</small><div className='trend-line'><i/><i/><i/><i/><i/><i/></div><div className='month-row'><span>SEP</span><span>OCT</span><span>NOV</span></div></div>
+                    <div className='risk-panel'><small>PRIORITY ACTIONS</small><span><b>03</b> High Risk</span><span><b>05</b> Medium</span><span><b>16</b> On Track</span></div>
+                  </div>
+                  <div className='visual-status'><span>Material Planning</span><span>Purchase Orders</span><span>Inventory</span><span>Logistics</span></div>
                 </div>
               </div>
             </article>
