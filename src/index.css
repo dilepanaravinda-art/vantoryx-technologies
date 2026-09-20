@@ -294,3 +294,26 @@ box-shadow:0 34px 100px rgba(0,0,0,.42),inset 0 1px 0 rgba(174,226,255,.10)}
 @media(max-width:1200px){.planvanta-feature{grid-template-columns:39% 61%;aspect-ratio:1.9/1}.pv-left{padding-left:5%}.pv-logo{width:78%}.pv-benefits{display:none}.pv-copy{font-size:12px}.pv-actions a{height:42px;padding:0 17px;font-size:11px}}
 @media(max-width:900px){.planvanta-feature{display:block;aspect-ratio:auto;border-radius:24px}.pv-left{padding:38px 28px 24px}.pv-logo{width:min(330px,82%);margin-bottom:28px}.pv-kicker{margin-bottom:14px}.pv-left h3{font-size:clamp(42px,11vw,58px)}.pv-copy{font-size:14px;margin-top:20px}.pv-copy-secondary{margin-top:14px}.pv-statement{font-size:14px;margin-top:20px}.pv-actions{margin-top:22px;flex-wrap:wrap}.pv-right{padding:8px 14px 24px}.pv-interface{width:100%;max-height:none}.pv-benefits{display:flex;margin-top:24px}.planvanta-feature:before{width:85%;left:-35%;top:-20%}}
 @media(max-width:560px){.pv-benefits{display:none}.pv-actions{width:100%}.pv-actions a{flex:1;padding:0 12px;white-space:nowrap}.pv-left{padding:32px 22px 22px}.pv-logo{width:88%}}
+
+/* Planvanta layout correction */
+.planvanta-feature{grid-template-columns:35% 65%!important;aspect-ratio:auto!important;min-height:790px!important}
+.pv-left{padding:46px 12px 28px 54px!important}
+.pv-logo{width:min(350px,80%)!important;margin:0 0 25px!important}
+.pv-kicker{margin-bottom:13px!important}
+.pv-left h3{font-size:clamp(43px,3vw,59px)!important;line-height:.94!important}
+.pv-copy{margin-top:18px!important;font-size:14px!important;line-height:1.48!important;max-width:530px!important}
+.pv-copy-secondary{margin-top:13px!important}
+.pv-statement{margin-top:18px!important;font-size:14px!important}
+.pv-actions{margin-top:18px!important}.pv-actions a{height:46px!important}
+.pv-benefits{margin-top:19px!important}
+.pv-right{overflow:hidden!important;padding:0!important;display:block!important;min-height:790px!important}
+.pv-interface-crop{position:absolute;left:-1.5%;top:9%;width:84%;height:84%;overflow:hidden;z-index:2}
+.pv-interface{position:absolute!important;height:100%!important;width:auto!important;max-height:none!important;max-width:none!important;left:-1%!important;top:0!important;object-fit:cover!important;object-position:left center!important}
+.pv-side-message{position:absolute;z-index:4;right:3.5%;top:42%;width:14%;color:#eef5ff;text-align:left}
+.pv-side-message:before{content:"";position:absolute;left:-22px;top:1px;width:2px;height:100%;background:linear-gradient(180deg,rgba(34,211,238,.9),rgba(89,104,240,.18))}
+.pv-side-message strong{display:block;font-size:clamp(17px,1.25vw,25px);line-height:1.12;font-weight:650}
+.pv-side-message i{display:block;width:42px;height:2px;margin:22px 0;background:#22d3ee}
+.pv-side-message p{margin:0;color:#9fb2cc;font-size:clamp(11px,.78vw,15px);line-height:1.45}
+@media(max-width:1200px){.planvanta-feature{min-height:700px!important;grid-template-columns:40% 60%!important}.pv-left{padding:38px 16px 26px 38px!important}.pv-right{min-height:700px!important}.pv-interface-crop{width:86%;height:78%;top:12%}.pv-side-message{right:2%;width:13%;top:40%}.pv-benefits{display:flex!important}.pv-benefits span{min-width:100px!important;padding:0 10px!important}}
+@media(max-width:900px){.planvanta-feature{min-height:0!important;display:block!important}.pv-left{padding:38px 28px 30px!important}.pv-right{min-height:560px!important}.pv-interface-crop{left:0;top:5%;width:100%;height:72%}.pv-interface{left:0!important;height:auto!important;width:100%!important}.pv-side-message{left:30px;right:auto;top:auto;bottom:28px;width:auto}.pv-side-message:before{display:none}.pv-side-message strong{font-size:20px}.pv-side-message p{font-size:12px}.pv-side-message i{margin:12px 0}.pv-benefits{display:flex!important}}
+@media(max-width:560px){.pv-benefits{display:flex!important;flex-wrap:wrap;gap:12px}.pv-benefits span{border:0!important;padding:0!important;min-width:92px!important}.pv-actions a{flex:0 1 auto!important}.pv-right{min-height:430px!important}}
