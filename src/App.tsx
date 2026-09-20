@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
-import { ArrowRight, BarChart3, Boxes, Cpu, Home, Layers3, Mail, Menu, Mouse, Settings2, ShieldCheck, Users, X } from 'lucide-react';
+import { ArrowRight, BarChart3, Layers3, Menu, Mouse, Settings2, ShieldCheck, X } from 'lucide-react';
 
 type Point = { x: number; y: number; phase: number; speed: number; size: number };
 
@@ -211,11 +211,11 @@ function App() {
             <span className='brand-plate'><img src='/resources/vantoryx-logo.png' alt='Vantoryx Technologies' /></span>
           </a>
           <nav className={menuOpen ? 'nav-links open' : 'nav-links'} aria-label='Main navigation'>
-            <a className='active' href='#home' onClick={() => setMenuOpen(false)}><Home /><span>Home</span></a>
-            <a href='#products' onClick={() => setMenuOpen(false)}><Boxes /><span>Products</span></a>
-            <a href='#technology' onClick={() => setMenuOpen(false)}><Cpu /><span>Technology</span></a>
-            <a href='#about' onClick={() => setMenuOpen(false)}><Users /><span>About</span></a>
-            <a href='#contact' onClick={() => setMenuOpen(false)}><Mail /><span>Contact</span></a>
+            <a className='active' href='#home' onClick={() => setMenuOpen(false)}>Home</a>
+            <a href='#products' onClick={() => setMenuOpen(false)}>Products</a>
+            <a href='#technology' onClick={() => setMenuOpen(false)}>Technology</a>
+            <a href='#about' onClick={() => setMenuOpen(false)}>About</a>
+            <a href='#contact' onClick={() => setMenuOpen(false)}>Contact</a>
           </nav>
           <a className='demo' href='#contact'>Book a Demo <ArrowRight size={16} /></a>
           <button className='menu-button' onClick={() => setMenuOpen(!menuOpen)} aria-label='Toggle navigation'>
