@@ -241,7 +241,7 @@ function App() {
         <div className='signal-copy' aria-hidden='true'><i /><span>CONNECTING<br />BUSINESSES<br />A SMARTER<br />TOMORROW</span></div>
         <div className='principles' aria-hidden='true'><i /><span>PLAN<br />SOURCE<br />CONTROL<br />GROW</span></div>
 
-        <div className='capability-strip' id='products'>
+        <div className='capability-strip'>
           {features.map(({ icon: Icon, title, text }) => (
             <div className='capability' key={title}>
               <span className='cap-icon'><Icon size={25} /></span>
@@ -250,10 +250,67 @@ function App() {
           ))}
         </div>
         <div className='scroll-cue' aria-hidden='true'><span /><Mouse size={20} /><b>SCROLL TO EXPLORE</b><span /></div>
-        <span id='technology' className='anchor' />
-        <span id='about' className='anchor' />
-        <span id='contact' className='anchor' />
       </section>
+
+      <section className='products-section' id='products'>
+        <div className='section-glow section-glow-one' aria-hidden='true' />
+        <div className='products-inner'>
+          <div className='section-heading'>
+            <p className='section-kicker'>VANTORYX PRODUCTS</p>
+            <h2>Intelligence built for<br /><span>real operations.</span></h2>
+            <p>Purpose-built platforms that turn complex operational data into clear, controlled decisions.</p>
+          </div>
+
+          <div className='product-showcase'>
+            <article className='product-panel planvanta-panel'>
+              <div className='product-number'>01</div>
+              <div className='product-body'>
+                <div className='product-brand'>
+                  <span className='product-mark planvanta-mark'>P</span>
+                  <div><strong>Planvanta</strong><small>PLAN · SOURCE · CONTROL · GROW</small></div>
+                </div>
+                <p className='product-eyebrow'>SUPPLY CHAIN INTELLIGENCE</p>
+                <h3>See the plan.<br />Control the outcome.</h3>
+                <p className='product-description'>A connected planning environment for material availability, purchasing, inventory, logistics and operational visibility.</p>
+                <div className='product-tags'><span>Material Planning</span><span>Procurement</span><span>Inventory</span><span>Logistics</span></div>
+                <a href='#planvanta'>Explore Planvanta <ArrowRight size={17} /></a>
+              </div>
+              <div className='product-visual' aria-hidden='true'>
+                <div className='visual-window'>
+                  <div className='visual-top'><i /><i /><i /><b>CONTROL TOWER</b></div>
+                  <div className='visual-kpis'><span><b>95%</b><small>Availability</small></span><span><b>24</b><small>Active POs</small></span><span><b>08</b><small>Priority</small></span></div>
+                  <div className='visual-chart'><i /><i /><i /><i /><i /><i /><i /><i /></div>
+                  <div className='visual-lines'><span /><span /><span /></div>
+                </div>
+              </div>
+            </article>
+
+            <article className='product-panel vendora-panel'>
+              <div className='product-number'>02</div>
+              <div className='product-body'>
+                <div className='product-brand'>
+                  <span className='product-mark vendora-mark'>V</span>
+                  <div><strong>VENDORA</strong><small>SUPPLIER INTELLIGENCE PLATFORM</small></div>
+                </div>
+                <p className='product-eyebrow'>DISCOVER · VERIFY · SOURCE</p>
+                <h3>Find better suppliers.<br />Source with confidence.</h3>
+                <p className='product-description'>Supplier intelligence designed to make discovery, qualification and sourcing decisions clearer and more structured.</p>
+                <div className='product-tags'><span>Discovery</span><span>Verification</span><span>Supplier Intelligence</span></div>
+                <a href='#vendora'>Explore VENDORA <ArrowRight size={17} /></a>
+              </div>
+              <div className='product-visual vendora-visual' aria-hidden='true'>
+                <div className='vendor-orbit'><span className='vendor-core'>V</span><i className='node n1'/><i className='node n2'/><i className='node n3'/><i className='node n4'/></div>
+                <div className='vendor-card vc1'><small>SUPPLIER</small><b>Verified</b></div>
+                <div className='vendor-card vc2'><small>RISK</small><b>Low</b></div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <span id='technology' className='anchor' />
+      <span id='about' className='anchor' />
+      <span id='contact' className='anchor' />
     </main>
   );
 }
