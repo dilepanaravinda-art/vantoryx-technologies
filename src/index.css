@@ -528,3 +528,30 @@
  .planvanta-card__copy{padding-top:18px!important}
  .planvanta-card__visual{padding-top:18px!important}
 }
+
+/* PLANVANTA COMPACT VERTICAL RHYTHM */
+@media(min-width:901px){
+  .planvanta-card{
+    min-height:0!important;
+    align-items:stretch!important;
+  }
+  .planvanta-card__copy{
+    display:flex!important;
+    flex-direction:column!important;
+    justify-content:flex-start!important;
+    padding:10px 20px 24px 48px!important;
+  }
+  .planvanta-card__logo{
+    width:100%!important;
+    max-width:520px!important;
+    margin:0!important;
+  }
+  .planvanta-card__eyebrow{
+    margin:4px 0 10px!important;
+  }
+  .planvanta-card__visual{
+    align-self:start!important;
+    align-items:flex-start!important;
+    padding:10px 28px 18px 4px!important;
+  }
+}
