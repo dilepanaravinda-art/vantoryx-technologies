@@ -283,7 +283,14 @@ function App() {
                 </div>
               </div>
               <div className='pv-right'>
-                <img className='pv-interface' src='/resources/planvanta-interface.png' alt='Planvanta 2.0 material planning interface' />
+                <div className='pv-interface-crop'>
+                  <img className='pv-interface' src='/resources/planvanta-interface.png' alt='Planvanta 2.0 material planning interface' />
+                </div>
+                <aside className='pv-side-message'>
+                  <strong>From<br />Data to a<br />Stronger<br />Tomorrow.</strong>
+                  <i />
+                  <p>Manufacturing<br />Intelligence<br />for a More<br />Resilient World.</p>
+                </aside>
               </div>
             </article>
 
