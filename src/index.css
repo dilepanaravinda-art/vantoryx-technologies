@@ -717,7 +717,7 @@
 .planvanta-card__logo{
   display:block;
   width:100%;
-  max-width:340px;
+  max-width:280px;
   height:auto;
   max-height:none;
   margin:0 0 12px 0;
@@ -729,8 +729,8 @@
   transform:none;
 }
 @media (min-width:901px) and (max-width:1200px){
-  .planvanta-card__logo{max-width:310px;}
+  .planvanta-card__logo{max-width:260px;}
 }
 @media (max-width:900px){
-  .planvanta-card__logo{max-width:min(300px,78vw);margin-bottom:18px;}
+  .planvanta-card__logo{max-width:min(250px,70vw);margin-bottom:18px;}
 }
