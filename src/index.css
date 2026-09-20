@@ -639,3 +639,20 @@
   background:radial-gradient(ellipse at 34% 42%,rgba(28,126,180,.22),rgba(8,38,61,.08) 58%,transparent 78%)!important;
   pointer-events:none!important;
 }
+
+/* PLANVANTA BODY COPY SIZE INCREASE */
+@media(min-width:901px){
+  .planvanta-card__body{
+    font-size:15px!important;
+    line-height:1.58!important;
+  }
+  .planvanta-card__support{
+    font-size:13.5px!important;
+    line-height:1.55!important;
+  }
+  .planvanta-card__statement{
+    font-size:14px!important;
+    line-height:1.42!important;
+    font-weight:780!important;
+  }
+}
