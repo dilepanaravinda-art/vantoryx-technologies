@@ -511,3 +511,88 @@
  .planvanta-interface-visual{padding:8px 18px 28px!important}
  .planvanta-interface-frame{width:100%!important;margin-left:0!important;-webkit-mask-image:none;mask-image:none}
 }
+
+
+/* Planvanta flagship precision pass v5 */
+.planvanta-panel{
+  min-height:560px!important;
+  grid-template-columns:minmax(500px,.84fr) minmax(680px,1.16fr)!important;
+}
+.planvanta-panel .product-body{
+  padding:38px 14px 38px 58px!important;
+  justify-content:center!important;
+}
+.planvanta-brand{
+  width:min(350px,88%)!important;
+  margin:0 0 12px!important;
+}
+.planvanta-brand:before{
+  inset:-55% -24%!important;
+  background:radial-gradient(ellipse at 30% 52%,rgba(55,210,255,.30),rgba(37,116,225,.10) 43%,transparent 70%)!important;
+  filter:blur(27px)!important;
+}
+.planvanta-brand img{
+  width:min(340px,100%)!important;
+  filter:brightness(1.62) saturate(1.22) contrast(1.06) drop-shadow(0 0 20px rgba(34,211,238,.24))!important;
+}
+.planvanta-panel .product-eyebrow{
+  margin:0 0 12px!important;
+  font-size:14px!important;
+  letter-spacing:.14em!important;
+}
+.planvanta-panel .product-body h3{
+  max-width:560px!important;
+  font-size:clamp(43px,2.85vw,58px)!important;
+  margin:0 0 18px!important;
+}
+.planvanta-panel .product-description{
+  max-width:550px!important;
+  font-size:15px!important;
+  line-height:1.58!important;
+}
+.planvanta-panel .product-mantra{
+  max-width:550px!important;
+  margin:15px 0 20px!important;
+  font-size:15.5px!important;
+}
+.planvanta-panel .product-actions{gap:12px!important}
+.planvanta-panel .product-number{
+  font-size:76px!important;
+  line-height:1!important;
+  opacity:.075!important;
+  top:20px!important;
+  right:28px!important;
+  font-weight:800!important;
+}
+.planvanta-interface-visual{
+  padding:22px 20px 26px 0!important;
+  align-items:center!important;
+  justify-content:center!important;
+  transform:translate(2.5%,-1.5%);
+}
+.planvanta-interface-visual:before{
+  inset:11% -3% 8% -9%!important;
+  background:
+    radial-gradient(ellipse at 48% 48%,rgba(36,199,247,.17),transparent 40%),
+    radial-gradient(ellipse at 78% 53%,rgba(132,74,255,.13),transparent 52%)!important;
+  filter:blur(34px)!important;
+}
+.planvanta-interface-frame{
+  width:104%!important;
+  margin-left:0!important;
+  box-shadow:0 34px 90px rgba(0,0,0,.24),0 0 105px rgba(34,211,238,.075)!important;
+}
+@media(max-width:1250px){
+ .planvanta-panel{grid-template-columns:minmax(430px,.86fr) minmax(540px,1.14fr)!important}
+ .planvanta-panel .product-body{padding-left:40px!important}
+ .planvanta-brand{width:min(320px,88%)!important}
+ .planvanta-interface-visual{transform:translate(1%,-1%)}
+}
+@media(max-width:900px){
+ .planvanta-panel{min-height:auto!important;grid-template-columns:1fr!important}
+ .planvanta-panel .product-body{padding:30px 26px 20px!important}
+ .planvanta-brand{width:min(320px,88%)!important;margin-bottom:12px!important}
+ .planvanta-interface-visual{padding:4px 18px 28px!important;transform:none}
+ .planvanta-interface-frame{width:100%!important}
+ .planvanta-panel .product-number{font-size:54px!important;right:18px!important}
+}
