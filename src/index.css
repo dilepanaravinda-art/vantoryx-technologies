@@ -456,3 +456,18 @@
 @media(max-width:520px){
  .planvanta-card__logo{width:min(320px,94%)!important;max-height:120px!important}
 }
+
+/* PLANVANTA LOGO SIZE INCREASE */
+.planvanta-card__logo{
+  width:min(500px,100%)!important;
+  max-height:180px!important;
+}
+@media(max-width:1200px){
+ .planvanta-card__logo{width:min(430px,100%)!important;max-height:160px!important}
+}
+@media(max-width:900px){
+ .planvanta-card__logo{width:min(430px,96%)!important;max-height:160px!important}
+}
+@media(max-width:520px){
+ .planvanta-card__logo{width:min(360px,100%)!important;max-height:135px!important}
+}
