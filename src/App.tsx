@@ -209,97 +209,107 @@ const planvantaCapabilities = [
 ];
 
 function PlanvantaProductPage(){
-  const capabilities = planvantaCapabilities;
-  const questions = ['What materials require attention?','Where are inventory risks developing?','Which purchase orders need follow-up?','How is material availability changing?','What does management need to see now?'];
-  return <main className='pv-page pv-premium'>
-    <header className='pv-page-nav'>
-      <a href='/' className='pv-page-vx'><img src='/resources/vantoryx-logo.png' alt='Vantoryx Technologies'/></a>
-      <div className='pv-page-navlinks'><a href='#platform'>Platform</a><a href='#intelligence'>Intelligence</a><a href='#architecture'>Multi-Plant</a><a href='/#contact' className='pv-nav-demo'>Request a Demo <ArrowRight size={14}/></a></div>
+  return <main className='pv3'>
+    <header className='pv3-nav'>
+      <a href='/' className='pv3-vx'><img src='/resources/vantoryx-logo.png' alt='Vantoryx Technologies'/></a>
+      <nav><a href='#platform'>Platform</a><a href='#architecture'>Architecture</a><a href='#decisions'>Intelligence</a><a className='pv3-demo' href='/#contact'>Request a Demo <ArrowRight size={14}/></a></nav>
     </header>
 
-    <section className='pv-page-hero'>
-      <div className='pv-hero-orbit pv-hero-orbit--one'/><div className='pv-hero-orbit pv-hero-orbit--two'/>
-      <div className='pv-page-hero-copy'>
-        <img src='/resources/planvanta-logo.png' className='pv-page-logo' alt='Planvanta'/>
-        <p className='pv-page-kicker'>MANUFACTURING PLANNING &amp; OPERATIONAL INTELLIGENCE</p>
-        <h1>Manufacturing Intelligence.<br/><span>Connected.</span></h1>
-        <p className='pv-page-lead'>Planvanta 2.0 connects material planning, inventory, procurement, plant operations and management visibility in one structured environment built for growing manufacturers.</p>
-        <div className='pv-hero-mantra'><span>PLAN</span><i>•</i><span>SOURCE</span><i>•</i><span>CONTROL</span><i>•</i><span>GROW</span></div>
-        <div className='pv-page-actions'><a className='pv-btn-primary' href='/#contact'>Request a Demo <ArrowRight size={16}/></a><a className='pv-btn-secondary' href='#platform'>Explore the Platform <ArrowRight size={16}/></a></div>
+    <section className='pv3-hero'>
+      <div className='pv3-grid'/>
+      <div className='pv3-aura pv3-aura-a'/><div className='pv3-aura pv3-aura-b'/>
+      <div className='pv3-hero-copy'>
+        <img src='/resources/planvanta-logo.png' className='pv3-logo' alt='Planvanta'/>
+        <p className='pv3-kicker'>MANUFACTURING PLANNING &amp; OPERATIONAL INTELLIGENCE</p>
+        <h1>Manufacturing<br/>Intelligence.<br/><em>Connected.</em></h1>
+        <p className='pv3-lead'>One environment for clearer material planning, inventory, procurement, plant operations and management visibility.</p>
+        <div className='pv3-actions'><a href='/#contact' className='pv3-primary'>Request a Demo <ArrowRight size={16}/></a><a href='#platform'>Explore the Platform <ArrowRight size={16}/></a></div>
       </div>
-      <div className='pv-hero-stage'>
-        <div className='pv-stage-label'><span>PLANVANTA 2.0</span><b>LIVE OPERATIONAL VIEW</b></div>
-        <div className='pv-page-hero-visual'><div className='pv-page-glow'/><img src='/resources/planvanta-interface.png' alt='Planvanta 2.0 operational interface'/></div>
-        <div className='pv-stage-chips'><span>Material Planning</span><span>Inventory</span><span>Procurement</span><span>Management Visibility</span></div>
+      <div className='pv3-stage'>
+        <div className='pv3-stage-meta'><span>PLANVANTA 2.0</span><i>OPERATIONAL VIEW</i></div>
+        <div className='pv3-screen'><div className='pv3-browser'><i/><i/><i/><b>PLANVANTA / MATERIAL PLANNING</b></div><img src='/resources/planvanta-interface.png' alt='Planvanta 2.0 operational interface'/></div>
+        <div className='pv3-stage-foot'><span>PLAN</span><span>SOURCE</span><span>CONTROL</span><span>GROW</span></div>
       </div>
+      <div className='pv3-scroll'>SCROLL TO EXPLORE <span>↓</span></div>
     </section>
 
-    <section className='pv-signal-strip'>
-      <span>ONE PLATFORM</span><i>→</i><span>PLANT VISIBILITY</span><i>→</i><span>STRUCTURED INTELLIGENCE</span><i>→</i><span>DECISION-READY INFORMATION</span>
+    <section className='pv3-statement'>
+      <p>THE OPERATING LAYER FOR GROWING MANUFACTURERS</p>
+      <h2>Less time consolidating information.<br/><em>More clarity on what needs attention.</em></h2>
+      <div className='pv3-statement-line'/>
+      <p className='pv3-statement-copy'>Planvanta 2.0 is a web-based manufacturing planning and operational intelligence platform developed by Vantoryx Technologies. It brings fragmented operational information into a structured environment designed around manufacturing decisions.</p>
     </section>
 
-    <section className='pv-page-section pv-reality'>
-      <div className='pv-section-index'>01</div>
-      <div className='pv-section-copy'><p className='pv-page-kicker'>THE OPERATIONAL REALITY</p><h2>Critical decisions should not live across <span>disconnected information.</span></h2><p>Growing manufacturers often coordinate planning through spreadsheets, ERP extracts, purchase orders, inventory records and operational reports. Planvanta brings these decision inputs into a clearer manufacturing intelligence environment.</p></div>
-      <div className='pv-fragment-map'><div className='pv-source-row'><span>Demand</span><span>Inventory</span><span>Purchase Orders</span><span>Plant Data</span><span>Planning Parameters</span></div><div className='pv-data-lines'><i/><i/><i/><i/><i/></div><div className='pv-core'><small>CONNECTED THROUGH</small>PLANVANTA <b>2.0</b><em>ONE STRUCTURED OPERATIONAL VIEW</em></div></div>
-    </section>
-
-    <section className='pv-page-section pv-platform' id='platform'>
-      <div className='pv-section-head'><div><p className='pv-page-kicker'>02 — THE PLATFORM</p><h2>See the operation.<br/><span>Not another report.</span></h2></div><p>Planvanta turns operational information into focused views designed around the decisions manufacturing teams need to make.</p></div>
-      <div className='pv-product-cinema'>
-        <div className='pv-product-frame'><div className='pv-frame-bar'><span/><span/><span/><b>PLANVANTA 2.0 / OPERATIONAL INTELLIGENCE</b></div><img src='/resources/planvanta-interface.png' alt='Real Planvanta 2.0 interface'/></div>
-        <aside><p className='pv-page-kicker'>REAL PRODUCT INTERFACE</p><h3>Decision visibility, brought forward.</h3><p>Planning status, material risk, purchase-order visibility and operational indicators are brought into focused management views.</p><div className='pv-proof-stat'><span>PLANNING</span><b>Structured</b></div><div className='pv-proof-stat'><span>VISIBILITY</span><b>Connected</b></div><div className='pv-proof-stat'><span>DECISIONS</span><b>Focused</b></div></aside>
+    <section className='pv3-product' id='platform'>
+      <div className='pv3-section-no'>01 / PLATFORM</div>
+      <div className='pv3-product-head'><h2>The product is<br/><em>the experience.</em></h2><p>Focused operational views help planners and management see planning status, material risk, purchase-order visibility and the information requiring attention.</p></div>
+      <div className='pv3-product-stage'>
+        <div className='pv3-product-halo'/>
+        <div className='pv3-product-screen'><div className='pv3-browser'><i/><i/><i/><b>REAL PLANVANTA 2.0 INTERFACE</b></div><img src='/resources/planvanta-interface.png' alt='Real Planvanta 2.0 interface'/></div>
+        <div className='pv3-callout pv3-callout-a'><small>01</small><b>MATERIAL PLANNING</b><span>Structured requirements &amp; ordering visibility</span></div>
+        <div className='pv3-callout pv3-callout-b'><small>02</small><b>INVENTORY INTELLIGENCE</b><span>Clearer positions &amp; areas requiring attention</span></div>
+        <div className='pv3-callout pv3-callout-c'><small>03</small><b>PROCUREMENT VISIBILITY</b><span>Requirements &amp; PO information in context</span></div>
       </div>
-      <div className='pv-cap-rail'>{capabilities.map(([t,d],i)=><article key={t}><span>{String(i+1).padStart(2,'0')}</span><h3>{t}</h3><p>{d}</p></article>)}</div>
-    </section>
-
-    <section className='pv-page-section pv-decision' id='intelligence'>
-      <div className='pv-section-head'><div><p className='pv-page-kicker'>03 — FROM DATA TO DECISION</p><h2>A clearer path from <span>information to action.</span></h2></div><p>Planvanta structures operational information into a repeatable decision-support flow without replacing human judgement.</p></div>
-      <div className='pv-decision-track'>{[
-        ['CONNECT','Bring supported operational information into Planvanta.'],
-        ['STRUCTURE','Organise information around groups, plants, modules and responsibilities.'],
-        ['CALCULATE','Apply standardised planning logic with authorised plant parameters.'],
-        ['VISUALISE','Turn operational data into focused dashboards and indicators.'],
-        ['IDENTIFY','Surface shortages, requirements, trends and exceptions.'],
-        ['ACT','Give teams decision-ready information for informed action.']
-      ].map(([t,d],i)=><article key={t}><div><b>{String(i+1).padStart(2,'0')}</b><i/></div><h3>{t}</h3><p>{d}</p></article>)}</div>
-    </section>
-
-    <section className='pv-page-section pv-questions'>
-      <div className='pv-section-copy'><p className='pv-page-kicker'>04 — INTELLIGENCE IN ACTION</p><h2>Built around the questions that <span>move operations.</span></h2><p>Instead of asking teams to interpret more raw data, Planvanta is designed to help bring attention to practical manufacturing decisions.</p></div>
-      <div className='pv-question-stack'>{questions.map((q,i)=><div key={q}><small>{String(i+1).padStart(2,'0')}</small><b>{q}</b><span>↗</span></div>)}</div>
-    </section>
-
-    <section className='pv-page-section pv-multiplant' id='architecture'>
-      <div className='pv-section-head'><div><p className='pv-page-kicker'>05 — MULTI-PLANT BY DESIGN</p><h2>Local control.<br/><span>Group intelligence.</span></h2></div><p>Each plant can maintain its own operational data and authorised configuration while management receives consolidated organisational visibility.</p></div>
-      <div className='pv-network'>
-        <div className='pv-network-left'><span>PLANT A<small>Local operational view</small></span><span>PLANT B<small>Local operational view</small></span><span>PLANT C<small>Local operational view</small></span></div>
-        <div className='pv-network-lines'><i/><i/><i/></div>
-        <div className='pv-network-core'><small>ORGANISATION / GROUP</small><b>PLANVANTA</b><em>CONSOLIDATED VISIBILITY</em></div>
-        <div className='pv-network-arrow'>→</div>
-        <div className='pv-network-output'><small>MANAGEMENT</small><b>Decision-Ready<br/>Group View</b></div>
+      <div className='pv3-capabilities'>
+        <article><span>04</span><h3>Plant-Level Dashboards</h3><p>Focused operational visibility based on each plant's own data and responsibilities.</p></article>
+        <article><span>05</span><h3>Consolidated Group Overview</h3><p>Move from individual plant information to consolidated organisational visibility.</p></article>
+        <article><span>06</span><h3>Operational Intelligence</h3><p>Surface risks, exceptions and decision-ready information where attention matters.</p></article>
       </div>
     </section>
 
-    <section className='pv-page-section pv-growth'>
-      <div className='pv-growth-copy'><p className='pv-page-kicker'>06 — DESIGNED TO GROW WITH OPERATIONS</p><h2>Enterprise thinking.<br/><span>Without enterprise complexity.</span></h2><p>Planvanta is designed for manufacturers that need better systems as operations become more complex, without adding unnecessary layers of traditional enterprise complexity.</p><div className='pv-growth-points'><span>Web-based environment</span><span>Plant-specific visibility</span><span>Role-based access principles</span><span>Configurable operational structure</span></div></div>
-      <div className='pv-access-card'><small>RIGHT INFORMATION / RIGHT PEOPLE</small><h3>Controlled visibility across the organisation.</h3><div className='pv-access-flow'><span>System</span><b>→</b><span>Organisation</span><b>→</b><span>Plant</span><b>→</b><span>Module</span><b>→</b><span>Dashboard</span><b>→</b><span>Permission</span></div><p>Role- and permission-based access principles help organisations control which plants, modules, dashboards and functions are available to different users.</p></div>
+    <section className='pv3-flow'>
+      <div className='pv3-section-no'>02 / OPERATING MODEL</div>
+      <div className='pv3-flow-head'><p>FROM OPERATIONAL DATA</p><h2>One continuous path<br/>from <em>signal to decision.</em></h2></div>
+      <div className='pv3-flow-line'>
+        {[
+          ['01','CONNECT','Operational information'],
+          ['02','STRUCTURE','Groups, plants & modules'],
+          ['03','CALCULATE','Planning logic'],
+          ['04','VISUALISE','Focused dashboards'],
+          ['05','IDENTIFY','Risks & exceptions'],
+          ['06','ACT','Decision-ready information']
+        ].map(([n,t,d])=><article key={n}><span>{n}</span><i/><h3>{t}</h3><p>{d}</p></article>)}
+      </div>
     </section>
 
-    <section className='pv-page-section pv-why'>
-      <div className='pv-section-head'><div><p className='pv-page-kicker'>07 — WHY PLANVANTA</p><h2>A scalable foundation for <span>clearer operations.</span></h2></div><p>Manufacturing-focused structure with the visibility growing organisations need.</p></div>
-      <div className='pv-why-grid'>{[
-        ['Connected Visibility','Bring important planning and operational information into one structured environment.'],
-        ['Multi-Plant Architecture','Manage individual plants while maintaining consolidated organisational visibility.'],
-        ['Manufacturing-Focused Planning','Designed around real material, inventory, procurement and operational planning requirements.'],
-        ['Configurable Operations','Support common organisational standards alongside authorised plant-specific parameters.'],
-        ['Role-Based Access','Provide users with access appropriate to their plants, modules and responsibilities.'],
-        ['Decision-Ready Dashboards','Move beyond raw data toward information designed for operational action.']
-      ].map(([t,d],i)=><article key={t}><small>{String(i+1).padStart(2,'0')}</small><h3>{t}</h3><p>{d}</p><span>↗</span></article>)}</div>
+    <section className='pv3-decisions' id='decisions'>
+      <div className='pv3-section-no'>03 / INTELLIGENCE</div>
+      <div className='pv3-decisions-copy'><p className='pv3-kicker'>BUILT AROUND PRACTICAL MANUFACTURING DECISIONS</p><h2>See the question.<br/><em>Find the signal.</em></h2><p>Planvanta is designed to strengthen human operational judgement with structured calculations, dashboards and decision-support information.</p></div>
+      <div className='pv3-question-list'>
+        {['What materials require attention?','Where are inventory risks developing?','Which purchase orders need follow-up?','How is material availability changing?','What does management need to see now?'].map((q,i)=><div key={q}><small>0{i+1}</small><b>{q}</b><span>↗</span></div>)}
+      </div>
     </section>
 
-    <section className='pv-origin'><p>BUILT BY VANTORYX TECHNOLOGIES</p><h2>Built in Sri Lanka.<br/>Engineered for growing manufacturers.<br/><span>Designed to scale further.</span></h2></section>
-    <section className='pv-final'><div className='pv-final-glow'/><img src='/resources/planvanta-logo.png' alt='Planvanta'/><p className='pv-page-kicker'>MANUFACTURING INTELLIGENCE. CONNECTED.</p><h2>Make Your Operations<br/><span>Easier to See.</span></h2><p>Your business already generates the data.<br/><b>Planvanta helps turn it into decisions.</b></p><div className='pv-page-actions'><a className='pv-btn-primary' href='/#contact'>Request a Demo <ArrowRight size={16}/></a><a className='pv-btn-secondary' href='/#contact'>Talk to Vantoryx <ArrowRight size={16}/></a></div><small>Developed by Vantoryx Technologies</small></section>
+    <section className='pv3-architecture' id='architecture'>
+      <div className='pv3-section-no'>04 / MULTI-PLANT ARCHITECTURE</div>
+      <div className='pv3-architecture-head'><h2>Local operational control.<br/><em>Group-level visibility.</em></h2><p>Individual plants retain their operational identity while management receives a consolidated organisational view.</p></div>
+      <div className='pv3-network'>
+        <div className='pv3-plants'><div><b>PLANT A</b><span>Operational view</span></div><div><b>PLANT B</b><span>Operational view</span></div><div><b>PLANT C</b><span>Operational view</span></div></div>
+        <div className='pv3-connectors'><i/><i/><i/></div>
+        <div className='pv3-core'><small>ORGANISATION / GROUP</small><b>PLANVANTA</b><span>CONNECTED OPERATIONAL INTELLIGENCE</span></div>
+        <div className='pv3-arrow'>→</div>
+        <div className='pv3-management'><small>MANAGEMENT VIEW</small><b>Consolidated<br/>Visibility</b></div>
+      </div>
+    </section>
+
+    <section className='pv3-access'>
+      <div><p className='pv3-kicker'>CONTROLLED VISIBILITY</p><h2>Right information.<br/><em>Right people.</em></h2><p>Role- and permission-based access principles help organisations control which plants, modules, dashboards and functions are available to different users.</p></div>
+      <div className='pv3-access-path'>{['SYSTEM','ORGANISATION','PLANT','MODULE','DASHBOARD','PERMISSION'].map((x,i)=><span key={x}><small>0{i+1}</small>{x}</span>)}</div>
+    </section>
+
+    <section className='pv3-origin'>
+      <span>BUILT BY VANTORYX TECHNOLOGIES</span>
+      <h2>Built in Sri Lanka.<br/>Engineered for growing manufacturers.<br/><em>Designed to scale further.</em></h2>
+    </section>
+
+    <section className='pv3-final'>
+      <div className='pv3-final-aura'/>
+      <img src='/resources/planvanta-logo.png' alt='Planvanta'/>
+      <p>MANUFACTURING INTELLIGENCE. CONNECTED.</p>
+      <h2>Make your operations<br/><em>easier to see.</em></h2>
+      <div className='pv3-actions'><a href='/#contact' className='pv3-primary'>Request a Demo <ArrowRight size={16}/></a><a href='/#contact'>Talk to Vantoryx <ArrowRight size={16}/></a></div>
+      <small>Developed by Vantoryx Technologies</small>
+    </section>
   </main>
 }
 
