@@ -204,7 +204,7 @@ function App() {
   return (
     <main className='site-shell'>
       <section className='hero' id='home'>
-        <CinematicWorld />
+        <div className='hero-background' aria-hidden='true' />
         <div className='cinematic-vignette' aria-hidden='true' />
         <header className='nav'>
           <a className='brand' href='#home' aria-label='Vantoryx Technologies home'>
