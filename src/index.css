@@ -541,3 +541,78 @@ mask-image:linear-gradient(90deg,transparent 0%,#000 7%,#000 93%,transparent 100
  .pv-interface-crop:after{inset:0!important;filter:none!important;background:linear-gradient(180deg,rgba(7,23,47,.15),transparent 9%,transparent 88%,#0c1235 100%)!important}
  .pv-right:before{left:0!important;inset:70% 0 0 0!important;background:linear-gradient(180deg,rgba(9,21,47,0),#0c1235 34%,#171047 100%)!important}
 }
+
+/* Planvanta structural crop lock — source artwork ends before story panel */
+.pv-interface-crop{
+  left:1.5%!important;
+  top:12.5%!important;
+  width:72.5%!important;
+  height:76%!important;
+  overflow:hidden!important;
+  border-radius:26px!important;
+  background:transparent!important;
+  box-shadow:none!important;
+}
+.pv-interface-crop:before{
+  content:""!important;
+  position:absolute!important;
+  z-index:4!important;
+  top:0!important;right:0!important;bottom:0!important;left:auto!important;
+  width:34px!important;
+  inset:0 0 0 auto!important;
+  background:linear-gradient(90deg,transparent 0%,rgba(7,19,47,.35) 45%,rgba(8,18,48,.92) 100%)!important;
+  filter:none!important;
+  pointer-events:none!important;
+}
+.pv-interface-crop:after{display:none!important}
+.pv-interface{
+  position:absolute!important;
+  z-index:2!important;
+  left:0!important;top:0!important;
+  width:auto!important;height:100%!important;
+  max-width:none!important;max-height:none!important;
+  transform:none!important;
+  object-fit:cover!important;
+  object-position:left center!important;
+  border-radius:24px!important;
+  filter:saturate(1.05) contrast(1.02) drop-shadow(0 26px 40px rgba(0,0,0,.24))!important;
+}
+.pv-right:before{
+  content:""!important;
+  position:absolute!important;
+  z-index:3!important;
+  left:72%!important;right:0!important;top:0!important;bottom:0!important;
+  inset:0 0 0 72%!important;
+  background:
+    radial-gradient(ellipse at 0% 72%,rgba(39,126,232,.16),transparent 48%),
+    radial-gradient(ellipse at 88% 76%,rgba(104,54,218,.16),transparent 58%),
+    linear-gradient(100deg,rgba(7,20,46,.86) 0%,#0a1234 32%,#11103d 70%,#171047 100%)!important;
+  box-shadow:-20px 0 38px rgba(7,20,47,.28)!important;
+  filter:none!important;
+}
+.pv-right:after{
+  content:""!important;
+  position:absolute!important;
+  z-index:1!important;
+  left:5%!important;right:22%!important;bottom:5%!important;height:20%!important;
+  background:radial-gradient(ellipse at 50% 45%,rgba(45,158,255,.30),rgba(47,99,220,.11) 44%,transparent 72%)!important;
+  filter:blur(22px)!important;
+  pointer-events:none!important;
+}
+.pv-side-message{
+  z-index:6!important;
+  right:3%!important;
+  width:18%!important;
+}
+@media(max-width:1200px){
+ .pv-interface-crop{left:1.5%!important;width:71.5%!important}
+ .pv-right:before{left:71%!important;inset:0 0 0 71%!important}
+ .pv-side-message{right:2%!important;width:20%!important}
+}
+@media(max-width:900px){
+ .pv-interface-crop{left:2%!important;top:5%!important;width:96%!important;height:68%!important;overflow:hidden!important}
+ .pv-interface{width:100%!important;height:100%!important;object-fit:cover!important}
+ .pv-interface-crop:before{display:none!important}
+ .pv-right:before{left:0!important;inset:70% 0 0 0!important;background:linear-gradient(180deg,rgba(9,21,47,0),#0c1235 34%,#171047 100%)!important}
+ .pv-side-message{left:30px!important;right:auto!important;width:auto!important}
+}
