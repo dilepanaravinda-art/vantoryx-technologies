@@ -205,6 +205,11 @@ function App() {
     <main className='site-shell'>
       <section className='hero' id='home'>
         <div className='hero-background' aria-hidden='true' />
+        <div className='cinematic-stars cinematic-stars-far' aria-hidden='true' />
+        <div className='cinematic-stars cinematic-stars-near' aria-hidden='true' />
+        <div className='cinematic-orbit-pulse pulse-one' aria-hidden='true' />
+        <div className='cinematic-orbit-pulse pulse-two' aria-hidden='true' />
+        <div className='cinematic-atmosphere' aria-hidden='true' />
         <div className='cinematic-vignette' aria-hidden='true' />
         <header className='nav'>
           <a className='brand' href='#home' aria-label='Vantoryx Technologies home'>
