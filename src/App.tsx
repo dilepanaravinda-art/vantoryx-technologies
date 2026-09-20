@@ -73,6 +73,9 @@ function CinematicWorld() {
         ctx.fill();
       });
 
+      // Milky-way style cyan/violet cloud band behind the globe.
+      ctx.save(); ctx.translate(w*.52,h*.13); ctx.rotate(-.16); const cloud=ctx.createLinearGradient(-w*.45,0,w*.45,0); cloud.addColorStop(0,'rgba(0,0,0,0)'); cloud.addColorStop(.25,'rgba(51,92,180,.10)'); cloud.addColorStop(.5,'rgba(165,208,255,.22)'); cloud.addColorStop(.7,'rgba(73,82,190,.12)'); cloud.addColorStop(1,'rgba(0,0,0,0)'); ctx.fillStyle=cloud; ctx.filter='blur(18px)'; ctx.fillRect(-w*.55,-18,w*1.1,36); ctx.filter='none'; ctx.restore();
+
       const nebula = ctx.createRadialGradient(w * 0.55, h * 0.18, 0, w * 0.55, h * 0.18, w * 0.48);
       nebula.addColorStop(0, 'rgba(34,211,238,.08)');
       nebula.addColorStop(0.34, 'rgba(35,91,200,.075)');
@@ -81,12 +84,12 @@ function CinematicWorld() {
       ctx.fillStyle = nebula;
       ctx.fillRect(0, 0, w, h);
 
-      const cx = w * 0.69;
-      const cy = h * 0.585;
-      const r = Math.min(w * 0.285, h * 0.50);
+      const cx = w * 0.665;
+      const cy = h * 0.56;
+      const r = Math.min(w * 0.305, h * 0.52);
       const earth = ctx.createRadialGradient(cx - r * 0.35, cy - r * 0.38, r * 0.08, cx, cy, r);
-      earth.addColorStop(0, '#1a68ba');
-      earth.addColorStop(0.28, '#073c7e');
+      earth.addColorStop(0, '#3b8fe2');
+      earth.addColorStop(0.28, '#0b4d96');
       earth.addColorStop(0.63, '#041f4a');
       earth.addColorStop(0.88, '#071634');
       earth.addColorStop(1, '#020713');
@@ -127,6 +130,8 @@ function CinematicWorld() {
       ctx.arc(cx, cy, r, Math.PI * 1.02, Math.PI * 1.98);
       ctx.stroke();
       ctx.shadowBlur = 0;
+      // Bright atmospheric crown matching the approved cinematic reference.
+      const atmosphere=ctx.createRadialGradient(cx,cy-r*.9,0,cx,cy-r*.9,r*.72); atmosphere.addColorStop(0,'rgba(96,190,255,.34)'); atmosphere.addColorStop(.45,'rgba(31,126,255,.11)'); atmosphere.addColorStop(1,'rgba(0,0,0,0)'); ctx.fillStyle=atmosphere; ctx.fillRect(cx-r,cy-r*1.45,r*2,r*.9);
       ctx.strokeStyle = 'rgba(167,139,250,.48)';
       ctx.lineWidth = 1;
       ctx.beginPath();
