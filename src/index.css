@@ -797,3 +797,32 @@
 .pv3-final{padding-top:170px;background:radial-gradient(ellipse at 50% 35%,rgba(45,193,231,.12),transparent 34%),linear-gradient(180deg,#04111e,#010711)}.pv3-final:before{content:"";position:absolute;left:8%;right:8%;top:0;height:1px;background:linear-gradient(90deg,transparent,var(--c),var(--v),transparent)}.pv3-final>img{filter:drop-shadow(0 16px 38px rgba(35,182,226,.12))}
 @media(max-width:1050px){.pv3-vx:after{display:none}}
 @media(max-width:650px){.pv3-nav{height:66px}.pv3-hero{min-height:auto}.pv3-stage{transform:none}.pv3-screen{transform:none}.pv3-hero h1{font-size:48px}}
+
+/* PLANVANTA V5 — PREMIUM HYBRID LIGHT/DARK RHYTHM */
+.pv3{--ink:#07182a;--muted:#647b90;--ice:#eef7fb;--paper:#f7fbfd;--line:rgba(25,92,132,.13)}
+/* Preserve the Vantoryx-to-product cinematic handoff */
+.pv3-nav,.pv3-hero{color:#eef6fd}
+/* Bright editorial introduction */
+.pv3-statement{color:var(--ink);background:radial-gradient(circle at 50% 15%,rgba(74,210,235,.13),transparent 28%),linear-gradient(180deg,#eef8fc 0%,#f9fcfe 100%);border-color:rgba(24,104,148,.1)}
+.pv3-statement>p:first-child{color:#078ca9}.pv3-statement h2{color:#0a1b2c}.pv3-statement-copy{color:#60778b}.pv3-statement-line{background:linear-gradient(#15aeca,rgba(21,174,202,.08))}
+/* Product showcase on an airy blue-white canvas */
+.pv3-product{color:var(--ink);background:radial-gradient(circle at 50% 42%,rgba(52,191,226,.14),transparent 31%),linear-gradient(180deg,#f8fcfe,#eaf5fa 72%,#f5fafc)}
+.pv3-product .pv3-section-no{color:#6b8799}.pv3-product-head p{color:#60798c}.pv3-product-halo{background:radial-gradient(ellipse,rgba(32,176,217,.2),rgba(108,92,225,.07) 45%,transparent 72%)}
+.pv3-product-screen{box-shadow:0 45px 100px rgba(13,49,76,.22),0 0 0 1px rgba(35,144,188,.08)}
+.pv3-callout{color:#eaf7ff;background:linear-gradient(145deg,rgba(7,31,50,.97),rgba(8,20,39,.97));box-shadow:0 20px 50px rgba(18,57,83,.2)}
+.pv3-capabilities{border-top-color:rgba(27,101,140,.14)}.pv3-capabilities article+article{border-left-color:rgba(27,101,140,.12)}.pv3-capabilities h3{color:#10273b}.pv3-capabilities p{color:#667e91}.pv3-capabilities article:hover{background:linear-gradient(180deg,rgba(37,169,205,.08),transparent)}
+/* Dark operating-model interlude */
+.pv3-flow{color:#eef6fd;background:radial-gradient(circle at 18% 50%,rgba(103,73,220,.1),transparent 25%),linear-gradient(120deg,#03101e,#06182a 58%,#080d21)}
+/* Intelligence returns to a bright executive surface */
+.pv3-decisions{color:var(--ink);background:radial-gradient(circle at 82% 50%,rgba(46,190,222,.14),transparent 30%),linear-gradient(115deg,#f7fbfd,#eaf5fa)}
+.pv3-decisions .pv3-section-no{color:#6a8497}.pv3-decisions-copy>p:last-child{color:#60798d}.pv3-question-list{border-top-color:rgba(24,102,143,.16)}.pv3-question-list>div{border-bottom-color:rgba(24,102,143,.13)}.pv3-question-list small{color:#7290a4}.pv3-question-list b{color:#10283d}.pv3-question-list>div:hover{background:linear-gradient(90deg,rgba(37,174,207,.09),transparent)}.pv3-question-list>div:hover b{color:#07182a}
+/* Architecture remains dark to create deliberate visual rhythm */
+.pv3-architecture{color:#eef6fd;background:radial-gradient(circle at 50% 55%,rgba(67,192,231,.1),transparent 27%),linear-gradient(180deg,#03101e,#020914)}
+/* Access becomes bright and calm */
+.pv3-access{color:var(--ink);background:radial-gradient(circle at 80% 40%,rgba(111,91,226,.08),transparent 27%),linear-gradient(130deg,#f7fbfd,#eaf4f9)}
+.pv3-access>div:first-child>p:last-child{color:#60798d}.pv3-access-path{background:rgba(26,105,146,.12);border-color:rgba(26,105,146,.12);box-shadow:0 24px 70px rgba(18,62,90,.08)}.pv3-access-path span{background:rgba(255,255,255,.82);color:#405e73}.pv3-access-path span:hover{background:#fff;color:#10283c}
+/* Bright trust/origin section */
+.pv3-origin{color:var(--ink);background:radial-gradient(ellipse at 50% 68%,rgba(45,192,224,.16),transparent 40%),linear-gradient(180deg,#edf7fb,#fbfdfe)}.pv3-origin>span{color:#078ca9}
+/* Premium dark close */
+.pv3-final{color:#eef6fd;background:radial-gradient(ellipse at 50% 35%,rgba(45,193,231,.14),transparent 34%),linear-gradient(180deg,#061625,#010711)}
+@media(max-width:650px){.pv3-product,.pv3-decisions,.pv3-access,.pv3-origin{background-attachment:scroll}}
