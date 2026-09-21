@@ -209,6 +209,7 @@ const planvantaCapabilities = [
 ];
 
 function PlanvantaProductPage(){
+  // Product route intentionally shares Vantoryx visual language with the corporate site.
   return <main className='pv3'>
     <header className='pv3-nav'>
       <a href='/' className='pv3-vx'><img src='/resources/vantoryx-logo.png' alt='Vantoryx Technologies'/></a>
