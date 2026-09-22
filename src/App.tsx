@@ -439,7 +439,7 @@ function App() {
             <p className='vxh-path-lead'>Every business is different. Some need a proven platform. Others need a tailored solution. Vantoryx gives you both — practical technology built for real business operations.</p>
             <div className='vxh-path-principles'><span><Target/><i><b>PLAN</b><small>with clarity</small></i></span><span><Share2/><i><b>CONNECT</b><small>your data</small></i></span><span><RefreshCw/><i><b>AUTOMATE</b><small>your processes</small></i></span><span><Eye/><i><b>UNDERSTAND</b><small>what matters</small></i></span><span><TrendingUp/><i><b>GROW</b><small>with confidence</small></i></span></div>
           </div>
-          <div className='vxh-path-visual vxh-path-visual--abstract' aria-hidden='true'><div className='vxh-abstract-grid'/><div className='vxh-abstract-core'><i/><i/><i/><span/></div><div className='vxh-abstract-copy'><b>REAL OPERATIONS.<br/>CONNECTED INTELLIGENCE.</b><span>MANUFACTURING · SUPPLY CHAIN · PROCUREMENT · OPERATIONS</span></div></div>
+          <div className='vxh-path-editorial' aria-hidden='true'><div className='vxh-path-editorial-art'><span className='vxh-tech-arc vxh-tech-arc-a'/><span className='vxh-tech-arc vxh-tech-arc-b'/><span className='vxh-tech-node vxh-tech-node-a'/><span className='vxh-tech-node vxh-tech-node-b'/><span className='vxh-tech-node vxh-tech-node-c'/><div className='vxh-tech-mark'><i/><i/><b>V</b></div></div><div className='vxh-path-editorial-copy'><b>REAL OPERATIONS.<br/>REAL IMPACT.</b><i/><span>MANUFACTURING<br/>SUPPLY CHAIN<br/>PROCUREMENT<br/>OPERATIONS<br/>MANAGEMENT<br/>AND BEYOND</span><strong>BUILDING A MORE<br/>EFFICIENT TOMORROW</strong></div></div>
         </div>
         <div className='vxh-path-grid'>
           <article className='vxh-path-product'>
@@ -523,4 +523,4 @@ function App() {
   </main>;
 }
 export default App;
-/* deployment-sync: abstract enterprise technology visual production */
+/* deployment-sync: borderless editorial technology composition */
