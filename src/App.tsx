@@ -376,180 +376,133 @@ function VendoraProductPage(){
   </main>
 }
 
+const publicProducts = [
+  {
+    number: '01',
+    name: 'Planvanta 2.0',
+    eyebrow: 'MANUFACTURING PLANNING & OPERATIONAL INTELLIGENCE',
+    title: 'Manufacturing Intelligence. Connected.',
+    description: "Vantoryx Technologies' manufacturing planning and operational intelligence platform — bringing material planning, inventory, procurement, plant operations and management visibility into one connected environment.",
+    statement: 'Plan Smarter. See Clearly. Operate with Confidence.',
+    href: '/products/planvanta',
+    logo: '/resources/planvanta-logo.png',
+    visual: '/resources/planvanta-interface.png'
+  }
+];
+
+const solutionCapabilities = [
+  ['01','Business Process Digitalisation','Transform spreadsheet-, email- and paper-driven processes into structured digital workflows.'],
+  ['02','Planning & Operational Solutions','Build structured tools for planning, monitoring and coordinating business operations.'],
+  ['03','Dashboards & Management Visibility','Turn operational information into clear dashboards and management views.'],
+  ['04','Workflow Automation','Reduce repetitive manual activities through structured workflows, information and rules.'],
+  ['05','Data & System Integration','Bring information from different sources together for more connected operational visibility.'],
+  ['06','Custom Business Applications','Design focused applications around defined business processes when an existing product does not fit.']
+];
+
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
   if (window.location.pathname === '/products/planvanta') return <PlanvantaProductPage />;
-  if (window.location.pathname === '/products/vendora') return <VendoraProductPage />;
 
-  return (
-    <>
-      <main className='site-shell'>
-      <section className='hero' id='home'>
-        <div className='hero-background' aria-hidden='true' />
-        <div className='cinematic-stars cinematic-stars-far' aria-hidden='true' />
-        <div className='cinematic-stars cinematic-stars-near' aria-hidden='true' />
-        <div className='cinematic-orbit-pulse pulse-one' aria-hidden='true' />
-        <div className='cinematic-orbit-pulse pulse-two' aria-hidden='true' />
-        <div className='cinematic-atmosphere' aria-hidden='true' />
-        <div className='cinematic-vignette' aria-hidden='true' />
-        <header className='nav'>
-          <a className='brand' href='#home' aria-label='Vantoryx Technologies home'>
-            <span className='brand-plate'><img src='/resources/vantoryx-logo.png' alt='Vantoryx Technologies' /></span>
-          </a>
-          <nav className={menuOpen ? 'nav-links open' : 'nav-links'} aria-label='Main navigation'>
-            <a className='active' href='#home' onClick={() => setMenuOpen(false)}>Home</a>
-            <a href='#products' onClick={() => setMenuOpen(false)}>Products</a>
-            <a href='#technology' onClick={() => setMenuOpen(false)}>Technology</a>
-            <a href='#about' onClick={() => setMenuOpen(false)}>About</a>
-            <a href='#contact' onClick={() => setMenuOpen(false)}>Contact</a>
-          </nav>
-          <a className='demo' href='#contact'>Book a Demo <ArrowRight size={16} /></a>
-          <button className='menu-button' onClick={() => setMenuOpen(!menuOpen)} aria-label='Toggle navigation'>
-            {menuOpen ? <X /> : <Menu />}
-          </button>
-        </header>
+  return <main className='vxh'>
+    <section className='vxh-hero' id='home'>
+      <CinematicWorld/>
+      <div className='vxh-overlay'/>
+      <header className='vxh-nav'>
+        <a href='#home' className='vxh-brand'><img src='/resources/vantoryx-logo.png' alt='Vantoryx Technologies'/></a>
+        <nav className={menuOpen ? 'open' : ''}>
+          <a href='#home' onClick={()=>setMenuOpen(false)}>Home</a>
+          <a href='#products' onClick={()=>setMenuOpen(false)}>Products</a>
+          <a href='#solutions' onClick={()=>setMenuOpen(false)}>Solutions</a>
+          <a href='#how' onClick={()=>setMenuOpen(false)}>How We Work</a>
+          <a href='#about' onClick={()=>setMenuOpen(false)}>About</a>
+          <a href='#contact' onClick={()=>setMenuOpen(false)}>Contact</a>
+        </nav>
+        <a className='vxh-nav-cta' href='#contact'>Discuss Your Requirement <ArrowRight size={14}/></a>
+        <button className='vxh-menu' onClick={()=>setMenuOpen(!menuOpen)} aria-label='Toggle navigation'>{menuOpen?<X/>:<Menu/>}</button>
+      </header>
+      <div className='vxh-hero-copy'>
+        <p>BUSINESS TECHNOLOGY · PRODUCTS · SOLUTIONS</p>
+        <h1>Technology built<br/>around <em>your business.</em></h1>
+        <h2>Products we develop. Solutions we design around you.</h2>
+        <p className='vxh-lead'>Vantoryx Technologies develops intelligent business products and tailored digital solutions designed around real operational requirements.</p>
+        <div className='vxh-actions'><a className='vxh-primary' href='#products'>Explore Our Products <ArrowRight size={16}/></a><a href='#contact'>Discuss Your Requirement <ArrowRight size={16}/></a></div>
+      </div>
+      <div className='vxh-hero-foot'><span>PLAN</span><span>CONNECT</span><span>AUTOMATE</span><span>UNDERSTAND</span><span>GROW</span></div>
+    </section>
 
-        <div className='hero-copy'>
-          <p className='kicker'>INTELLIGENCE FOR A BRIGHTER TOMORROW</p>
-          <h1>BUILDING<br /><span>INTELLIGENCE</span><br />FOR BUSINESS.</h1>
-          <p className='intro'>We develop intelligent software solutions to help businesses plan,<br className='desktop-break' /> source, control and grow with confidence.</p>
-          <div className='hero-actions'>
-            <a className='primary' href='#products'>Explore Our Products <ArrowRight size={17} /></a>
-            <a className='secondary' href='#technology'>Our Technology <ArrowRight size={16} /></a>
-          </div>
+    <section className='vxh-paths'>
+      <div className='vxh-wrap'>
+        <p className='vxh-kicker'>TWO WAYS TO WORK WITH VANTORYX</p>
+        <h2>Use our technology where it fits.<br/><em>Or let us build around the requirement.</em></h2>
+        <div className='vxh-path-grid'>
+          <article><small>01 / PRODUCTS</small><h3>Purpose-built technology for real business operations.</h3><p>We develop and commercialise our own software products designed around practical business and operational requirements.</p><a href='#products'>Explore Products <ArrowRight size={15}/></a></article>
+          <article><small>02 / BUSINESS SOLUTIONS</small><h3>Technology designed around your requirement.</h3><p>Bring us an operational challenge, inefficient process, visibility gap or manual workflow. We work with you to design an appropriate digital solution.</p><a href='#solutions'>Explore Solutions <ArrowRight size={15}/></a></article>
         </div>
+      </div>
+    </section>
 
-        <div className='signal-copy' aria-hidden='true'><i /><span>CONNECTING<br />BUSINESSES<br />A SMARTER<br />TOMORROW</span></div>
-        <div className='principles' aria-hidden='true'><i /><span>PLAN<br />SOURCE<br />CONTROL<br />GROW</span></div>
-
-        <div className='capability-strip'>
-          {features.map(({ icon: Icon, title, text }) => (
-            <div className='capability' key={title}>
-              <span className='cap-icon'><Icon size={25} /></span>
-              <span className='cap-copy'><strong>{title}</strong><small>{text}</small></span>
-            </div>
-          ))}
+    <section className='vxh-products' id='products'>
+      <div className='vxh-wrap'>
+        <div className='vxh-section-head'><div><p className='vxh-kicker'>VANTORYX PRODUCTS</p><h2>Technology we build.<br/><em>Products businesses can use.</em></h2></div><p>Our portfolio is developed around real operational challenges — combining practical business understanding with technology designed for everyday use.</p></div>
+        <div className='vxh-product-list'>
+          {publicProducts.map(p=><article className='vxh-product' key={p.name}>
+            <div className='vxh-product-copy'><small>{p.number} / VANTORYX PRODUCT</small><img src={p.logo} alt={p.name}/><p className='vxh-product-eyebrow'>{p.eyebrow}</p><h3>{p.title}</h3><p>{p.description}</p><b>{p.statement}</b><a href={p.href}>Explore {p.name} <ArrowRight size={16}/></a></div>
+            <div className='vxh-product-visual'><img src={p.visual} alt={p.name+' interface'}/></div>
+          </article>)}
         </div>
-        <div className='scroll-cue' aria-hidden='true'><span /><Mouse size={20} /><b>SCROLL TO EXPLORE</b><span /></div>
-      </section>
+      </div>
+    </section>
 
-      <section className='products-section' id='products'>
-        <div className='section-glow section-glow-one' aria-hidden='true' />
-        <div className='products-inner'>
-          <div className='section-heading'>
-            <p className='section-kicker'>VANTORYX PRODUCTS</p>
-            <h2>Intelligence built for<br /><span>real operations.</span></h2>
-            <p>Purpose-built platforms that turn complex operational data into clear, controlled decisions.</p>
-          </div>
-
-          <div className='product-showcase'>
-            <article className='planvanta-card' id='planvanta'>
-              <div className='planvanta-card__copy'>
-                <img className='planvanta-card__logo' src='/resources/planvanta-logo.png' alt='Planvanta' />
-                <p className='planvanta-card__eyebrow'>INTRODUCING PLANVANTA 2.0</p>
-                <h3>Manufacturing Intelligence. <span>Connected.</span></h3>
-                <p className='planvanta-card__body'>Planvanta 2.0 is Vantoryx Technologies' manufacturing planning and operational intelligence platform — bringing material planning, inventory, procurement, plant operations and management visibility into one connected environment.</p>
-                <p className='planvanta-card__support'>Built for growing manufacturers. Designed for multi-plant operations. Engineered to turn operational data into clearer decisions.</p>
-                <p className='planvanta-card__statement'>Plan Smarter. See Clearly. Operate with Confidence.</p>
-                <div className='planvanta-card__actions'>
-                  <a className='planvanta-card__primary' href='/products/planvanta'>Explore Planvanta 2.0 <ArrowRight size={17}/></a>
-                  <a className='planvanta-card__secondary' href='#contact'>Request a Demo <ArrowRight size={17}/></a>
-                </div>
-              </div>
-              <div className='planvanta-card__visual'>
-                <div className='planvanta-card__sweep planvanta-card__sweep--one' aria-hidden='true' />
-                <div className='planvanta-card__sweep planvanta-card__sweep--two' aria-hidden='true' />
-                <div className='planvanta-card__halo' aria-hidden='true' />
-                <img src='/resources/planvanta-interface.png' alt='Planvanta 2.0 Material Planning dashboard' />
-              </div>
-            </article>
-
-            <article className='product-panel vendora-panel'>
-              <div className='product-number'>02</div>
-              <div className='product-body'>
-                <div className='product-brand product-brand-official vendora-brand'>
-                  <img src='/resources/vendora-logo.png' alt='VENDORA — Supplier Intelligence Platform' />
-                </div>
-                <p className='product-eyebrow'>DISCOVER · VERIFY · SOURCE</p>
-                <h3>Find better suppliers.<br />Source with confidence.</h3>
-                <p className='product-description'>Supplier intelligence designed to make discovery, qualification and sourcing decisions clearer and more structured.</p>
-                <div className='product-tags'><span>Discovery</span><span>Verification</span><span>Supplier Intelligence</span></div>
-                <a href='/products/vendora'>Explore VENDORA <ArrowRight size={17} /></a>
-              </div>
-              <div className='product-visual vendora-visual' aria-hidden='true'>
-                <div className='supplier-network'>
-                  <div className='network-rings'><i /><i /><i /></div>
-                  <span className='network-hub'><ShieldCheck size={30} /><small>SUPPLIER<br/>INTELLIGENCE</small></span>
-                  <span className='supplier-node sn1'>01</span><span className='supplier-node sn2'>02</span><span className='supplier-node sn3'>03</span><span className='supplier-node sn4'>04</span>
-                  <span className='network-line nl1'/><span className='network-line nl2'/><span className='network-line nl3'/><span className='network-line nl4'/>
-                </div>
-                <div className='vendor-card vc1'><small>VERIFICATION</small><b>Verified supplier</b></div>
-                <div className='vendor-card vc2'><small>RISK PROFILE</small><b>Low exposure</b></div>
-                <div className='vendor-card vc3'><small>SOURCING</small><b>Qualified</b></div>
-              </div>
-            </article>
-          </div>
+    <section className='vxh-solutions' id='solutions'>
+      <div className='vxh-wrap'>
+        <div className='vxh-section-head vxh-section-head--light'><div><p className='vxh-kicker'>BUSINESS SOLUTIONS</p><h2>Your requirement.<br/><em>Our technology.</em></h2></div><p>Not every business challenge needs another off-the-shelf system. Start with the business problem and we design around the operational requirement.</p></div>
+        <div className='vxh-solution-grid'>{solutionCapabilities.map(([n,t,d])=><article key={n}><small>{n}</small><h3>{t}</h3><p>{d}</p></article>)}</div>
+        <div className='vxh-problem'>
+          <p>YOU DON'T NEED TO ARRIVE WITH A SOFTWARE SPECIFICATION.</p>
+          <h3>Tell us what is difficult to see, control, coordinate or manage.</h3>
+          <a href='#contact'>Discuss Your Requirement <ArrowRight size={16}/></a>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section className='corp-tech' id='technology'>
-        <div className='corp-wrap corp-split'>
-          <div>
-            <p className='corp-kicker'>HOW WE BUILD</p>
-            <h2>Technology shaped around<br/><span>operational reality.</span></h2>
-          </div>
-          <div className='corp-tech-copy'>
-            <p>Vantoryx builds focused business software that brings fragmented operational information into clearer, structured environments.</p>
-            <div className='corp-pillars'>
-              <article><small>01</small><b>Connected Information</b><span>Bring operational data into one structured view.</span></article>
-              <article><small>02</small><b>Decision Visibility</b><span>Surface the information teams and management need to act.</span></article>
-              <article><small>03</small><b>Scalable Architecture</b><span>Support growing organisations, plants and operational needs.</span></article>
-            </div>
-          </div>
-        </div>
-      </section>
+    <section className='vxh-how' id='how'>
+      <div className='vxh-wrap'>
+        <p className='vxh-kicker'>HOW WE WORK</p>
+        <h2>Business first.<br/><em>Technology second.</em></h2>
+        <p className='vxh-how-lead'>We start by understanding how the operation works before deciding what technology should be built.</p>
+        <div className='vxh-process'>{[
+          ['01','Understand','Understand the business requirement, users and expected outcome.'],
+          ['02','Map','Map workflows, information, responsibilities, controls and decision points.'],
+          ['03','Design','Design how technology can simplify the process or improve visibility.'],
+          ['04','Build','Turn the design into a working application, workflow, dashboard or integration.'],
+          ['05','Implement','Bring the solution into the operation and establish the required workflow.'],
+          ['06','Improve','Evolve the solution as the business and its requirements change.']
+        ].map(([n,t,d])=><article key={n}><small>{n}</small><h3>{t}</h3><p>{d}</p></article>)}</div>
+        <blockquote>We don't start by asking what software you want.<br/><b>We start by asking what your business needs to achieve.</b></blockquote>
+      </div>
+    </section>
 
-      <section className='corp-about' id='about'>
-        <div className='corp-wrap corp-about-grid'>
-          <div className='corp-about-mark'><span>V</span><i/></div>
-          <div>
-            <p className='corp-kicker'>VANTORYX TECHNOLOGIES</p>
-            <h2>Software built closer<br/>to the <span>operation.</span></h2>
-            <p className='corp-about-copy'>We are a Sri Lankan technology company developing practical software products for business operations. Our focus is simple: make complex information easier to see, control and use in everyday decisions.</p>
-            <div className='corp-values'><span>PLAN</span><span>SOURCE</span><span>CONTROL</span><span>GROW</span></div>
-          </div>
-        </div>
-      </section>
+    <section className='vxh-about' id='about'>
+      <div className='vxh-wrap vxh-about-grid'>
+        <div><p className='vxh-kicker'>ABOUT VANTORYX</p><h2>Technology should understand<br/><em>the business it serves.</em></h2></div>
+        <div><p>Vantoryx Technologies is a Sri Lankan technology company developing business software products and tailored digital solutions around real operational requirements.</p><p>Effective business technology requires more than writing software. It requires understanding the process, the people using it, the information they need and the decisions they have to make.</p><div className='vxh-about-tags'><span>PRODUCTS</span><span>SOLUTIONS</span><span>INTELLIGENCE & AUTOMATION</span></div><h3>Built in Sri Lanka. <em>Designed to go further.</em></h3></div>
+      </div>
+    </section>
 
-      <section className='corp-contact' id='contact'>
-        <div className='corp-contact-glow' aria-hidden='true'/>
-        <div className='corp-wrap corp-contact-grid'>
-          <div>
-            <p className='corp-kicker'>START A CONVERSATION</p>
-            <h2>See what Vantoryx<br/>can do for your <span>operation.</span></h2>
-            <p>Interested in Planvanta 2.0, VENDORA or a Vantoryx product? Tell us what you want to improve and we can start from there.</p>
-          </div>
-          <div className='corp-contact-card'>
-            <p>REQUEST A DEMO</p>
-            <h3>Let's understand your operation.</h3>
-            <p className='corp-contact-note'>Share your requirements with Vantoryx and we’ll use them to guide the right product conversation.</p>
-            <div className='corp-contact-cta corp-contact-cta--pending' aria-label='Demo request contact channel pending'>Request a Demo <ArrowRight size={17}/></div>
-            <small>Official Vantoryx contact channel will be connected here before public launch.</small>
-          </div>
+    <section className='vxh-contact' id='contact'>
+      <div className='vxh-wrap'>
+        <p className='vxh-kicker'>START A CONVERSATION</p>
+        <h2>What does your business<br/><em>need to solve?</em></h2>
+        <p className='vxh-contact-lead'>Whether you're interested in a Vantoryx product or need technology designed around a specific business requirement, start the conversation with us.</p>
+        <div className='vxh-contact-grid'>
+          <article><small>01 / PRODUCT</small><h3>Interested in Planvanta 2.0?</h3><p>Explore how an existing Vantoryx product could support your operation.</p><a href='/products/planvanta'>Explore Planvanta <ArrowRight size={15}/></a></article>
+          <article><small>02 / BUSINESS REQUIREMENT</small><h3>Have a process or operational challenge?</h3><p>Tell us what you want to improve. We'll start by understanding the requirement before deciding what should be built.</p><div className='vxh-contact-pending'>Discuss Your Requirement <ArrowRight size={15}/></div><span>Official Vantoryx contact channel will be connected before public launch.</span></article>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <footer className='corp-footer'>
-        <div className='corp-wrap'>
-          <img src='/resources/vantoryx-logo.png' alt='Vantoryx Technologies'/>
-          <p>Intelligence for a brighter tomorrow.</p>
-          <nav><a href='#products'>Products</a><a href='#technology'>Technology</a><a href='#about'>About</a><a href='#contact'>Contact</a></nav>
-          <small>© 2026 Vantoryx Technologies. All rights reserved.</small>
-        </div>
-      </footer>
-      </main>
-    </>
-  );
+    <footer className='vxh-footer'><div className='vxh-wrap'><img src='/resources/vantoryx-logo.png' alt='Vantoryx Technologies'/><p>Technology built around your business.</p><nav><a href='#products'>Products</a><a href='#solutions'>Solutions</a><a href='#how'>How We Work</a><a href='#about'>About</a><a href='#contact'>Contact</a></nav><small>© 2026 Vantoryx Technologies. All rights reserved.</small></div></footer>
+  </main>;
 }
 export default App;
 /* deployment-sync: site-wide QA phase */
