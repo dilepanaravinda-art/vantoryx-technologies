@@ -7,6 +7,14 @@
     {
       "source": "/products/planvanta/",
       "destination": "/index.html"
+    },
+    {
+      "source": "/products/vendora",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/products/vendora/",
+      "destination": "/index.html"
     }
   ]
 }
