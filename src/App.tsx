@@ -523,4 +523,4 @@ function App() {
   </main>;
 }
 export default App;
-/* deployment-sync: reference-accurate premium reconstruction */
+/* deployment-sync: supplied-reference premium reconstruction */
