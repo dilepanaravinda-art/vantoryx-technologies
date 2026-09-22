@@ -490,4 +490,4 @@ function App() {
   );
 }
 export default App;
-/* deployment-sync: Planvanta homepage logo sizing */
+/* deployment-sync: Vantoryx corporate phase */
