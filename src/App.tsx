@@ -523,4 +523,4 @@ function App() {
   </main>;
 }
 export default App;
-/* deployment-sync: live rotating digital globe */
+/* deployment-sync: live rotating digital globe production */
