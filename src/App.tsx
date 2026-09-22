@@ -284,14 +284,15 @@ function PlanvantaProductPage(){
 
     <section className='pv3-architecture' id='architecture'>
       <div className='pv3-section-no'>04 / MULTI-PLANT ARCHITECTURE</div>
-      <div className='pv3-architecture-head'><h2>Local operational control.<br/><em>Group-level visibility.</em></h2><p>Individual plants retain their operational identity while management receives a consolidated organisational view.</p></div>
-      <div className='pv3-network'>
-        <div className='pv3-plants'><div><b>PLANT A</b><span>Operational view</span></div><div><b>PLANT B</b><span>Operational view</span></div><div><b>PLANT C</b><span>Operational view</span></div></div>
+      <div className='pv3-architecture-head'><h2>Local operational control.<br/><em>Group-level visibility.</em></h2><p>Each plant maintains its own operational view while management receives consolidated visibility across the organisation.</p></div>
+      <div className='pv3-network pv3-network--premium'>
+        <div className='pv3-plants'><div><small>01</small><b>PLANT 01</b><span>Plant-level operational view</span></div><div><small>02</small><b>PLANT 02</b><span>Plant-level operational view</span></div><div><small>03</small><b>PLANT 03</b><span>Plant-level operational view</span></div></div>
         <div className='pv3-connectors'><i/><i/><i/></div>
-        <div className='pv3-core'><small>ORGANISATION / GROUP</small><b>PLANVANTA</b><span>CONNECTED OPERATIONAL INTELLIGENCE</span></div>
-        <div className='pv3-arrow'>→</div>
-        <div className='pv3-management'><small>MANAGEMENT VIEW</small><b>Consolidated<br/>Visibility</b></div>
+        <div className='pv3-core'><small>ORGANISATION / GROUP</small><img src='/resources/planvanta-logo.png' alt='Planvanta'/><span>GROUP INTELLIGENCE</span><div><b>PLANT ISOLATION</b><b>CONNECTED VISIBILITY</b></div></div>
+        <div className='pv3-arrow'><ArrowRight size={26}/></div>
+        <div className='pv3-management'><small>MANAGEMENT VIEW</small><b>Consolidated Group<br/>Overview</b><span>Group-level visibility</span></div>
       </div>
+      <div className='pv3-architecture-notes'><span>PLANT-LEVEL OPERATIONAL VIEWS</span><span>ISOLATED PLANT DATA</span><span>CONSOLIDATED GROUP VISIBILITY</span></div>
     </section>
 
     <section className='pv3-access'>
@@ -527,4 +528,4 @@ function App() {
   </main>;
 }
 export default App;
-/* deployment-sync: premium business solutions redesign production */
+/* deployment-sync: premium multi-plant architecture redesign */
