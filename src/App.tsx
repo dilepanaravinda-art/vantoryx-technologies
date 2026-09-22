@@ -210,7 +210,7 @@ const planvantaCapabilities = [
 
 function PlanvantaProductPage(){
   // Product route intentionally shares Vantoryx visual language with the corporate site.
-  // V5 premium hybrid light/dark visual system is deployed with this component.
+  // V6 production-polished hybrid visual system is deployed with this component.
   return <main className='pv3'>
     <header className='pv3-nav'>
       <a href='/' className='pv3-vx'><img src='/resources/vantoryx-logo.png' alt='Vantoryx Technologies'/></a>
