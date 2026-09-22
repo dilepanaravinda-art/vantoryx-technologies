@@ -875,3 +875,37 @@
   .pv3-capabilities article{min-height:0}.pv3-question-list>div{grid-template-columns:34px 1fr 20px;padding-block:20px}.pv3-question-list b{font-size:14px}
   .pv3-final{min-height:600px;padding-top:90px;padding-bottom:90px}
 }
+
+/* PLANVANTA V7 — LIGHT PREMIUM PRODUCT EXPERIENCE */
+.pv3{background:#f7fbfd;color:#0a2340}
+.pv3-nav{background:rgba(255,255,255,.92);border-bottom:1px solid rgba(15,71,113,.1);box-shadow:0 10px 36px rgba(18,65,98,.07);backdrop-filter:blur(22px)}
+.pv3-nav:after{background:linear-gradient(90deg,transparent,rgba(15,157,198,.28),rgba(105,92,210,.16),transparent)}
+.pv3-vx:after{color:#7690a3}.pv3-nav nav a{color:#4c657a}.pv3-nav nav a:hover{color:#071f3a}.pv3-nav .pv3-demo{color:#fff;background:linear-gradient(100deg,#087fae,#1aa9ca);box-shadow:0 10px 28px rgba(19,151,190,.16)}
+.pv3-hero{color:#0a2340;background:radial-gradient(circle at 75% 40%,rgba(54,185,223,.16),transparent 28%),radial-gradient(circle at 92% 12%,rgba(118,97,220,.08),transparent 24%),linear-gradient(125deg,#fbfdff 0%,#eef8fc 52%,#e8f4fa 100%)}
+.pv3-hero:before{background:linear-gradient(105deg,transparent 48%,rgba(30,156,197,.04) 48.2%,transparent 48.5%),linear-gradient(75deg,transparent 65%,rgba(104,87,208,.035) 65.2%,transparent 65.5%)}
+.pv3-grid{opacity:.16;background-image:linear-gradient(rgba(43,135,180,.13) 1px,transparent 1px),linear-gradient(90deg,rgba(43,135,180,.13) 1px,transparent 1px)}
+.pv3-aura{border-color:rgba(36,160,200,.1)}.pv3-logo{filter:drop-shadow(0 10px 26px rgba(18,111,159,.08))}
+.pv3-kicker{color:#0789aa}.pv3-hero h1{text-shadow:none;color:#09233f}.pv3-lead{color:#557087}
+.pv3-actions a{color:#153c59;background:rgba(255,255,255,.76);border-color:rgba(29,111,154,.18);box-shadow:0 8px 24px rgba(19,68,100,.05)}
+.pv3-actions a:hover{background:#fff;border-color:rgba(17,146,184,.38)}.pv3-actions .pv3-primary{color:#fff;background:linear-gradient(100deg,#0789b0,#22b7d2);box-shadow:0 15px 38px rgba(20,156,192,.2)}
+.pv3-stage:before{background:radial-gradient(ellipse at center,rgba(39,179,217,.2),rgba(93,82,213,.06) 42%,transparent 68%)}
+.pv3-stage-meta{color:#7890a2}.pv3-stage-meta span{color:#078eae}.pv3-screen{border-color:rgba(34,135,179,.22);box-shadow:0 42px 100px rgba(18,66,99,.2),0 0 0 1px rgba(43,149,188,.05)}
+.pv3-stage-foot{color:#6b8498}.pv3-stage-foot span{background:rgba(255,255,255,.74);border-color:rgba(30,119,158,.12)}.pv3-stage-foot span:first-child{color:#078eae}
+.pv3-scroll{color:#7790a3}.pv3-scroll span{color:#078eae}
+.pv3-statement,.pv3-product,.pv3-decisions,.pv3-access,.pv3-origin{color:#0a2340}
+.pv3-statement{background:radial-gradient(circle at 50% 15%,rgba(74,210,235,.11),transparent 28%),#fff}
+.pv3-product{background:radial-gradient(circle at 50% 42%,rgba(52,191,226,.12),transparent 31%),linear-gradient(180deg,#f7fbfd,#edf7fb 72%,#f8fbfd)}
+/* Previously dark sections now use premium light surfaces */
+.pv3-flow{color:#0a2340;background:radial-gradient(circle at 18% 50%,rgba(101,84,215,.07),transparent 25%),linear-gradient(120deg,#f7fbfd,#edf7fb 58%,#f6f4ff)}
+.pv3-flow .pv3-section-no{color:#6b8799}.pv3-flow-head>p,.pv3-flow-line article>span{color:#078eae}.pv3-flow-line article>i{background:linear-gradient(90deg,#18a9c7,rgba(24,169,199,.08));box-shadow:none}.pv3-flow-line h3{color:#102a43}.pv3-flow-line p{color:#687f92}.pv3-flow-line article:not(:last-child):after{border-color:rgba(14,142,174,.4)}
+.pv3-decisions{background:radial-gradient(circle at 82% 50%,rgba(46,190,222,.11),transparent 30%),#fff}
+.pv3-architecture{color:#0a2340;background:radial-gradient(circle at 50% 55%,rgba(67,192,231,.1),transparent 28%),linear-gradient(180deg,#f5fbfd,#eaf5fa)}
+.pv3-architecture .pv3-section-no{color:#6b8799}.pv3-architecture-head p{color:#60798d}
+.pv3-plants div{background:rgba(255,255,255,.82);border-color:rgba(28,116,157,.13);box-shadow:0 10px 28px rgba(20,65,94,.05)}.pv3-plants b{color:#15324a}.pv3-plants span{color:#6a8397}
+.pv3-connectors i{background:linear-gradient(90deg,rgba(22,150,184,.08),#16a3c2)}.pv3-core{background:radial-gradient(circle at 50% 0,rgba(52,192,227,.12),transparent 68%),#fff;border-color:rgba(23,154,186,.22);box-shadow:0 25px 65px rgba(21,76,105,.1)}.pv3-core small,.pv3-core span{color:#718a9c}.pv3-core b{color:#0b2a45}.pv3-core:before{border-color:rgba(24,152,184,.08)}
+.pv3-arrow{color:#139fbe}.pv3-management{border-left-color:#17a5c4;background:linear-gradient(90deg,rgba(49,195,228,.09),transparent)}.pv3-management small{color:#71899b}.pv3-management b{color:#15324a}
+.pv3-access{background:radial-gradient(circle at 80% 40%,rgba(111,91,226,.07),transparent 27%),#fff}.pv3-origin{background:radial-gradient(ellipse at 50% 68%,rgba(45,192,224,.12),transparent 40%),linear-gradient(180deg,#eef8fb,#fff)}
+/* Keep only the final CTA dark for brand contrast */
+.pv3-final{color:#eef6fd;background:radial-gradient(ellipse at 50% 35%,rgba(45,193,231,.14),transparent 34%),linear-gradient(180deg,#08213a,#03101d)}
+.pv3-final .pv3-actions a:not(.pv3-primary){color:#eaf6fc;background:rgba(255,255,255,.04);border-color:rgba(157,210,235,.2)}
+@media(max-width:650px){.pv3-nav{background:rgba(255,255,255,.96)}}
