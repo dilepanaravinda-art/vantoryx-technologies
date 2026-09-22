@@ -961,3 +961,33 @@ img{max-width:100%}
 .vxh-path-solution-list{display:grid;grid-template-columns:1fr 1fr;gap:11px;margin:28px 0}.vxh-path-solution-list>span{display:grid;grid-template-columns:32px 1fr;column-gap:9px;align-items:center;padding:13px;border:1px solid rgba(74,178,218,.12);border-radius:9px;background:rgba(5,20,36,.3)}.vxh-path-solution-list svg{grid-row:1/3;color:#3bd3e5}.vxh-path-solution-list b{color:#eef7fd;font-size:9px}.vxh-path-solution-list small{color:#7290a4!important;font-size:7px!important;letter-spacing:0!important}.vxh-path-solutions>a{margin-top:22px!important;padding:12px 15px!important;border:0!important;border-radius:7px!important;color:#071725!important;background:#fff!important}
 @media(max-width:950px){.vxh-path-intro{grid-template-columns:1fr}.vxh-path-orbit{display:none}.vxh-path-grid .vxh-path-product{padding-right:40px}.vxh-path-product-preview{position:relative;right:auto;bottom:auto;width:100%;padding:15px 0;margin-top:15px}.vxh-path-product-preview img:first-child{margin-left:0}.vxh-path-grid article{min-height:0}}
 @media(max-width:650px){.vxh-path-principles{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}.vxh-path-principles span{padding:0;border:0}.vxh-path-solution-list{grid-template-columns:1fr}.vxh-path-grid article{padding:27px 22px}}
+
+/* VANTORYX TWO-PATH V2 — MATCH APPROVED MOCKUP COMPOSITION */
+.vxh-paths{padding:78px 0 105px;background:radial-gradient(circle at 77% 13%,rgba(103,189,229,.15),transparent 29%),linear-gradient(180deg,#fff 0%,#f8fcfe 72%,#fff 100%)}
+.vxh-path-intro{grid-template-columns:minmax(0,1.55fr) minmax(330px,.45fr);gap:34px;align-items:center}
+.vxh-paths h2{font-size:clamp(46px,4.45vw,72px);line-height:.96;max-width:930px}
+.vxh-path-lead{max-width:900px;margin-top:24px;font-size:15px}
+.vxh-path-principles{max-width:920px;margin-top:24px;padding:17px 0}
+.vxh-path-orbit{height:285px;transform:translateY(12px)}
+.vxh-path-orbit:before{width:270px;height:270px}.vxh-path-orbit:after{width:205px;height:205px}
+.vxh-path-grid{grid-template-columns:1fr 1fr;gap:14px;margin-top:46px}
+.vxh-path-grid article{min-height:440px;border-radius:15px;padding:32px 36px}
+.vxh-path-grid .vxh-path-product{padding-right:44%}
+.vxh-path-grid h3{margin-top:17px;font-size:26px;line-height:1.08}
+.vxh-path-grid p{font-size:12px;line-height:1.65}
+.vxh-path-grid ul{margin:19px 0}.vxh-path-grid li{margin:8px 0;font-size:9px}
+.vxh-path-product-preview{right:-14px;bottom:26px;width:45%;padding:10px}
+.vxh-path-product-preview img:first-child{width:178px;margin:0 0 12px auto}
+.vxh-path-product-preview img:nth-child(2){width:100%;max-height:190px;object-fit:cover;object-position:left top;border-radius:8px}
+.vxh-path-product-preview b,.vxh-path-product-preview span{margin-left:0}
+.vxh-path-solutions:after{content:"PEOPLE\A PROCESSES\A TECHNOLOGY\A BETTER OUTCOMES";white-space:pre;position:absolute;right:24px;bottom:26px;color:rgba(132,180,206,.42);font-size:7px;font-weight:850;line-height:1.8;letter-spacing:.16em}
+.vxh-path-solution-list{margin:23px 0 17px;gap:9px}.vxh-path-solution-list>span{padding:11px 12px}
+.vxh-path-solutions>a{margin-top:12px!important}
+@media(min-width:1250px){
+ .vxh-wrap{width:min(1320px,calc(100% - 80px))}
+ .vxh-paths{padding-top:68px}
+ .vxh-path-intro{grid-template-columns:minmax(0,1.42fr) minmax(380px,.58fr)}
+ .vxh-paths h2{font-size:68px;max-width:970px}
+ .vxh-path-grid article{min-height:420px}
+}
+@media(max-width:950px){.vxh-path-intro{grid-template-columns:1fr}.vxh-path-orbit{display:none}.vxh-path-grid{grid-template-columns:1fr}.vxh-path-grid .vxh-path-product{padding-right:32px}.vxh-path-product-preview{position:relative;right:auto;bottom:auto;width:100%;max-width:560px}.vxh-path-product-preview img:first-child{margin-left:0}.vxh-path-grid article{min-height:0}}
