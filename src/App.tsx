@@ -296,22 +296,21 @@ function PlanvantaProductPage(){
     </section>
 
     <section className='pv3-access'>
-      <div><p className='pv3-kicker'>CONTROLLED VISIBILITY</p><h2>Right information.<br/><em>Right people.</em></h2><p>Role- and permission-based access principles help organisations control which plants, modules, dashboards and functions are available to different users.</p></div>
-      <div className='pv3-access-path'>{['SYSTEM','ORGANISATION','PLANT','MODULE','DASHBOARD','PERMISSION'].map((x,i)=><span key={x}><small>0{i+1}</small>{x}</span>)}</div>
+      <div className='pv3-access-copy'><p className='pv3-kicker'>05 / CONTROLLED VISIBILITY</p><h2>Right information.<br/><em>Right people.</em></h2><p>Access follows the operating structure. Users work within the organisations, plants, modules and dashboards made available to them, keeping operational visibility relevant and controlled.</p><div className='pv3-access-principles'><span>WORKSPACE ACCESS</span><span>PLANT ISOLATION</span><span>MODULE VISIBILITY</span></div></div>
+      <div className='pv3-access-map'>
+        <div className='pv3-access-path'>{['SYSTEM','ORGANISATION / GROUP','PLANT','MODULE','DASHBOARD','PERMISSION'].map((x,i)=><span key={x}><small>{String(i+1).padStart(2,'0')}</small><b>{x}</b><i/></span>)}</div>
+        <p>CONTROLLED ACCESS PATH</p>
+      </div>
     </section>
 
     <section className='pv3-origin'>
-      <span>BUILT BY VANTORYX TECHNOLOGIES</span>
-      <h2>Built in Sri Lanka.<br/>Engineered for growing manufacturers.<br/><em>Designed to scale further.</em></h2>
+      <div><span>BUILT BY VANTORYX TECHNOLOGIES</span><h2>Built in Sri Lanka.<br/>Engineered for growing manufacturers.<br/><em>Designed to scale further.</em></h2></div>
+      <p>Planvanta is developed around practical manufacturing and supply-chain requirements, with a product architecture designed to support growing operational complexity.</p>
     </section>
 
     <section className='pv3-final'>
       <div className='pv3-final-aura'/>
-      <img src='/resources/planvanta-logo.png' alt='Planvanta'/>
-      <p>MANUFACTURING INTELLIGENCE. CONNECTED.</p>
-      <h2>Make your operations<br/><em>easier to see.</em></h2>
-      <div className='pv3-actions'><a href='/#contact' className='pv3-primary'>Request a Demo <ArrowRight size={16}/></a><a href='/#contact'>Talk to Vantoryx <ArrowRight size={16}/></a></div>
-      <small>Developed by Vantoryx Technologies</small>
+      <div className='pv3-final-inner'><img src='/resources/planvanta-logo.png' alt='Planvanta'/><p>MANUFACTURING INTELLIGENCE. CONNECTED.</p><h2>See what matters.<br/><em>Act with clarity.</em></h2><span>Bring material planning, inventory, procurement and operational visibility into one connected environment.</span><div className='pv3-actions'><a href='/#contact' className='pv3-primary'>Request a Demo <ArrowRight size={16}/></a><a href='/#contact'>Talk to Vantoryx <ArrowRight size={16}/></a></div><small>Developed by Vantoryx Technologies</small></div>
     </section>
   </main>
 }
@@ -528,4 +527,4 @@ function App() {
   </main>;
 }
 export default App;
-/* deployment-sync: premium multi-plant architecture redesign production */
+/* deployment-sync: completed Planvanta closing sections */
