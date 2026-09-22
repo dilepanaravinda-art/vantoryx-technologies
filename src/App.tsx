@@ -439,14 +439,14 @@ function App() {
             <p className='vxh-path-lead'>Every business is different. Some need a proven platform. Others need a tailored solution. Vantoryx gives you both — practical technology built for real business operations.</p>
             <div className='vxh-path-principles'><span><b>PLAN</b><small>with clarity</small></span><span><b>CONNECT</b><small>your data</small></span><span><b>AUTOMATE</b><small>your processes</small></span><span><b>UNDERSTAND</b><small>what matters</small></span><span><b>GROW</b><small>with confidence</small></span></div>
           </div>
-          <div className='vxh-path-orbit' aria-hidden='true'><i/><i/><i/><div><b>REAL OPERATIONS</b><span>CONNECTED TECHNOLOGY</span><small>BETTER OUTCOMES</small></div></div>
+          <div className='vxh-path-orbit' aria-hidden='true'><i/><i/><i/><div><b>REAL OPERATIONS</b><span>CONNECTED TECHNOLOGY</span><small>BETTER OUTCOMES</small></div><aside><b>REAL OPERATIONS.<br/>REAL IMPACT.</b><span>MANUFACTURING<br/>SUPPLY CHAIN<br/>PROCUREMENT<br/>OPERATIONS<br/>MANAGEMENT<br/>AND BEYOND</span><strong>BUILDING<br/>A MORE EFFICIENT<br/>TOMORROW</strong></aside></div>
         </div>
         <div className='vxh-path-grid'>
           <article className='vxh-path-product'>
             <small>01 / VANTORYX PRODUCTS</small><h3>Purpose-built technology for real business operations.</h3>
             <p>We develop and commercialise our own software products designed around practical business and operational requirements.</p>
             <ul><li>Built from real operational requirements</li><li>Focused on everyday business use</li><li>Designed to evolve with the operation</li></ul>
-            <div className='vxh-path-product-preview'><img src='/resources/planvanta-logo.png' alt='Planvanta'/><img src='/resources/planvanta-interface.png' alt='Planvanta 2.0 interface'/><b>PLANVANTA 2.0</b><span>Manufacturing Intelligence. Connected.</span></div>
+            <div className='vxh-path-product-preview'><img src='/resources/planvanta-logo.png' alt='Planvanta'/><div className='vxh-device'><i/><img src='/resources/planvanta-interface.png' alt='Planvanta 2.0 interface'/></div><b>PLANVANTA 2.0</b><span>Manufacturing Intelligence. Connected.</span></div>
             <a href='#products'>Explore Products <ArrowRight size={15}/></a>
           </article>
           <article className='vxh-path-solutions'>
