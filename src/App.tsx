@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
-import { ArrowRight, BarChart3, Layers3, Menu, Mouse, Settings2, ShieldCheck, X } from 'lucide-react';
+import { ArrowRight, BarChart3, Layers3, Menu, Mouse, Settings2, ShieldCheck, X, Target, Share2, RefreshCw, Eye, TrendingUp } from 'lucide-react';
 
 type Point = { x: number; y: number; phase: number; speed: number; size: number };
 
@@ -437,7 +437,7 @@ function App() {
             <p className='vxh-kicker'>TWO WAYS TO WORK WITH VANTORYX</p>
             <h2>Use our technology where it fits.<br/><em>Or let us build around the requirement.</em></h2>
             <p className='vxh-path-lead'>Every business is different. Some need a proven platform. Others need a tailored solution. Vantoryx gives you both — practical technology built for real business operations.</p>
-            <div className='vxh-path-principles'><span><b>PLAN</b><small>with clarity</small></span><span><b>CONNECT</b><small>your data</small></span><span><b>AUTOMATE</b><small>your processes</small></span><span><b>UNDERSTAND</b><small>what matters</small></span><span><b>GROW</b><small>with confidence</small></span></div>
+            <div className='vxh-path-principles'><span><Target/><i><b>PLAN</b><small>with clarity</small></i></span><span><Share2/><i><b>CONNECT</b><small>your data</small></i></span><span><RefreshCw/><i><b>AUTOMATE</b><small>your processes</small></i></span><span><Eye/><i><b>UNDERSTAND</b><small>what matters</small></i></span><span><TrendingUp/><i><b>GROW</b><small>with confidence</small></i></span></div>
           </div>
           <div className='vxh-path-orbit' aria-hidden='true'><i/><i/><i/><div><b>REAL OPERATIONS</b><span>CONNECTED TECHNOLOGY</span><small>BETTER OUTCOMES</small></div><aside><b>REAL OPERATIONS.<br/>REAL IMPACT.</b><span>MANUFACTURING<br/>SUPPLY CHAIN<br/>PROCUREMENT<br/>OPERATIONS<br/>MANAGEMENT<br/>AND BEYOND</span><strong>BUILDING<br/>A MORE EFFICIENT<br/>TOMORROW</strong></aside></div>
         </div>
@@ -523,4 +523,4 @@ function App() {
   </main>;
 }
 export default App;
-/* deployment-sync: precise approved mockup reconstruction */
+/* deployment-sync: reference-accurate premium reconstruction */
