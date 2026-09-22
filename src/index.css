@@ -1068,3 +1068,20 @@ img{max-width:100%}
  .vxh-path-visual{margin-right:-36px}
 }
 @media(max-width:1100px){.vxh-path-visual{display:none}}
+
+/* LIVE ROTATING DIGITAL GLOBE */
+.vxh-path-visual{isolation:isolate}
+.vxh-path-visual-bg{position:absolute;inset:0;z-index:0}
+.vxh-live-globe{position:absolute;z-index:3;left:9%;top:7%;width:270px;aspect-ratio:1;border-radius:50%;filter:drop-shadow(0 18px 24px rgba(0,76,150,.22))}
+.vxh-live-earth{position:absolute;inset:8%;border-radius:50%;overflow:hidden;background-image:linear-gradient(110deg,rgba(0,214,255,.20),rgba(0,53,119,.18)),url('https://threejs.org/examples/textures/planets/earth_atmos_2048.jpg');background-size:auto 100%;background-position:0 center;box-shadow:inset -34px -10px 45px rgba(0,15,56,.42),inset 18px 8px 25px rgba(255,255,255,.22),0 0 28px rgba(0,174,255,.42);animation:vxhEarthSpin 32s linear infinite}
+.vxh-live-earth:before{content:"";position:absolute;inset:0;border-radius:50%;background:repeating-linear-gradient(90deg,transparent 0 18px,rgba(83,221,255,.15) 19px,transparent 20px),repeating-linear-gradient(0deg,transparent 0 18px,rgba(83,221,255,.11) 19px,transparent 20px);mix-blend-mode:screen;opacity:.55}
+.vxh-live-earth:after{content:"";position:absolute;inset:0;border-radius:50%;background:radial-gradient(circle at 32% 26%,rgba(255,255,255,.38),transparent 22%),radial-gradient(circle at 50% 50%,transparent 50%,rgba(0,18,60,.46) 100%)}
+.vxh-orbit{position:absolute;left:4%;top:22%;width:92%;height:56%;border:1px solid rgba(75,205,255,.72);border-radius:50%;box-shadow:0 0 8px rgba(45,191,255,.25);animation:vxhOrbit 13s linear infinite}
+.vxh-orbit-b{transform:rotate(58deg);animation-duration:17s}.vxh-orbit-c{transform:rotate(-58deg);animation-duration:21s}
+.vxh-node{position:absolute;width:7px;height:7px;border-radius:50%;background:#e9fdff;box-shadow:0 0 10px 3px rgba(34,211,238,.9)}
+.vxh-node-a{left:14%;top:30%;animation:vxhPulse 2.8s ease-in-out infinite}.vxh-node-b{right:8%;top:48%;animation:vxhPulse 3.3s ease-in-out infinite .5s}.vxh-node-c{left:48%;bottom:5%;animation:vxhPulse 3s ease-in-out infinite 1s}
+@keyframes vxhEarthSpin{to{background-position:-2048px center}}
+@keyframes vxhOrbit{to{rotate:360deg}}
+@keyframes vxhPulse{50%{transform:scale(1.7);opacity:.55}}
+@media(min-width:1400px){.vxh-live-globe{width:300px;left:8%;top:5%}}
+@media(prefers-reduced-motion:reduce){.vxh-live-earth,.vxh-orbit,.vxh-node{animation:none!important}}
