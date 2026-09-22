@@ -552,4 +552,4 @@ function App() {
   );
 }
 export default App;
-/* deployment-sync: VENDORA product phase */
+/* deployment-sync: site-wide QA phase */
