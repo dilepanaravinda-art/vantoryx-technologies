@@ -552,4 +552,4 @@ function App() {
   );
 }
 export default App;
-/* deployment-sync: Vantoryx corporate phase */
+/* deployment-sync: VENDORA product phase */
