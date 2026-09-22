@@ -430,9 +430,61 @@ function App() {
         </div>
       </section>
 
-      <span id='technology' className='anchor' />
-      <span id='about' className='anchor' />
-      <span id='contact' className='anchor' />
+      <section className='corp-tech' id='technology'>
+        <div className='corp-wrap corp-split'>
+          <div>
+            <p className='corp-kicker'>HOW WE BUILD</p>
+            <h2>Technology shaped around<br/><span>operational reality.</span></h2>
+          </div>
+          <div className='corp-tech-copy'>
+            <p>Vantoryx builds focused business software that brings fragmented operational information into clearer, structured environments.</p>
+            <div className='corp-pillars'>
+              <article><small>01</small><b>Connected Information</b><span>Bring operational data into one structured view.</span></article>
+              <article><small>02</small><b>Decision Visibility</b><span>Surface the information teams and management need to act.</span></article>
+              <article><small>03</small><b>Scalable Architecture</b><span>Support growing organisations, plants and operational needs.</span></article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className='corp-about' id='about'>
+        <div className='corp-wrap corp-about-grid'>
+          <div className='corp-about-mark'><span>V</span><i/></div>
+          <div>
+            <p className='corp-kicker'>VANTORYX TECHNOLOGIES</p>
+            <h2>Software built closer<br/>to the <span>operation.</span></h2>
+            <p className='corp-about-copy'>We are a Sri Lankan technology company developing practical software products for business operations. Our focus is simple: make complex information easier to see, control and use in everyday decisions.</p>
+            <div className='corp-values'><span>PLAN</span><span>SOURCE</span><span>CONTROL</span><span>GROW</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section className='corp-contact' id='contact'>
+        <div className='corp-contact-glow' aria-hidden='true'/>
+        <div className='corp-wrap corp-contact-grid'>
+          <div>
+            <p className='corp-kicker'>START A CONVERSATION</p>
+            <h2>See what Vantoryx<br/>can do for your <span>operation.</span></h2>
+            <p>Interested in Planvanta 2.0, VENDORA or a Vantoryx product? Tell us what you want to improve and we can start from there.</p>
+          </div>
+          <div className='corp-contact-card'>
+            <p>REQUEST A DEMO</p>
+            <h3>Let's understand your operation.</h3>
+            <p className='corp-contact-note'>Share your requirements with Vantoryx and we’ll use them to guide the right product conversation.</p>
+            <a className='corp-contact-cta' href='mailto:info@vantoryx.com?subject=Vantoryx%20Product%20Demo%20Request'>Request a Demo <ArrowRight size={17}/></a>
+            <small>Email destination can be connected to your official Vantoryx inbox when it is provided.</small>
+          </div>
+        </div>
+      </section>
+
+      <footer className='corp-footer'>
+        <div className='corp-wrap'>
+          <img src='/resources/vantoryx-logo.png' alt='Vantoryx Technologies'/>
+          <p>Intelligence for a brighter tomorrow.</p>
+          <nav><a href='#products'>Products</a><a href='#technology'>Technology</a><a href='#about'>About</a><a href='#contact'>Contact</a></nav>
+          <small>© 2026 Vantoryx Technologies. All rights reserved.</small>
+        </div>
+      </footer>
       </main>
     </>
   );
