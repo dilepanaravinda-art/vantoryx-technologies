@@ -523,4 +523,4 @@ function App() {
   </main>;
 }
 export default App;
-/* deployment-sync: premium two-path experience */
+/* deployment-sync: approved mockup composition */
