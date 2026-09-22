@@ -928,3 +928,12 @@
 .vd-origin{padding:145px 28px;text-align:center;color:#10283f;background:radial-gradient(ellipse at 50% 68%,rgba(44,192,223,.13),transparent 40%),#f7fbfd}.vd-origin>img{width:min(390px,72%);max-height:150px;object-fit:contain}.vd-origin>p{color:#0a91af;font-size:8px;font-weight:850;letter-spacing:.22em}.vd-origin .vd-actions{justify-content:center}.vd-origin .vd-actions a{color:#173d59;background:#fff;border-color:rgba(26,112,153,.16)}.vd-origin .vd-actions .vd-primary{color:#fff;background:linear-gradient(100deg,#078eae,#37c9dd)}.vd-origin>small{display:block;margin-top:34px;color:#7890a2;font-size:8px}
 @media(max-width:950px){.vd-hero,.vd-business{grid-template-columns:1fr}.vd-visual{height:500px}.vd-step-grid{grid-template-columns:repeat(2,1fr)}.vd-step-grid article:nth-child(3){border-left:0}}
 @media(max-width:650px){.vd-nav{height:64px;padding:0 17px}.vd-nav img{width:132px}.vd-nav nav>a:not(.vd-cta){display:none}.vd-nav .vd-cta{font-size:8px;padding:9px 10px}.vd-hero{padding:48px 20px 70px;gap:35px}.vd-logo{width:80%}.vd-hero h1,.vd-intro h2,.vd-section-head h2,.vd-business h2,.vd-origin h2{font-size:42px}.vd-visual{height:400px}.vd-rings i:nth-child(1){width:330px;height:330px}.vd-rings i:nth-child(2){width:260px;height:260px}.vd-rings i:nth-child(3){width:190px;height:190px}.vd-rings i:nth-child(4){width:390px;height:390px}.vd-core{width:150px;height:150px}.vd-node{width:108px;padding:10px}.vd-intro,.vd-steps,.vd-business,.vd-origin{padding:90px 20px}.vd-step-grid{grid-template-columns:1fr}.vd-step-grid article,.vd-step-grid article+article{padding:23px 0;border-left:0;border-bottom:1px solid rgba(29,112,153,.1)}.vd-actions a{width:100%;justify-content:center}}
+
+/* SITE-WIDE FINAL QA */
+html{scroll-behavior:smooth;scroll-padding-top:82px}body{overflow-x:hidden}
+img{max-width:100%}
+.nav a,.corp-footer a,.planvanta-card__actions a,.product-body>a{transition:transform .2s ease,opacity .2s ease,color .2s ease,background .2s ease}
+.nav a:focus-visible,.corp-footer a:focus-visible,.planvanta-card__actions a:focus-visible,.product-body>a:focus-visible,.vd a:focus-visible{outline:2px solid #22d3ee;outline-offset:4px}
+.corp-contact-cta--pending{cursor:default;opacity:.92}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.pv3 *, .vd *, .site-shell *{animation:none!important;transition:none!important}}
+@media(max-width:650px){.corp-footer nav{gap:14px}.corp-footer img{width:145px}.corp-contact-grid{gap:42px}}
