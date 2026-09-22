@@ -439,7 +439,7 @@ function App() {
             <p className='vxh-path-lead'>Every business is different. Some need a proven platform. Others need a tailored solution. Vantoryx gives you both — practical technology built for real business operations.</p>
             <div className='vxh-path-principles'><span><Target/><i><b>PLAN</b><small>with clarity</small></i></span><span><Share2/><i><b>CONNECT</b><small>your data</small></i></span><span><RefreshCw/><i><b>AUTOMATE</b><small>your processes</small></i></span><span><Eye/><i><b>UNDERSTAND</b><small>what matters</small></i></span><span><TrendingUp/><i><b>GROW</b><small>with confidence</small></i></span></div>
           </div>
-          <div className='vxh-path-visual' aria-hidden='true'><img src='/resources/vantoryx-two-path-premium-bg.png' alt=''/></div>
+          <div className='vxh-path-visual' aria-hidden='true'><img className='vxh-path-visual-bg' src='/resources/vantoryx-two-path-premium-bg.png' alt=''/><div className='vxh-live-globe'><div className='vxh-live-earth'/><i className='vxh-orbit vxh-orbit-a'/><i className='vxh-orbit vxh-orbit-b'/><i className='vxh-orbit vxh-orbit-c'/><span className='vxh-node vxh-node-a'/><span className='vxh-node vxh-node-b'/><span className='vxh-node vxh-node-c'/></div></div>
         </div>
         <div className='vxh-path-grid'>
           <article className='vxh-path-product'>
@@ -523,4 +523,4 @@ function App() {
   </main>;
 }
 export default App;
-/* deployment-sync: uploaded premium two-path artwork live */
+/* deployment-sync: live rotating digital globe */
