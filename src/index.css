@@ -1189,3 +1189,21 @@ img{max-width:100%}
 @media(min-width:1600px){.vxh-paths>.vxh-wrap{width:min(1380px,calc(100% - 140px))!important}}
 @media(max-width:1100px){.vxh-paths>.vxh-wrap{width:min(100% - 48px,900px)!important}.vxh-path-grid article{height:auto!important;min-height:0!important}}
 @media(max-width:650px){.vxh-paths>.vxh-wrap{width:calc(100% - 36px)!important}.vxh-paths h2{font-size:40px!important}}
+
+/* BUSINESS SOLUTIONS — PREMIUM OUTCOME-LED REDESIGN */
+.vxh-solutions{position:relative;overflow:hidden}
+.vxh-solutions:before{content:"";position:absolute;inset:0;pointer-events:none;background:radial-gradient(circle at 78% 9%,rgba(124,58,237,.10),transparent 29%),radial-gradient(circle at 16% 60%,rgba(34,211,238,.055),transparent 34%)}
+.vxh-solutions>.vxh-wrap{position:relative;z-index:1}
+.vxh-section-head--light>p b{display:block;margin-top:8px;color:#d8e9f4;font-weight:500}
+.vxh-solution-flow{display:flex;align-items:center;justify-content:space-between;margin:44px 0 30px;padding:15px 22px;border:1px solid rgba(107,184,222,.13);border-radius:8px;background:rgba(7,35,55,.42);backdrop-filter:blur(10px)}
+.vxh-solution-flow span{color:#b9d0df;font-size:8px;font-weight:700;letter-spacing:.17em}.vxh-solution-flow svg{width:13px;color:#22d3ee;opacity:.58}
+.vxh-solution-groups{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.vxh-solution-groups>section{padding:18px 0 0}.vxh-solution-groups>section>small{display:block;margin:0 0 12px 3px;color:#22d3ee;font-size:8px;font-weight:800;letter-spacing:.19em}
+.vxh-solution-groups article{position:relative;min-height:178px;margin-bottom:14px;padding:27px 26px 25px;border:1px solid rgba(105,180,215,.13);border-radius:10px;background:linear-gradient(145deg,rgba(8,39,60,.78),rgba(5,28,47,.62));transition:transform .25s ease,border-color .25s ease,background .25s ease}
+.vxh-solution-groups article:hover{transform:translateY(-4px);border-color:rgba(34,211,238,.34);background:linear-gradient(145deg,rgba(10,48,72,.9),rgba(7,32,52,.76))}
+.vxh-solution-groups article i{display:block;color:#22d3ee;font-size:8px;font-style:normal;font-weight:800;letter-spacing:.14em}.vxh-solution-groups article h3{margin:17px 0 9px;color:#f4f9fc;font-size:17px;line-height:1.16}.vxh-solution-groups article p{margin:0;color:#89a7ba;font-size:10px;line-height:1.55}.vxh-solution-groups article span{display:block;margin-top:19px;color:#5ecce6;font-size:7.5px;font-weight:600;letter-spacing:.08em}
+.vxh-problem--premium{display:grid!important;grid-template-columns:1.25fr .75fr!important;width:100%!important;margin-top:42px!important;padding:42px 44px!important;border:1px solid rgba(34,211,238,.18)!important;border-left:3px solid #22d3ee!important;border-radius:10px!important;background:linear-gradient(120deg,rgba(8,48,69,.92),rgba(7,30,51,.74))!important}
+.vxh-problem--premium>div:first-child>p{margin:0 0 18px;color:#22d3ee;font-size:8px;font-weight:800;letter-spacing:.17em}.vxh-problem--premium h3{max-width:650px;margin:0;color:#f5fbff;font-size:27px;line-height:1.12}.vxh-problem--premium h3 em{color:#93ddec;font-style:normal}.vxh-problem--premium>div:first-child>span{display:block;max-width:650px;margin-top:17px;color:#8daabc;font-size:10px;line-height:1.55}.vxh-problem--premium a{display:inline-flex!important;margin-top:25px!important;color:#dff9ff!important}
+.vxh-problem-process{display:grid;grid-template-columns:repeat(2,1fr);align-content:center;gap:0 22px;padding-left:35px;border-left:1px solid rgba(122,186,214,.15)}.vxh-problem-process span{display:flex;align-items:center;gap:12px;padding:13px 0;border-bottom:1px solid rgba(122,186,214,.10);color:#c5d9e5;font-size:8px;font-weight:700;letter-spacing:.1em}.vxh-problem-process span i{color:#22d3ee;font-style:normal;font-size:7px}
+@media(max-width:900px){.vxh-solution-flow{overflow-x:auto;gap:16px;justify-content:flex-start}.vxh-solution-flow span{white-space:nowrap}.vxh-solution-groups{grid-template-columns:1fr}.vxh-problem--premium{grid-template-columns:1fr!important}.vxh-problem-process{margin-top:30px;padding:25px 0 0;border-left:0;border-top:1px solid rgba(122,186,214,.15)}}
+@media(max-width:560px){.vxh-problem--premium{padding:30px 24px!important}.vxh-problem-process{grid-template-columns:1fr}.vxh-solution-groups article{min-height:0}}
