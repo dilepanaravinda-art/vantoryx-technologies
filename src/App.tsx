@@ -533,8 +533,8 @@ function App() {
             <p>REQUEST A DEMO</p>
             <h3>Let's understand your operation.</h3>
             <p className='corp-contact-note'>Share your requirements with Vantoryx and we’ll use them to guide the right product conversation.</p>
-            <a className='corp-contact-cta' href='mailto:info@vantoryx.com?subject=Vantoryx%20Product%20Demo%20Request'>Request a Demo <ArrowRight size={17}/></a>
-            <small>Email destination can be connected to your official Vantoryx inbox when it is provided.</small>
+            <a className='corp-contact-cta' href='mailto:dileepa@vantoryx.com?subject=Vantoryx%20Product%20Demo%20Request'>Request a Demo <ArrowRight size={17}/></a>
+            <small>Tell us which product you are interested in and a little about your operation.</small>
           </div>
         </div>
       </section>
