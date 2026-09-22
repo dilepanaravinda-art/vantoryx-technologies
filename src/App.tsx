@@ -473,12 +473,16 @@ function App() {
 
     <section className='vxh-solutions' id='solutions'>
       <div className='vxh-wrap'>
-        <div className='vxh-section-head vxh-section-head--light'><div><p className='vxh-kicker'>BUSINESS SOLUTIONS</p><h2>Your requirement.<br/><em>Our technology.</em></h2></div><p>Not every business challenge needs another off-the-shelf system. Start with the business problem and we design around the operational requirement.</p></div>
-        <div className='vxh-solution-grid'>{solutionCapabilities.map(([n,t,d])=><article key={n}><small>{n}</small><h3>{t}</h3><p>{d}</p></article>)}</div>
-        <div className='vxh-problem'>
-          <p>YOU DON'T NEED TO ARRIVE WITH A SOFTWARE SPECIFICATION.</p>
-          <h3>Tell us what is difficult to see, control, coordinate or manage.</h3>
-          <a href='#contact'>Discuss Your Requirement <ArrowRight size={16}/></a>
+        <div className='vxh-section-head vxh-section-head--light'><div><p className='vxh-kicker'>BUSINESS SOLUTIONS</p><h2>Your requirement.<br/><em>Our technology.</em></h2></div><p>Not every business challenge needs another off-the-shelf system. <b>Start with the operational problem. We design the technology around it.</b></p></div>
+        <div className='vxh-solution-flow'><span>BUSINESS PROBLEM</span><ArrowRight/><span>REQUIREMENT</span><ArrowRight/><span>SOLUTION</span><ArrowRight/><span>VISIBILITY</span><ArrowRight/><span>IMPROVEMENT</span></div>
+        <div className='vxh-solution-groups'>
+          <section><small>DIGITALISE</small>{solutionCapabilities.filter(([n])=>n==='01'||n==='06').map(([n,t,d])=><article key={n}><i>{n}</i><h3>{t}</h3><p>{d}</p><span>Structured digital operations</span></article>)}</section>
+          <section><small>CONNECT &amp; AUTOMATE</small>{solutionCapabilities.filter(([n])=>n==='04'||n==='05').map(([n,t,d])=><article key={n}><i>{n}</i><h3>{t}</h3><p>{d}</p><span>Connected workflows &amp; information</span></article>)}</section>
+          <section><small>SEE &amp; CONTROL</small>{solutionCapabilities.filter(([n])=>n==='02'||n==='03').map(([n,t,d])=><article key={n}><i>{n}</i><h3>{t}</h3><p>{d}</p><span>Planning &amp; management visibility</span></article>)}</section>
+        </div>
+        <div className='vxh-problem vxh-problem--premium'>
+          <div><p>YOU DON'T NEED TO ARRIVE WITH A SOFTWARE SPECIFICATION.</p><h3>Tell us the business problem.<br/><em>We'll help structure the technology around it.</em></h3><span>From an inefficient process to a visibility gap or disconnected workflow, start by telling us what needs to work better.</span><a href='#contact'>Discuss Your Requirement <ArrowRight size={16}/></a></div>
+          <div className='vxh-problem-process'>{['UNDERSTAND','MAP','DESIGN','BUILD','IMPLEMENT','IMPROVE'].map((x,i)=><span key={x}><i>{String(i+1).padStart(2,'0')}</i>{x}</span>)}</div>
         </div>
       </div>
     </section>
@@ -523,4 +527,4 @@ function App() {
   </main>;
 }
 export default App;
-/* deployment-sync: final two-path proportion polish production */
+/* deployment-sync: premium business solutions redesign */
