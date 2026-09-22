@@ -432,11 +432,29 @@ function App() {
 
     <section className='vxh-paths'>
       <div className='vxh-wrap'>
-        <p className='vxh-kicker'>TWO WAYS TO WORK WITH VANTORYX</p>
-        <h2>Use our technology where it fits.<br/><em>Or let us build around the requirement.</em></h2>
+        <div className='vxh-path-intro'>
+          <div>
+            <p className='vxh-kicker'>TWO WAYS TO WORK WITH VANTORYX</p>
+            <h2>Use our technology where it fits.<br/><em>Or let us build around the requirement.</em></h2>
+            <p className='vxh-path-lead'>Every business is different. Some need a proven platform. Others need a tailored solution. Vantoryx gives you both — practical technology built for real business operations.</p>
+            <div className='vxh-path-principles'><span><b>PLAN</b><small>with clarity</small></span><span><b>CONNECT</b><small>your data</small></span><span><b>AUTOMATE</b><small>your processes</small></span><span><b>UNDERSTAND</b><small>what matters</small></span><span><b>GROW</b><small>with confidence</small></span></div>
+          </div>
+          <div className='vxh-path-orbit' aria-hidden='true'><i/><i/><i/><div><b>REAL OPERATIONS</b><span>CONNECTED TECHNOLOGY</span><small>BETTER OUTCOMES</small></div></div>
+        </div>
         <div className='vxh-path-grid'>
-          <article><small>01 / PRODUCTS</small><h3>Purpose-built technology for real business operations.</h3><p>We develop and commercialise our own software products designed around practical business and operational requirements.</p><a href='#products'>Explore Products <ArrowRight size={15}/></a></article>
-          <article><small>02 / BUSINESS SOLUTIONS</small><h3>Technology designed around your requirement.</h3><p>Bring us an operational challenge, inefficient process, visibility gap or manual workflow. We work with you to design an appropriate digital solution.</p><a href='#solutions'>Explore Solutions <ArrowRight size={15}/></a></article>
+          <article className='vxh-path-product'>
+            <small>01 / VANTORYX PRODUCTS</small><h3>Purpose-built technology for real business operations.</h3>
+            <p>We develop and commercialise our own software products designed around practical business and operational requirements.</p>
+            <ul><li>Built from real operational requirements</li><li>Focused on everyday business use</li><li>Designed to evolve with the operation</li></ul>
+            <div className='vxh-path-product-preview'><img src='/resources/planvanta-logo.png' alt='Planvanta'/><img src='/resources/planvanta-interface.png' alt='Planvanta 2.0 interface'/><b>PLANVANTA 2.0</b><span>Manufacturing Intelligence. Connected.</span></div>
+            <a href='#products'>Explore Products <ArrowRight size={15}/></a>
+          </article>
+          <article className='vxh-path-solutions'>
+            <small>02 / BUSINESS SOLUTIONS</small><h3>Technology designed around your requirement.</h3>
+            <p>Bring us an operational challenge, inefficient process, visibility gap or manual workflow. We work with you to understand the requirement and design an appropriate digital solution.</p>
+            <div className='vxh-path-solution-list'><span><Settings2 size={18}/><b>Process Digitalisation</b><small>From manual to digital</small></span><span><Layers3 size={18}/><b>Workflow Automation</b><small>More efficient operations</small></span><span><BarChart3 size={18}/><b>Operational Dashboards</b><small>Clearer visibility</small></span><span><ShieldCheck size={18}/><b>Integration & Custom Solutions</b><small>Built around your business</small></span></div>
+            <a href='#solutions'>Explore Solutions <ArrowRight size={15}/></a>
+          </article>
         </div>
       </div>
     </section>
