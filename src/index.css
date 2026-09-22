@@ -1148,3 +1148,27 @@ img{max-width:100%}
  .vxh-path-grid{margin-top:16px!important}
 }
 @media(max-width:1100px){.vxh-path-statement{display:none!important}}
+
+/* FINAL TWO-PATH REBALANCE — full-width, compact, no dead sidebar */
+.vxh-paths{padding-top:82px!important;padding-bottom:82px!important}
+.vxh-path-intro{display:block!important;min-height:0!important;padding:0!important}
+.vxh-path-intro>div:first-child{max-width:none!important}
+.vxh-paths h2{max-width:1120px!important;margin-bottom:18px!important;font-size:clamp(54px,4.65vw,74px)!important;line-height:.97!important}
+.vxh-path-lead{max-width:790px!important;margin-bottom:25px!important;font-size:14px!important;line-height:1.55!important}
+.vxh-path-principles{width:min(100%,1040px)!important;margin-top:0!important;padding:15px 0!important;border-top:1px solid rgba(16,78,112,.12)!important;border-bottom:1px solid rgba(16,78,112,.12)!important}
+.vxh-path-principles span{min-width:0!important;padding:0 20px!important}
+.vxh-path-principles span:first-child{padding-left:0!important}
+.vxh-path-principles span:last-child{padding-right:0!important}
+.vxh-path-grid{margin-top:22px!important;gap:18px!important}
+.vxh-path-grid article{height:458px!important;min-height:458px!important;padding-top:32px!important;padding-bottom:32px!important}
+.vxh-path-grid h3{font-size:27px!important;line-height:1.08!important;margin-top:15px!important;margin-bottom:15px!important}
+.vxh-path-grid p{font-size:12px!important;line-height:1.62!important}
+.vxh-path-grid li{font-size:9.5px!important;line-height:1.35!important}
+.vxh-path-solution-list{margin-top:24px!important;row-gap:10px!important}
+.vxh-path-solution-list b{font-size:9.5px!important}
+.vxh-path-solution-list small{font-size:7.5px!important}
+.vxh-path-product-preview{bottom:29px!important}
+.vxh-path-product>a,.vxh-path-solutions>a{bottom:30px!important}
+@media(min-width:1500px){.vxh-paths>.vxh-wrap{width:min(1460px,calc(100% - 120px))!important}}
+@media(max-width:1100px){.vxh-paths{padding-top:68px!important}.vxh-path-grid article{height:auto!important;min-height:0!important}}
+@media(max-width:650px){.vxh-paths h2{font-size:42px!important}.vxh-path-principles span{padding:8px 10px!important}}
