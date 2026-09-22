@@ -1085,3 +1085,12 @@ img{max-width:100%}
 @keyframes vxhPulse{50%{transform:scale(1.7);opacity:.55}}
 @media(min-width:1400px){.vxh-live-globe{width:300px;left:8%;top:5%}}
 @media(prefers-reduced-motion:reduce){.vxh-live-earth,.vxh-orbit,.vxh-node{animation:none!important}}
+
+/* HOTFIX — REMOVE DUPLICATED FLAT-EARTH OVERLAY; RESTORE CLEAN PREMIUM ARTWORK */
+.vxh-live-globe{display:none!important}
+.vxh-path-visual{height:360px!important;overflow:hidden!important;background:#f7fbfe}
+.vxh-path-visual-bg{position:absolute!important;inset:0!important;width:100%!important;height:100%!important;object-fit:cover!important;object-position:center!important;filter:none!important}
+@media(min-width:1101px){
+ .vxh-path-intro{grid-template-columns:minmax(0,1.22fr) minmax(560px,.78fr)!important}
+ .vxh-path-visual{margin-top:-44px!important;margin-right:-36px!important}
+}
