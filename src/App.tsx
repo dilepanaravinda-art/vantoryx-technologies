@@ -505,4 +505,4 @@ function App() {
   </main>;
 }
 export default App;
-/* deployment-sync: site-wide QA phase */
+/* deployment-sync: hybrid business platform repositioning */
