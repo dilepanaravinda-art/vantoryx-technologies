@@ -208,6 +208,19 @@ const planvantaCapabilities = [
   ['Operational Intelligence','Surface risks, exceptions and decision-ready information so teams can focus attention where it matters.']
 ];
 
+const publicProducts = [
+  { number:'01', name:'Planvanta 2.0', logo:'/resources/planvanta-logo.png', eyebrow:'MANUFACTURING PLANNING & OPERATIONAL INTELLIGENCE', title:'Manufacturing Intelligence. Connected.', description:'A connected environment for material planning, inventory, procurement, plant operations and management visibility.', statement:'Plan Smarter. See Clearly. Operate with Confidence.', href:'/products/planvanta', visual:'/resources/planvanta-interface.png' }
+];
+
+const solutionCapabilities = [
+  ['01','Business Process Digitalisation','Turn structured manual processes into clearer digital workflows.'],
+  ['02','Planning & Operational Solutions','Create practical digital tools around planning and day-to-day operational requirements.'],
+  ['03','Dashboards & Management Visibility','Bring operational information into focused views for clearer management visibility.'],
+  ['04','Workflow Automation','Reduce repetitive manual handling through structured workflow automation.'],
+  ['05','Data & System Integration','Connect relevant information across systems and operational data sources.'],
+  ['06','Custom Business Applications','Design focused business applications around defined operational requirements.']
+];
+
 function PlanvantaProductPage(){
   // Product route intentionally shares Vantoryx visual language with the corporate site.
   // V7 premium light product visual system is deployed with this component.
@@ -443,4 +456,4 @@ function App() {
   </main>;
 }
 export default App;
-/* deployment-sync: temporary launch contact channels production */
+/* deployment-sync: restore homepage data definitions */
