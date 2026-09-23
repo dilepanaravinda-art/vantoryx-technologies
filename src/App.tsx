@@ -443,4 +443,4 @@ function App() {
   </main>;
 }
 export default App;
-/* deployment-sync: publication cleanup no public vendora code */
+/* deployment-sync: publication readiness cleanup */
