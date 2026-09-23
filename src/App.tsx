@@ -225,7 +225,7 @@ function PlanvantaProductPage(){
         <p className='pv3-kicker'>MANUFACTURING PLANNING &amp; OPERATIONAL INTELLIGENCE</p>
         <h1>Manufacturing<br/>Intelligence.<br/><em>Connected.</em></h1>
         <p className='pv3-lead'>One environment for clearer material planning, inventory, procurement, plant operations and management visibility.</p>
-        <div className='pv3-actions'><a href='/#contact' className='pv3-primary'>Request a Demo <ArrowRight size={16}/></a><a href='#platform'>Explore the Platform <ArrowRight size={16}/></a></div>
+        <div className='pv3-actions'><a href='mailto:demo@vantoryx.example?subject=Planvanta%202.0%20Demo%20Request' className='pv3-primary'>Request a Demo <ArrowRight size={16}/></a><a href='#platform'>Explore the Platform <ArrowRight size={16}/></a></div>
       </div>
       <div className='pv3-stage'>
         <div className='pv3-stage-meta'><span>PLANVANTA 2.0</span><i>OPERATIONAL VIEW</i></div>
@@ -310,7 +310,7 @@ function PlanvantaProductPage(){
 
     <section className='pv3-final'>
       <div className='pv3-final-aura'/>
-      <div className='pv3-final-inner'><img src='/resources/planvanta-logo.png' alt='Planvanta'/><p>MANUFACTURING INTELLIGENCE. CONNECTED.</p><h2>See what matters.<br/><em>Act with clarity.</em></h2><span>Bring material planning, inventory, procurement and operational visibility into one connected environment.</span><div className='pv3-actions'><a href='/#contact' className='pv3-primary'>Request a Demo <ArrowRight size={16}/></a><a href='/#contact'>Talk to Vantoryx <ArrowRight size={16}/></a></div><small>Developed by Vantoryx Technologies</small></div>
+      <div className='pv3-final-inner'><img src='/resources/planvanta-logo.png' alt='Planvanta'/><p>MANUFACTURING INTELLIGENCE. CONNECTED.</p><h2>See what matters.<br/><em>Act with clarity.</em></h2><span>Bring material planning, inventory, procurement and operational visibility into one connected environment.</span><div className='pv3-actions'><a href='mailto:demo@vantoryx.example?subject=Planvanta%202.0%20Demo%20Request' className='pv3-primary'>Request a Demo <ArrowRight size={16}/></a><a href='mailto:hello@vantoryx.example?subject=Planvanta%20Enquiry'>Talk to Vantoryx <ArrowRight size={16}/></a></div><small>Developed by Vantoryx Technologies</small></div>
     </section>
   </main>
 }
@@ -434,7 +434,7 @@ function App() {
         <p className='vxh-contact-lead'>Whether you're interested in a Vantoryx product or need technology designed around a specific business requirement, start the conversation with us.</p>
         <div className='vxh-contact-grid'>
           <article><small>01 / PRODUCT</small><h3>Interested in Planvanta 2.0?</h3><p>Explore how an existing Vantoryx product could support your operation.</p><a href='/products/planvanta'>Explore Planvanta <ArrowRight size={15}/></a></article>
-          <article><small>02 / BUSINESS REQUIREMENT</small><h3>Have a process or operational challenge?</h3><p>Tell us what you want to improve. We'll start by understanding the requirement before deciding what should be built.</p><div className='vxh-contact-pending'>Discuss Your Requirement <ArrowRight size={15}/></div><span>Official Vantoryx contact channel will be connected before public launch.</span></article>
+          <article><small>02 / BUSINESS REQUIREMENT</small><h3>Have a process or operational challenge?</h3><p>Tell us what you want to improve. We'll start by understanding the requirement before deciding what should be built.</p><a href='mailto:hello@vantoryx.example?subject=Business%20Requirement%20Enquiry'>Discuss Your Requirement <ArrowRight size={15}/></a><div className='vxh-contact-details'><span><b>Email</b> hello@vantoryx.example</span><span><b>Phone</b> +94 11 000 0000</span><span><b>Location</b> Colombo, Sri Lanka</span></div><em className='vxh-demo-note'>Temporary demonstration contact details — to be replaced before public launch.</em></article>
         </div>
       </div>
     </section>
@@ -443,4 +443,4 @@ function App() {
   </main>;
 }
 export default App;
-/* deployment-sync: publication readiness cleanup */
+/* deployment-sync: temporary launch contact channels */
