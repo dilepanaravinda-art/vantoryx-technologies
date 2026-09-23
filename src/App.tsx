@@ -315,90 +315,6 @@ function PlanvantaProductPage(){
   </main>
 }
 
-function VendoraProductPage(){
-  return <main className='vd'>
-    <header className='vd-nav'>
-      <a href='/'><img src='/resources/vantoryx-logo.png' alt='Vantoryx Technologies'/></a>
-      <nav><a href='#platform'>Platform</a><a href='#approach'>Approach</a><a href='#business'>For Business</a><a className='vd-cta' href='/#contact'>Talk to Vantoryx <ArrowRight size={14}/></a></nav>
-    </header>
-
-    <section className='vd-hero'>
-      <div className='vd-hero-copy'>
-        <img className='vd-logo' src='/resources/vendora-logo.png' alt='VENDORA — Supplier Intelligence Platform'/>
-        <p className='vd-kicker'>SUPPLIER INTELLIGENCE PLATFORM</p>
-        <h1>Discover. Verify.<br/><em>Source with confidence.</em></h1>
-        <p className='vd-lead'>VENDORA is Vantoryx Technologies' supplier intelligence platform — designed to make supplier discovery, qualification and sourcing decisions clearer and more structured.</p>
-        <div className='vd-actions'><a className='vd-primary' href='/#contact'>Talk to Vantoryx <ArrowRight size={16}/></a><a href='#platform'>Explore VENDORA <ArrowRight size={16}/></a></div>
-      </div>
-      <div className='vd-visual' aria-hidden='true'>
-        <div className='vd-rings'><i/><i/><i/><i/></div>
-        <div className='vd-core'><ShieldCheck size={36}/><small>SUPPLIER</small><b>INTELLIGENCE</b></div>
-        <div className='vd-node vd-n1'><span>01</span><b>DISCOVER</b></div>
-        <div className='vd-node vd-n2'><span>02</span><b>VERIFY</b></div>
-        <div className='vd-node vd-n3'><span>03</span><b>QUALIFY</b></div>
-        <div className='vd-node vd-n4'><span>04</span><b>SOURCE</b></div>
-      </div>
-    </section>
-
-    <section className='vd-intro' id='platform'>
-      <p className='vd-kicker'>A CLEARER SOURCING STARTING POINT</p>
-      <h2>Supplier decisions need<br/><em>more than a search result.</em></h2>
-      <p>VENDORA is being developed around a simple idea: supplier discovery should lead into a more structured view of verification, qualification and sourcing — helping teams organise the information behind supplier decisions.</p>
-    </section>
-
-    <section className='vd-steps' id='approach'>
-      <div className='vd-section-head'><small>01 / APPROACH</small><h2>A structured path from<br/><em>discovery to sourcing.</em></h2></div>
-      <div className='vd-step-grid'>
-        <article><span>01</span><h3>Discover</h3><p>Identify potential suppliers and create a clearer starting point for sourcing.</p></article>
-        <article><span>02</span><h3>Verify</h3><p>Bring supplier verification information into a more structured review process.</p></article>
-        <article><span>03</span><h3>Qualify</h3><p>Organise relevant supplier information to support internal qualification decisions.</p></article>
-        <article><span>04</span><h3>Source</h3><p>Move from supplier intelligence toward a more informed sourcing decision.</p></article>
-      </div>
-    </section>
-
-    <section className='vd-business' id='business'>
-      <div><p className='vd-kicker'>BUILT FOR PROCUREMENT TEAMS</p><h2>Turn supplier information<br/>into <em>usable intelligence.</em></h2></div>
-      <div className='vd-business-list'>
-        <div><small>01</small><b>Structured supplier discovery</b></div>
-        <div><small>02</small><b>Clearer verification workflow</b></div>
-        <div><small>03</small><b>More organised qualification information</b></div>
-        <div><small>04</small><b>Better context for sourcing decisions</b></div>
-      </div>
-    </section>
-
-    <section className='vd-origin'>
-      <img src='/resources/vendora-logo.png' alt='VENDORA'/>
-      <p>DISCOVER · VERIFY · SOURCE</p>
-      <h2>Build a clearer view<br/>of your <em>supplier options.</em></h2>
-      <div className='vd-actions'><a className='vd-primary' href='/#contact'>Talk to Vantoryx <ArrowRight size={16}/></a><a href='/'>Back to Vantoryx <ArrowRight size={16}/></a></div>
-      <small>Developed by Vantoryx Technologies</small>
-    </section>
-  </main>
-}
-
-const publicProducts = [
-  {
-    number: '01',
-    name: 'Planvanta 2.0',
-    eyebrow: 'MANUFACTURING PLANNING & OPERATIONAL INTELLIGENCE',
-    title: 'Manufacturing Intelligence. Connected.',
-    description: "Vantoryx Technologies' manufacturing planning and operational intelligence platform — bringing material planning, inventory, procurement, plant operations and management visibility into one connected environment.",
-    statement: 'Plan Smarter. See Clearly. Operate with Confidence.',
-    href: '/products/planvanta',
-    logo: '/resources/planvanta-logo.png',
-    visual: '/resources/planvanta-interface.png'
-  }
-];
-
-const solutionCapabilities = [
-  ['01','Business Process Digitalisation','Transform spreadsheet-, email- and paper-driven processes into structured digital workflows.'],
-  ['02','Planning & Operational Solutions','Build structured tools for planning, monitoring and coordinating business operations.'],
-  ['03','Dashboards & Management Visibility','Turn operational information into clear dashboards and management views.'],
-  ['04','Workflow Automation','Reduce repetitive manual activities through structured workflows, information and rules.'],
-  ['05','Data & System Integration','Bring information from different sources together for more connected operational visibility.'],
-  ['06','Custom Business Applications','Design focused applications around defined business processes when an existing product does not fit.']
-];
-
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
   if (window.location.pathname === '/products/planvanta') return <PlanvantaProductPage />;
@@ -527,4 +443,4 @@ function App() {
   </main>;
 }
 export default App;
-/* deployment-sync: completed Planvanta closing sections production */
+/* deployment-sync: publication cleanup no public vendora code */
